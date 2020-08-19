@@ -1,0 +1,148 @@
+.mother-filter#filter-tab-parent
+	.mother-filter__desc Отфильтруйте по необходимым параметрам и выберете 5 кандидатов для сурогатного материанства. Выбор нужно формировать в следующем порядке: больше всего понравилась - менее понравилась.
+
+	a(href="#").mother-filter__open.btn-default.js-toggle Выбор по параметрам
+	form(action="" class="form form-filter")
+						.form__body
+							.row
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Поиск по id
+										.form-input__wrap
+											input(type="text" class="form-input" placeholder="Введите id")
+											.form-input-icon.form-input-icon--search
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Город
+										select.form-select.js-nice-select
+											option(value="Тюмень") Тюмень
+											option(value="Сургут") Сургут
+											option(value="Урал") Урал
+											option(value="Омск") Омск
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Национальность
+										select.form-select.js-nice-select
+											option(value="Русская") Русская
+											option(value="Татарка") Татарка
+											option(value="Казашка") Казашка
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Цвет глаз
+										.form-select-color
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Серый").color.color--gray.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Голубой").color.color--blue.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Голубо-зеленый").color.color--blue-green.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Зеленый").color.color--green.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Карий").color.color--brown.js-tooltip
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Цвет волос
+										.form-select-color
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Черный").color.color--black.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Каштановый").color.color--brown.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Рыжий").color.color--orange.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Русый").color.color--gold.js-tooltip
+											label.custom-color-checkbox
+												input(class="color-checkbox" type="checkbox")
+												span(data-toggle="tooltip" title="Блондинка").color.color--blonde.js-tooltip
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name
+											| Группа крови
+											span.form__field-hint.js-hint(data-toggle="modal" data-target="#resus-table")
+										select.form-select.js-nice-select
+											option(value="Первая положительная") Первая положительная
+											option(value="Вторая положительная") Вторая положительная
+											option(value="Третья положительная") Третья положительная
+											option(value="Четвертая положительная") Четвертая положительная
+											option(value="Первая отрицательная") Первая отрицательная
+											option(value="Вторая отрицательная") Вторая отрицательная
+											option(value="Третья отрицательная") Третья отрицательная
+											option(value="Четвертая отрицательная") Четвертая отрицательная
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Образование
+										select.form-select.js-nice-select
+											option(value="Среднее") Среднее
+											option(value="Высшее") Высшее
+											option(value="Неоконченное высшее") Неоконченное высшее
+											option(value="Среднеспециальное") Среднеспециальное
+											option(value="Среднее") Среднее
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Семейное положение
+										select.form-select.js-nice-select
+											option(value="Не замужем") Не замужем
+											option(value="Жената") Замужем
+											option(value="Гражданский брак") Гражданский брак			
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Возраст
+										.form-range
+											input(type="hidden" name="age['min']" value="18")
+											input(type="hidden" name="age['max']" value="34")
+											div(data-from="18" data-to="34").js-range
+												.js-range-min 18
+												.js-range-max 34
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Рост
+										.form-range
+											input(type="hidden" name="height['min']" value="150")
+											input(type="hidden" name="height['max']" value="185")
+											div(data-from="150" data-to="185").js-range
+												.js-range-min 150
+												.js-range-max 185
+								.col-12.col-sm-6.col-md-4.col-lg-3
+									.form__field
+										.form__field-name Вес
+										.form-range
+											input(type="hidden" name="weight['min']" value="45")
+											input(type="hidden" name="weight['max']" value="90")
+											div(data-from="45" data-to="90").js-range
+												.js-range-min 45
+												.js-range-max 90+
+								
+							.row
+								.col-12.col-sm-5.col-xl-3
+									.form__field.form__field--horizontal
+										.form__field-name.ml0 Наличие детей
+										label.custom-switch
+											input(type="checkbox" class="checkbox")
+											span.switch-handle
+											span.yes Да
+											span.no Нет
+								.col-12.col-sm-7.col-xl-3
+									.form__field.form__field--horizontal
+										.form__field-name.ml0 Опыт участия в программе
+										label.custom-switch
+											input(type="checkbox" class="checkbox")
+											span.switch-handle
+											span.yes Да
+											span.no Нет
+							.row
+								.col-12.col-sm-6.col-md-3
+									.form__field-submit
+										a(href="" class="btn-aqua") Поиск по параметрам
+								.col-12.col-sm-6.col-md-3
+									.form__field-clear
+										a(href="" class="btn-white-bordered js-form-clear") Очистить

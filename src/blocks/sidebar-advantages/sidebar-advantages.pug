@@ -1,0 +1,9 @@
+mixin sidebar-advantages(items) 
+	.sidebar-advantages
+		-var i = 1;
+		each item in items
+			.sidebar-advantages__item
+				.sidebar-advantages__icon
+					img(src='/dist/img/ico/sidebar-advantages-'+i+'.svg', alt="")
+				.sidebar-advantages__text=item.text
+			- i++;

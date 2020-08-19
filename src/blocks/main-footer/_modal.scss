@@ -1,0 +1,228 @@
+/* modal start */
+.modal-open {
+    // padding-right: 0 !important;
+}
+.modal-backdrop.show {
+    opacity: 0.3;
+    background: rgb(63, 72, 98);
+}
+.modal-close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url('/dist/img/ico/close.svg') no-repeat center;
+    background-size: contain;
+    border: 0;
+    cursor: pointer;
+    right: 40px;
+    top: 40px;
+
+
+}
+
+#modalCity {
+    .modal-city {
+        pointer-events: auto;
+        max-width: 100%;
+        margin: 0;
+        width: 565px;
+        padding: 30px 40px;
+        background: $fiord;
+        box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: $screen-xs) {
+            width: calc(100% - 30px);
+            margin: 100px 0;
+        }
+
+        .modal-close {
+            @media (max-width: $screen-xs) {
+                top: 42px;
+                right: 28px;
+            }
+        }
+
+        &__head {
+            color: $white;
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: 500;
+
+            @media (max-width: $screen-xs) {
+                font-size: 22px;
+            }
+        }
+        &__body {
+            margin-top: 28px;
+            margin-bottom: 24px;
+        }
+        &__item {
+            margin-top: 16px;
+            display: block;
+            font-size: 22px;
+            line-height: 26px;
+
+            @media (max-width: $screen-xs) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#callback {
+    .modal-callback {
+        pointer-events: auto;
+        width: 691px;
+        max-width: 100%;
+        margin: 0;
+        padding: 60px 130px;
+        background: $fiord;
+        box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: $screen-xs) {
+            width: calc(100% - 30px);
+            // margin: 100px 0;
+            padding: 35px;
+        }
+
+        .modal-close {
+            @media (max-width: $screen-xs) {
+                top: 45px;
+                right: 42px;
+            }
+            @media (max-width: $screen-5s) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &__form {
+
+            &-title {
+                color: $white;
+                font-size: 32px;
+                line-height: 38px;
+                font-weight: 500;
+                text-align: center;
+
+                @media (max-width: $screen-xs) {
+                    font-size: 24px;
+                    text-align: left;
+                }
+                @media (max-width: $screen-5s) {
+                    font-size: 20px;
+                }
+            }
+
+            &-body {
+                margin-top: 63px;
+
+                @media (max-width: $screen-xs) {
+                    margin-top: 35px;
+                }
+            }
+
+            &-field {
+
+                &:not(:first-of-type) {
+                    margin-top: 40px;
+
+                    @media (max-width: $screen-xs) {
+                        margin-top: 25px;
+                    }
+                }
+
+                input[type="text"] {
+                    background-color: $white;
+                    border-radius: 50px;
+                    max-width: 100%;
+                    padding: 12px 36px;
+                    border: 0;
+                    width: 100%;
+                    color: $black;
+                }
+
+
+                &__check {
+
+                    label {
+                        line-height: 100%;
+                        font-weight: 300;
+                        color: $white;
+                        padding-left: 30px;
+                        position: relative;
+                        cursor: pointer;
+                        user-select: none;
+
+                        &::before {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            content: '';
+                            border-radius: 3px;
+                            background-color: $white;
+                            left: 0;
+                        }
+                        &::after {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            content: '';
+                            border-radius: 3px;
+                            background-color: $white;
+                            left: 0;
+                            opacity: 0;
+                            background: url('/dist/img/ico/check.svg') no-repeat center;
+                            background-size: contain;
+                            transition: all 0.2s ease-out;
+                        }
+
+                        @media (max-width: $screen-xs) {
+                            font-size: 14px;
+                        }
+
+                        a {
+                            text-decoration: underline;
+                        }
+
+                    }
+
+                    input[type="checkbox"]:checked ~ label::after{
+                        opacity: 1;
+                    }
+
+                }
+
+                .g-recaptcha {
+                    transform-origin: 0;
+                    transform: scale(0.8);
+                }
+
+                .btn-default {
+                    max-width: 100%;
+
+                    @media (max-width: $screen-xs) {
+                        padding: 17px 30px;
+                    }
+                }
+            }
+
+            .form-field__captcha {
+                margin-top: 26px;
+            }
+        }
+    }
+}
+/* modal end */

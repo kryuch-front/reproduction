@@ -1,0 +1,168 @@
+// Основные цвета
+$white: #ffffff;
+$black: #222729;
+$black-text: #30353A;
+$gray: #F9F9F9;
+$gray-dark: #5E6368;
+$aqua: linear-gradient(134.87deg, #7DBC91 0%, #37ADD1 100%);
+$aqua-diagonal: linear-gradient(177.9deg, #7DBC91 0%, #37ADD1 100%);
+$fiord: #3F4862;
+$gradient: linear-gradient(90deg, #6288E4 0%, #AB86E4 100%);
+$dark: #30353A;
+$purple: #A687E4;
+// Семантические цвета
+
+$font-family: "Rubik", Arial, sans-serif;
+
+@mixin super-small-text {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 120%;
+}
+
+@mixin small-text {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 21px;
+
+	@media (max-width: $screen-sm) {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+
+@mixin small-text-normal {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+
+	@media (max-width: $screen-sm) {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+
+@mixin default-text {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+
+	@media (max-width: $screen-md) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 14px;
+	}
+}
+
+@mixin default-text-light {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+
+	@media (max-width: $screen-md) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 14px;
+	}
+}
+
+@mixin subtitle {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+
+	@media (max-width: $screen-lg) {
+		font-size: 16px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 14px;
+	}
+}
+
+
+@mixin heading2 {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 130%;
+
+	@media (max-width: $screen-md) {
+		font-size: 26px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 22px;
+	}
+}
+
+@mixin heading3 {
+	font-family: $font-family;
+	font-style: normal;
+	font-size: 26px;
+	line-height: 130%;
+}
+
+@mixin heading4 {
+	font-family:  $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 130%;
+
+	@media (max-width: $screen-md) {
+		font-size: 20px;
+	}
+}
+
+@mixin heading5 {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 130%;
+
+	@media (max-width: $screen-lg) {
+		font-size: 18px;
+	}
+
+	@media (max-width: $screen-xs) {
+		font-size: 16px;
+	}
+}
+
+// Брейкпоинты
+$screen-xl: 2560px;
+$screen-blg: 1366px;
+$screen-lg: 1199px;
+$screen-md: 991px;
+$screen-sm: 767px;
+$screen-xs: 576px;
+$screen-5s: 320px;

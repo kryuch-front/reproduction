@@ -1,0 +1,40 @@
+mixin consultation()
+    section.consultation
+        .container
+            .block-title--white.d-block.d-sm-none Анонимная консультация
+            .consultation__body
+                .consultation__photo
+                    .consultation__photo-img
+                        img(src="/dist/img/consult-photo.png", alt="")
+                    .consultation__photo-text
+                        .consultation__photo-name Екатерина Минаева
+                        .consultation__photo-position Основатель и директор компании
+                        //- a(href="tel:89224730883").consultation__photo-tel 8-922-473-08-83
+                .consultation__form.d-none.d-sm-block
+                    .block-title--white Анонимная консультация
+                    ul.white-list
+                        li
+                            span 12 лет опыта в сфере репродуктивного подбора
+                        li
+                            span юрист в области семейного права. В 2006г. защитила магистерскую диссертацию в ТюмГУ  по теме «Суррогатное материнство в России и мире»
+                        li
+                            span постоянный участник выставок и конференций Российской Ассоциации Репродукции Человека (РАРЧ) и Европейского общества репродуктологии (ESHRE)
+                        li
+                            span многодетная мама с личным опытом преодоления бесплодия
+                    form(action="/")
+                        .form-field
+                            input(type="text" placeholder="+7 (___) ___-__-__").js-phone-mask
+                        .form-field
+                            input(type="submit" value="Заказать обратный звонок").btn-white
+                .consultation__socials
+                    a(href="https://wa.me/89224730888" target="_blank")
+                        img(src="/dist/img/ico/whatsapp-original.svg", alt="")
+                    //- a(href="//vk.com" target="_blank").socials_item
+                    //-     img(src="/dist/img/ico/vk-white.svg", alt="")
+                    a(href="mailto:test@test.ru" target="_blank").socials_item
+                        img(src="/dist/img/ico/envelope-white.svg", alt="")
+        .wave-bottom
+ 
+
+
+

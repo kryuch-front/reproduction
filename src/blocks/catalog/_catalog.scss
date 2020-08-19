@@ -1,0 +1,19 @@
+.catalog {
+  &__title {
+    margin-bottom: 15px;
+
+    @include heading2;
+    color: $black;
+  }
+
+  .form-filter {
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+  }
+}

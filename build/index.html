@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="date=no">
+        <meta name="format-detection" content="address=no">
+        <meta name="format-detection" content="email=no">
+        <meta content="notranslate" name="google">
+        <title>Репродукция - Главная</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+        <link href="./dist/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./dist/vendor/nice-select/css/nice-select.css" rel="stylesheet">
+        <link href="./dist/vendor/slick/slick.css" rel="stylesheet">
+        <link href="./dist/vendor/slinky/slinky.min.css" rel="stylesheet">
+        <link href="./dist/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+        <link href="./dist/vendor/jquery/jquery-ui.css" rel="stylesheet">
+        <link href="./dist/vendor/jquery/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="./dist/vendor/brazzers/jQuery.Brazzers-Carousel.min.css" rel="stylesheet">
+        <link href="dist/css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="main-header__bg d-none d-md-block">
+                <img src="/dist/img/main-banner__baby.png" alt="">
+            </div>
+            <div class="main-header__bg mobile"></div>
+            <div class="main-header__top">
+                <div class="container">
+                    <div class="main-header__top-list">
+                        <div class="main-header__top-logo">
+                            <img src="/dist/img/logo.svg" alt="">
+                        </div>
+                        <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
+                        <div class="main-header__top-phone d-none d-xl-block">
+                            <div class="main-header__top-phone_part">
+                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="https://wa.me/89224730888">
+                                    <img src="/dist/img/ico/whatsapp-original.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="main-header__top-phone_part">
+                                <a class="main-header__top-phone_num" href="tel:88005001080">8-800-500-10-88</a>
+                                <div class="main-header__top-phone_desc">Бесплатный номер РФ</div>
+                            </div>
+                        </div>
+                        <a class="js-btn-modal-menu main-header__top-btn d-none d-sm-flex" href="#">меню</a>
+                        <a class="js-mobile-menu main-header__top-btn d-block d-sm-none" href="#">меню</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header__menu">
+                <div class="container">
+                    <div class="row">
+                        <hr class="main-header__menu-hr">
+                        <div class="col-xl-9 col-lg-12 d-none d-lg-block">
+                            <div class="main-header__menu-list">
+                                <a class="main-header__menu-item" href="#">Родителям</a>
+                                <a class="main-header__menu-item" href="#">Донорам яйцеклеток</a>
+                                <a class="main-header__menu-item" href="#">Суррогатным мамам</a>
+                                <a class="main-header__menu-item" href="#">Об агенстве</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-12 d-none d-lg-block">
+                            <div class="main-header__top-socials d-none d-md-flex">
+                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//vk.com" target="_blank">
+                                    <img src="/dist/img/ico/vk-original.svg" alt="">
+                                </a>
+                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//instagram.com" target="_blank">
+                                    <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                </a>
+                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//ok.ru" target="_blank">
+                                    <img src="/dist/img/ico/envelope.svg" alt="">
+                                </a>
+                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//youtube.com" target="_blank">
+                                    <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-banner">
+                    <div class="container">
+                        <div class="main-banner__img">
+                            <img src="/dist/img/baby-mobile.png" alt="">
+                        </div>
+                        <div class="main-banner__title">Мы поможем вам стать родителями!</div>
+                        <div class="main-banner__text">Суррогатное материнство и донорство яйцеклеток. Работаем в нескольких регионах России.</div>
+                        <a class="btn-default main-banner__btn" href="#">Узнать как</a>
+                        <a class="js-banner-scroll btn-arrow" href="#"></a>
+                    </div>
+                </div>
+                <div class="main-adv d-none d-sm-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="main-adv__item">
+                                    <div class="main-adv__item-title">
+                                        <span data-start="1">13</span>&nbsp; лет
+                                    </div>
+                                    <div class="main-adv__item-text">боремся с бесплодием</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-adv__item">
+                                    <div class="main-adv__item-title">
+                                        <span data-start="1">11</span>&nbsp; городов
+                                    </div>
+                                    <div class="main-adv__item-text">присутствия</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-adv__item">
+                                    <div class="main-adv__item-title">>&nbsp;<span data-start="1000">3000</span>&nbsp; кандидатов</div>
+                                    <div class="main-adv__item-text">в каталоге</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="main-adv__item">
+                                    <div class="main-adv__item-title">
+                                        <span data-start="1000">0</span>&nbsp; руб предоплата
+                                    </div>
+                                    <div class="main-adv__item-text">оплата по финишу</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="categories">
+                <div class="container">
+                    <div class="block-title">Программы донорства яйцеклетов и суррогатного материнства</div>
+                    <div class="block-text">Доверьте чудо рождения профессионалам. Мы одни из основателей подобного рода услуг. Начиная свою деятельность в 2007г. с уральского региона мы планомерно продвигаем свои услуги в различные города России. И сейчас, скорее всего, именно наша девушка из региона России, вынашивает малыша для столичной семьи. Мы имеем крупнейшие базы доноров яйцеклеток и суррогатных мам. Собираем для вас самых привлекательных доноров и ведём тщательный отбор кандидаток в программы суррогатного материнства.</div>
+                    <div class="categories__list">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="categories__item">
+                                    <div class="categories__item-bg">
+                                        <img src="/dist/img/category-1.png" alt="Родителям: донорство яйцеклеток яйцеклеток">
+                                    </div>
+                                    <div class="categories__item-links">
+                                        <a class="categories__item-mainlink" href="#">Родителям: донорство яйцеклеток яйцеклеток</a>
+                                        <div class="categories__item-links_list">
+                                            <a class="categories__item-link" href="#">О программе </a>
+                                            <a class="categories__item-link" href="#">Стоимость</a>
+                                            <a class="categories__item-link" href="#">Частые вопросы</a>
+                                            <a class="categories__item-link" href="#">Вход в каталог</a>
+                                            <a class="categories__item-link" href="#">Заявка</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="categories__item">
+                                    <div class="categories__item-bg">
+                                        <img src="/dist/img/category-2.png" alt="Родителям: суррогатное материнство">
+                                    </div>
+                                    <div class="categories__item-links">
+                                        <a class="categories__item-mainlink" href="#">Родителям: суррогатное материнство</a>
+                                        <div class="categories__item-links_list">
+                                            <a class="categories__item-link" href="#">О программе </a>
+                                            <a class="categories__item-link" href="#">Стоимость</a>
+                                            <a class="categories__item-link" href="#">Частые вопросы</a>
+                                            <a class="categories__item-link" href="#">Вход в каталог</a>
+                                            <a class="categories__item-link" href="#">Заявка</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="categories__item">
+                                    <div class="categories__item-bg">
+                                        <img src="/dist/img/category-3.png" alt="Донорам яйцеклеток">
+                                    </div>
+                                    <div class="categories__item-links">
+                                        <a class="categories__item-mainlink" href="#">Донорам яйцеклеток</a>
+                                        <div class="categories__item-links_list">
+                                            <a class="categories__item-link" href="#">О программе </a>
+                                            <a class="categories__item-link" href="#">Стоимость</a>
+                                            <a class="categories__item-link" href="#">Частые вопросы</a>
+                                            <a class="categories__item-link" href="#">Вход в каталог</a>
+                                            <a class="categories__item-link" href="#">Заявка</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="categories__item">
+                                    <div class="categories__item-bg">
+                                        <img src="/dist/img/category-4.png" alt="Суррогатным мамам">
+                                    </div>
+                                    <div class="categories__item-links">
+                                        <a class="categories__item-mainlink" href="#">Суррогатным мамам</a>
+                                        <div class="categories__item-links_list">
+                                            <a class="categories__item-link" href="#">О программе </a>
+                                            <a class="categories__item-link" href="#">Стоимость</a>
+                                            <a class="categories__item-link" href="#">Частые вопросы</a>
+                                            <a class="categories__item-link" href="#">Вход в каталог</a>
+                                            <a class="categories__item-link" href="#">Заявка</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="region-price">
+                <div class="wave-top"></div>
+                <div class="container">
+                    <div class="region-price__container" id="faq-item-parent">
+                        <div class="block-title--white">Особенности региональных программ</div>
+                        <div class="block-text--white">Своей деятельностью нам приходится доказывать простую истину: Мама-это та, что воспитала! Материнство достижимо всегда! Помните об этом и обращайтесь к профессионалам, ведь мы знаем, как сделать путь к материнству короче и результативней.</div>
+                        <div class="faq-tabs__item">
+                            <a class="faq-tabs__item-name" href="#faq-tabs-1" data-toggle="collapse" aria-expanded="true" role="button">Подбор суррогатной мамы из Вашего города</a>
+                            <div class="faq-tabs__item-text collapse show" id="faq-tabs-1" data-parent="#faq-item-parent">
+                                <p>Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы подберём Вам девушку из вашего города, проведём программу бюджетно и Вы заплатите только за подбор. Ничего лишнего и это доступно многим! </p>
+                                <p>Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете.</p>
+                                <p>Вы будете общаться с суррогатной мамой, будете вовлечены в процесс вынашивания вашего ребенка и при этом, не будете переплачивать.</p>
+                                <p>Так же можно провести программу без прямого контакта с суррогатной мамой – Вы можете заказать услугу «личный куратор» или « полное сопровождение». Оплата услуг сурмамы будет по цене того региона, где проходит программа.</p>
+                                <p>Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.</p>
+                                <p>В нашей базе суррогатных мам всегда есть девушки, готовые в кратчайшие сроки вступить в протокол. Поскольку они местные жительницы это облегчает и удешевляет процесс подбора. Все девушки имеют своих здоровых детей, рождённых естественным путём. Мы не идём на компромиссы из-за нехватки кандидаток и не рискуем здоровьем Ваших будущих детей, поэтому мы не работаем с девушками с отрицательной кровью, после операции «кесарево сечение» и кандидатками старше 34 лет. Если Вас интересует суррогатное материнство, мы сделаем всё возможное, чтобы Вы остались довольны.</p>
+                                <a class="btn-default" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="faq-tabs__item">
+                            <a class="faq-tabs__item-name" href="#faq-tabs-2" data-toggle="collapse" aria-expanded="false" role="button">Подбор донора яйцеклеток</a>
+                            <div class="faq-tabs__item-text collapse" id="faq-tabs-2" data-parent="#faq-item-parent">
+                                <p>Без донорской яйцеклетки вам не справиться? Взгляните на ситуацию с другой стороны – это не так страшно, как кажется вначале. Спустя время, вы не вспомните о доноре. Зато в рождении вашего ребенка будут свои, особенные плюсы: яйцеклетки молодых женщин более «здоровы», на них нет бремя прожитых лет, а значит, делая выбор в пользу донорского материала, вы заботитесь о будущем здоровье вашего малыша. Яйцеклетки можно выбрать – вернее выбрать донора, благодаря которой вы станете мамой: выбрать нужный носик, глазки, ушки ребенка, выбрать нужный рост или выбрать похожую на себя девушку таким образом, что даже близкие не догадаются о вашей тайне. Никакие «замороженные клетки» и анонимные доноры, предлагаемые в клиниках, не дадут Вам такой возможности. Только индивидуальный подбор и только «живые» программы! Именно эти программы, на свежих клетках, помимо всех плюсов еще и высоко результативны.</p>
+                                <p>В наш каталог мы собрали самых привлекательных девушек-доноров со всей России и в каждом городе в отдельности. База доноров насчитывает более 3000 кандидаток. Вы можете выбрать себе донора яйцеклеток по фото, пообщаться с кандидаткой по телефону и даже лично познакомиться с ней без дополнительной оплаты. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете.</p>
+                                <p>На нашем сайте для родителей существует личный кабинет, в котором представлен регулярно обновляемый каталог доноров яйцеклеток с фильтром выбора по параметрам. Помимо подбора донора, мы возьмём на себя всю организацию программы ЭКО с донорской яйцеклеткой — сопровождение донора на приёмы в клинику репродукции, медицинское обследование, контроль за выполнением донором своих обязательств. Мы несём ответственность и гарантируем точное выполнение донором своих услуг. Если Вам нужна донорская яйцеклетка, мы поможем!</p>
+                                <p>Мы можем удовлетворить практически любой запрос. Именно поэтому с нами, помимо стандартных программ, работают столичные агентства и «выискивают» из базы доноров в категории «vip».</p>
+                                <a class="btn-default" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="faq-tabs__item">
+                            <a class="faq-tabs__item-name" href="#faq-tabs-3" data-toggle="collapse" aria-expanded="false" role="button">Абсолютная прозрачность всех стадий подбора</a>
+                            <div class="faq-tabs__item-text collapse" id="faq-tabs-3" data-parent="#faq-item-parent">
+                                <p>Вы будете вовлечены в процесс подбора как суррогатной мамы, так и донора яйцеклеток. После одобрения кандидатуры суррогатной матери вашим лечащим врачом, у Вас будет прямой контакт с девушкой. Только Вам решать, общаться с девушкой или доверить это агентству. С донором яйцеклеток общаться не рекомендуем, в связи с особенностью программ, но посмотреть на донора «живьём» в офисе агентства или в клинике на приёме, а так же пообщаться по телефону, видеосвязи – можно. И это будет абсолютно бесплатно! Так же мы ответим на все ваши вопросы относительно самих кандидаток.</p>
+                                <p>Мы, единственное агентство, которое работает полностью без предоплаты, в этом наша «фишка». Есть агентства, которые берут предоплату после одобрения кандидатуры у врача, но это не то… ведь потом эту кандидатку могут забраковать в процессе сдачи анализов или она сама передумает, или передумаете Вы, или заболеет, да мало ли что. А деньги уже заплачены…и Вам их никто не вернёт. Нам вы оплачиваете услугу по завершению программы! Соответственно, это мы рискуем финансово. А раз так, мы в первую очередь заинтересованы в адекватности, здоровье и добропорядочности вашей сурмамы или донора.</p>
+                                <a class="btn-default" href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-bottom"></div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <div class="block-title">Почему стоит выбрать агентство Репродукция?</div>
+                    <div class="advantages-list">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/advantages-1.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Полная конфиденциальность.
+                                        <br>Все файлы уничтожаются
+                                        <br>по завершению программы.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/advantages-2.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Юридическая безопасность и консультации 24/7</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-3.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Общение с кандидатами через сообщения, видео и личные встречи</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-4.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Более 500 пар сделали родителями</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-5.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Фиксированная сумма выплаты, никаких скрытых платежей</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-6.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Проверяем психическое и физическое состояние сурмам</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-7.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Гарантируем согласие сурмамы на запись Вас родителями</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-8.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Любая клиника ЭКО вашего города</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-9.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Работаем с 2007 года по всей России</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-10.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Полное отсутствие предоплаты. Расчёт по факту оказания услуг (день забора яйцеклеток или день подсадки)</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-11.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Большой, обновляемый каталог доноров яйцеклеток с фотографиями</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="advantages__item">
+                                    <div class="advantages__item-img">
+                                        <img src="/dist/img/adv-12.svg" alt="">
+                                    </div>
+                                    <div class="advantages__item-text">Наличие бюджетных донорских программ, а также программ VIP</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a class="btn-default d-none d-sm-block" href="#">Подробнее о гарантии услуги</a>
+                                <a class="btn-default d-block d-sm-none" href="#">Подробнее о гарантиях</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-video">
+                <div class="wave-top"></div>
+                <div class="main-video__body" style="background: url('/dist/img/video-bg.png') no-repeat center;" data-gif="gifurl">
+                    <div class="container">
+                        <div class="main-video__title block-title--white">Агенство репродуктивных технологий «Репродукция»</div>
+                        <div class="btn-video-play" data-video="dQw4w9WgXcQ" onclick="videoplay(this)"></div>
+                    </div>
+                </div>
+                <div class="wave-bottom"></div>
+            </section>
+            <section class="about-mainpage">
+                <div class="container">
+                    <p>Агентство Репродукция является региональной компанией. Мы не новички в сфере подбора. Начиная свою деятельность с глубинки России, мы стали лидерами в нескольких крупных регионах страны. Наши филиалы есть в Уральском и Южном Федеральном округе, а так же ряде других городов. Мы не ограничены территорией. С жителями любого города мы рады и готовы работать.</p>
+                    <p>Так же мы осуществляем сотрудничество с некоторыми Агентствами и Клиниками Москвы, Санкт-Петербурга и Китая. С родителями из столичных городов мы работаем по «транспортной схеме».</p>
+                    <p class="bold">Мы знаем, как достичь долгожданного материнства и сделать путь преодоления проще, легче и короче. И это наверно базовое в подборе.</p>
+                    <div class="about-mainpage__categories">
+                        <a class="btn-default" href="#">Оставить заявку на подбор донора</a>
+                        <a class="btn-default" href="#">Оставить заявку на подбор суррогатной мамы</a>
+                    </div>
+                </div>
+            </section>
+            <section class="consultation">
+                <div class="container">
+                    <div class="block-title--white d-block d-sm-none">Анонимная консультация</div>
+                    <div class="consultation__body">
+                        <div class="consultation__photo">
+                            <div class="consultation__photo-img">
+                                <img src="/dist/img/consult-photo.png" alt="" />
+                            </div>
+                            <div class="consultation__photo-text">
+                                <div class="consultation__photo-name">Екатерина Минаева</div>
+                                <div class="consultation__photo-position">Основатель и директор компании</div>
+                            </div>
+                        </div>
+                        <div class="consultation__form d-none d-sm-block">
+                            <div class="block-title--white">Анонимная консультация</div>
+                            <ul class="white-list">
+                                <li>
+                                    <span>12 лет опыта в сфере репродуктивного подбора</span>
+                                </li>
+                                <li>
+                                    <span>юрист в области семейного права. В 2006г. защитила магистерскую диссертацию в ТюмГУ по теме «Суррогатное материнство в России и мире»</span>
+                                </li>
+                                <li>
+                                    <span>постоянный участник выставок и конференций Российской Ассоциации Репродукции Человека (РАРЧ) и Европейского общества репродуктологии (ESHRE)</span>
+                                </li>
+                                <li>
+                                    <span>многодетная мама с личным опытом преодоления бесплодия</span>
+                                </li>
+                            </ul>
+                            <form action="/">
+                                <div class="form-field">
+                                    <input class="js-phone-mask" type="text" placeholder="+7 (___) ___-__-__" />
+                                </div>
+                                <div class="form-field">
+                                    <input class="btn-white" type="submit" value="Заказать обратный звонок" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="consultation__socials">
+                            <a class="socials_item" href="https://wa.me/89224730888" target="_blank">
+                                <img src="/dist/img/ico/whatsapp-original.svg" alt="" />
+                            </a>
+                            <a class="socials_item" href="mailto:test@test.ru" target="_blank">
+                                <img src="/dist/img/ico/envelope.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-bottom"></div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <div class="block-title">Наши партнеры</div>
+                    <div class="partners__list js-slider-partners">
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-1.png" alt="" />
+                        </div>
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-2.png" alt="" />
+                        </div>
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-3.png" alt="" />
+                        </div>
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-1.png" alt="" />
+                        </div>
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-1.png" alt="" />
+                        </div>
+                        <div class="partners__item">
+                            <img src="/dist/img/partners-1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div id="map-default">
+                    <div class="map-content d-none">
+                        <div class="map-item" data-url="//ekb.babyural.ru/" data-name="Екатеринбург" data-position-x="56.838011" data-position-y="60.597465"></div>
+                        <div class="map-item" data-url="//perm.babyural.ru/" data-name="Пермь" data-position-x="58.010450" data-position-y="56.229434"></div>
+                        <div class="map-item" data-url="//tyumen.babyural.ru/" data-name="Тюмень" data-position-x="57.153033" data-position-y="65.534328"></div>
+                    </div>
+                    <div class="container">
+                        <div class="map-title">Присутствие в 11 городах России</div>
+                    </div>
+                </div>
+                <div class="wave-top"></div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12">
+                        <div class="main-footer__logo">
+                            <img src="/dist/img/logo.svg" alt="">
+                        </div>
+                        <div class="main-footer__phone">
+                            <a class="main-footer__phone_num" href="tel:88005001088">8-800-500-10-88</a>
+                            <div class="main-footer__phone_desc">Бесплатный номер РФ</div>
+                        </div>
+                        <div class="main-footer__phone">
+                            <a class="main-footer__phone_num" href="tel:89224730888">8-922-473-08-88</a>
+                        </div>
+                        <div class="main-footer__adress">г.Тюмень, ул. Осипенко</div>
+                        <div class="main-footer__socials">
+                            <a class="socials_item" href="//vk.com" target="_blank">
+                                <img src="/dist/img/ico/vk-original.svg" alt="">
+                            </a>
+                            <a class="socials_item" href="//instagram.com" target="_blank">
+                                <img src="/dist/img/ico/instagram-original.svg" alt="">
+                            </a>
+                            <a class="socials_item" href="//ok.ru" target="_blank">
+                                <img src="/dist/img/ico/envelope.svg" alt="">
+                            </a>
+                            <a class="socials_item" href="//youtube.com" target="_blank">
+                                <img src="/dist/img/ico/youtube-original.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <div class="main-footer__menu">
+                            <div class="main-footer__menu-title">
+                                <span>Родителям: донорство яйцеклеток</span>
+                            </div>
+                            <div class="main-footer__menu-list">
+                                <a class="main-footer__menu-item" href="#">О программе</a>
+                                <a class="main-footer__menu-item" href="#">Стоимость</a>
+                                <a class="main-footer__menu-item" href="#">Частые вопросы</a>
+                                <a class="main-footer__menu-item" href="#">Вход в каталог</a>
+                                <a class="main-footer__menu-item" href="#">Заявка</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <div class="main-footer__menu">
+                            <div class="main-footer__menu-title">
+                                <span>Родителям: суррогатное материнство</span>
+                            </div>
+                            <div class="main-footer__menu-list">
+                                <a class="main-footer__menu-item" href="#">О программе</a>
+                                <a class="main-footer__menu-item" href="#">Стоимость</a>
+                                <a class="main-footer__menu-item" href="#">Частые вопросы</a>
+                                <a class="main-footer__menu-item" href="#">Вход в каталог</a>
+                                <a class="main-footer__menu-item" href="#">Заявка</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <div class="main-footer__menu">
+                            <div class="main-footer__menu-title">
+                                <span>Донорам
+                                    <br> яйцеклеток</span>
+                            </div>
+                            <div class="main-footer__menu-list">
+                                <a class="main-footer__menu-item" href="#">О программе</a>
+                                <a class="main-footer__menu-item" href="#">Оплата</a>
+                                <a class="main-footer__menu-item" href="#">Частые вопросы</a>
+                                <a class="main-footer__menu-item" href="#">Анкета</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <div class="main-footer__menu">
+                            <div class="main-footer__menu-title">
+                                <span>Суррогатным
+                                    <br> мамам</span>
+                            </div>
+                            <div class="main-footer__menu-list">
+                                <a class="main-footer__menu-item" href="#">О программе</a>
+                                <a class="main-footer__menu-item" href="#">Оплата</a>
+                                <a class="main-footer__menu-item" href="#">Частые вопросы</a>
+                                <a class="main-footer__menu-item" href="#">Анкета</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <div class="main-footer__menu">
+                            <div class="main-footer__menu-title">
+                                <span>Об агенстве</span>
+                            </div>
+                            <div class="main-footer__menu-list">
+                                <a class="main-footer__menu-item" href="#">Преимущества</a>
+                                <a class="main-footer__menu-item" href="#">Отзывы</a>
+                                <a class="main-footer__menu-item" href="#">СМИ о нас</a>
+                                <a class="main-footer__menu-item" href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="main-footer__copy">© 2006-2019 ООО Репродукция, ИНН 7204207510, ОГРН 1147232029306</div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="main-footer__copy">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="main-footer__copy">
+                            <a href="//vprioritete.ru">Создание сайта ИК «Приоритет»</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal-menu">
+            <div class="modal-menu__wrapper">
+                <div class="main-header__top">
+                    <div class="container">
+                        <div class="main-header__top-list">
+                            <div class="main-header__top-logo main-header__top-logo--dark">
+                                <img src="/dist/img/logo.svg" alt="">
+                            </div>
+                            <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
+                            <div class="main-header__top-phone d-none d-xl-block">
+                                <div class="main-header__top-phone_part">
+                                    <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="https://wa.me/89224730888">
+                                        <img src="/dist/img/ico/whatsapp-original.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="main-header__top-phone_part">
+                                    <a class="main-header__top-phone_num" href="tel:88005001080">8-800-500-10-88</a>
+                                    <div class="main-header__top-phone_desc">Бесплатный номер РФ</div>
+                                </div>
+                            </div>
+                            <button class="js-btn-modal-menu-close main-header__top-btn--close">закрыть</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-menu__body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="modal-menu__category">
+                                    <div class="modal-menu__category-title">Родителям</div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-1" aria-expanded="false" role="button">Программа суррогатного материнства</a>
+                                    <div class="collapse modal-menu__category-list" id="category-1">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к сур. материнству</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы сур. материнства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ суррогатного материнства</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-2" aria-expanded="false" role="button">Программа донорства ооцитов</a>
+                                    <div class="collapse modal-menu__category-list" id="category-2">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к донорству ооцитов</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы донорства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ донорства ооцитов</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="modal-menu__category-item profile" href="#">Анкета будущих родителей</a>
+                                    <a class="modal-menu__category-item personal" href="#">Личный кабинет для родителей</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="modal-menu__category">
+                                    <div class="modal-menu__category-title">Суррогатным мамам</div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-3" aria-expanded="false" role="button">Программа суррогатного материнства</a>
+                                    <div class="collapse modal-menu__category-list" id="category-3">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к сур. материнству</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы сур. материнства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ суррогатного материнства</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-4" aria-expanded="false" role="button">Программа донорства ооцитов</a>
+                                    <div class="collapse modal-menu__category-list" id="category-4">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к донорству ооцитов</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы донорства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ донорства ооцитов</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="modal-menu__category-item profile" href="#">Анкета для суррогатных матерей</a>
+                                    <a class="modal-menu__category-item personal" href="#">Личный кабинет для суррогатных матерей</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="modal-menu__category">
+                                    <div class="modal-menu__category-title">Донорам ооцитов</div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-5" aria-expanded="false" role="button">Программа суррогатного материнства</a>
+                                    <div class="collapse modal-menu__category-list" id="category-5">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к сур. материнству</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы сур. материнства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ суррогатного материнства</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" data-toggle="collapse" href="#category-6" aria-expanded="false" role="button">Программа донорства ооцитов</a>
+                                    <div class="collapse modal-menu__category-list" id="category-6">
+                                        <a class="modal-menu__category-list_item" href="#">Показания к донорству ооцитов</a>
+                                        <a class="modal-menu__category-list_item" href="#">Этапы программы донорства</a>
+                                        <a class="modal-menu__category-list_item" href="#">Виды программ донорства ооцитов</a>
+                                    </div>
+                                    <a class="modal-menu__category-item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="modal-menu__category-item profile" href="#">Анкета для доноров</a>
+                                    <a class="modal-menu__category-item personal" href="#">Личный кабинет для доноров</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="modal-menu__category">
+                                    <div class="modal-menu__category-title">О компании</div>
+                                    <a class="modal-menu__category-item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="modal-menu__category-item profile" href="#">Анкета для доноров</a>
+                                    <a class="modal-menu__category-item personal" href="#">Личный кабинет для доноров</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="modal-menu__category">
+                                    <div class="modal-menu__category-title">Контакты</div>
+                                    <div class="modal-menu__category-item">г.Тюмень, ул. Осипенко</div>
+                                    <div class="main-header__top-socials footer-modifier">
+                                        <a class="main-header__top-socials_item" href="//vk.com" target="_blank">
+                                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                                        </a>
+                                        <a class="main-header__top-socials_item" href="//instagram.com" target="_blank">
+                                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                        </a>
+                                        <a class="main-header__top-socials_item" href="//ok.ru" target="_blank">
+                                            <img src="/dist/img/ico/envelope.svg" alt="">
+                                        </a>
+                                        <a class="main-header__top-socials_item" href="//youtube.com" target="_blank">
+                                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <a class="btn-default main-header__menu-btn" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" aria-hidden="true" id="modalCity">
+            <div class="modal-dialog modal-city" role="document">
+                <button class="modal-close" type="button" data-dismiss="modal" data-target="#modalCity"></button>
+                <div class="modal-city__head">Выберите город</div>
+                <div class="modal-city__body">
+                    <a class="modal-city__item" href="#">Тюмень</a>
+                    <a class="modal-city__item" href="#">Екатеринбург</a>
+                    <a class="modal-city__item" href="#">Челябинск</a>
+                    <a class="modal-city__item" href="#">Пермь</a>
+                    <a class="modal-city__item" href="#">Краснодар</a>
+                    <a class="modal-city__item" href="#">Ростов-на-Дону</a>
+                    <a class="modal-city__item" href="#">Волгоград</a>
+                    <a class="modal-city__item" href="#">Воронеж</a>
+                    <a class="modal-city__item" href="#">Саратов</a>
+                    <a class="modal-city__item" href="#">Благовещенск</a>
+                    <a class="modal-city__item" href="#">Хабаровск</a>
+                    <a class="modal-city__item" href="#">Владивосток</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" aria-hidden="true" id="callback">
+            <div class="modal-dialog modal-callback" role="document">
+                <button class="modal-close" type="button" data-dismiss="modal" data-target="#callback"></button>
+                <form class="modal-callback__form">
+                    <div class="modal-callback__form-title">Обратный звонок</div>
+                    <div class="modal-callback__form-body">
+                        <div class="modal-callback__form-field">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="modal-callback__form-field">
+                            <input class="js-phone-mask" type="text" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <div class="modal-callback__form-field modal-callback__form-field__check">
+                            <input class="d-none" type="checkbox" id="modal-callback-agreement">
+                            <label for="modal-callback-agreement">согласен на обработку&nbsp;<a href="#">персональных данных</a>
+                            </label>
+                        </div>
+                        <div class="modal-callback__form-field form-field__captcha">
+                            <div class="g-recaptcha" data-sitekey="6LeNGMUUAAAAAIdwqM4ZtR-qx-ipELQIlY3rR_bt"></div>
+                        </div>
+                        <div class="modal-callback__form-field">
+                            <input class="d-none" type="submit" name="submit" value="Отправить заявку на обратный звонок">
+                            <div class="btn-default submit">Отправить заявку на обратный звонок</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <section class="mobile-menu">
+            <div class="container">
+                <div class="mobile-menu__header">
+                    <div class="mobile-menu__logo">
+                        <img src="/dist/img/logo.svg" alt="">
+                    </div>
+                    <div class="mobile-menu__close js-mobile-menu-close">Закрыть</div>
+                </div>
+                <div class="mobile-menu__body">
+                    <ul>
+                        <a class="mobile-menu__city" href="#modalCity" data-toggle="modal" role="button">
+                            <span>Тюмень</span>
+                        </a>
+                        <li>
+                            <a href="#">Родителям</a>
+                            <ul>
+                                <li>
+                                    <a class="mobile-menu__item" href="#">Программа суррогатного материнства</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к сур. материнству</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы сур. материнства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ суррогатного материнства</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Программа донорства ооцитов</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к донорству ооцитов</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы донорства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ донорства ооцитов</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="mobile-menu__item profile" href="#">Анкета будущих родителей</a>
+                                    <a class="mobile-menu__item personal" href="#">Личный кабинет для родителей</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Суррогатным мамам</a>
+                            <ul>
+                                <li>
+                                    <a class="mobile-menu__item" href="#">Программа суррогатного материнства</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к сур. материнству</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы сур. материнства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ суррогатного материнства</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Программа донорства ооцитов</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к сур. материнству</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы сур. материнства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ суррогатного материнства</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="mobile-menu__item profile" href="#">Анкета для суррогатных матерей</a>
+                                    <a class="mobile-menu__item personal" href="#">Личный кабинет для суррогатных матерей</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Донорам ооцитов</a>
+                            <ul>
+                                <li>
+                                    <a class="mobile-menu__item" href="#">Программа суррогатного материнства</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к сур. материнству</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы сур. материнства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ суррогатного материнства</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Программа донорства ооцитов</a>
+                                    <ul>
+                                        <li>
+                                            <a class="mobile-menu__item" href="#">Показания к сур. материнству</a>
+                                            <a class="mobile-menu__item" href="#">Этапы программы сур. материнства</a>
+                                            <a class="mobile-menu__item" href="#">Виды программ суррогатного материнства</a>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-menu__item" href="#">Часто задаваемые вопросы</a>
+                                    <a class="mobile-menu__item profile" href="#">Анкета для доноров</a>
+                                    <a class="mobile-menu__item personal" href="#">Личный кабинет для доноров</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__footer">
+                    <div class="mobile-menu__adress">г.Тюмень, ул. Осипенко</div>
+                    <div class="mobile-menu__socials">
+                        <a class="socials_item" href="//vk.com" target="_blank">
+                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                        </a>
+                        <a class="socials_item" href="//instagram.com" target="_blank">
+                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                        </a>
+                        <a class="socials_item" href="//ok.ru" target="_blank">
+                            <img src="/dist/img/ico/envelope.svg" alt="">
+                        </a>
+                        <a class="socials_item" href="//youtube.com" target="_blank">
+                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                        </a>
+                    </div>
+                    <a class="btn-default" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>
+                </div>
+            </div>
+        </section>
+        <script src="./dist/vendor/jquery/jquery.min.js"></script>
+        <script src="./dist/vendor/jquery/jquery-ui.js"></script>
+        <script src="./dist/vendor/bootstrap/js/popper.min.js"></script>
+        <script src="./dist/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./dist/vendor/sticky-sidebar/ResizeSensor.js"></script>
+        <script src="./dist/vendor/sticky-sidebar/jquery.sticky-sidebar.min.js"></script>
+        <script src="./dist/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="./dist/vendor/slick/slick.min.js"></script>
+        <script src="./dist/vendor/fancybox/jquery.fancybox.min.js"></script>
+        <script src="./dist/vendor/inputmask/jquery.inputmask.bundle.js"></script>
+        <script src="./dist/vendor/slinky/slinky.min.js"></script>
+        <script src="./dist/vendor/jquery.countTo/jquery.countTo.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=6e43f7e4-2919-4656-b25a-f0b73e1a7052&amp;lang=ru_RU"></script>
+        <script src="./dist/vendor/brazzers/jQuery.Brazzers-Carousel.min.js"></script>
+        <script src="./dist/js/custom.js"></script>
+        <script src="./dist/js/map.js"></script>
+        <script type="text/javascript" src="dist/js/main.js"></script>
+    </body>
+</html>

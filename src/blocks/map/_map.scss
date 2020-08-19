@@ -1,0 +1,40 @@
+.map {
+    position: relative;
+
+    .wave-top {
+        background: url('/dist/img/waves/map-wave-top.png') repeat-x center;
+        height: 150px;
+    }
+
+    #map-default {
+        width: 100%;
+        height: 945px;
+        position: relative;
+
+        @media (max-width: $screen-md) {
+            height: 600px;
+        }
+    }
+
+    &-title {
+        z-index: 1;
+        padding: 27px 32px;
+        background: linear-gradient(90deg, rgba(98, 136, 228, 0.8) 0%, rgba(171, 134, 228, 0.8) 100%);
+        border-radius: 5px;
+        color: $white;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 110%;
+        text-align: center;
+        position: absolute;
+        top: 210px;
+
+        @media (max-width: $screen-md) {
+            padding: 17px 21px;
+            font-size: 24px;
+        }
+        @media (max-width: $screen-xs) {
+            width: calc(100% - 30px);
+        }
+    }
+}

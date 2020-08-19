@@ -1,0 +1,88 @@
+.breadcrumbs {
+	margin: 32px 0;
+
+	@media (max-width: $screen-sm) {
+		margin: 25px 0;
+	}
+
+	@media (max-width: $screen-xs) {
+		margin: 15px 0;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+	}
+
+	&__item {
+		position: relative;
+
+		margin-right: 25px;
+
+		@media (max-width: $screen-xs) {
+			margin-bottom: 5px;
+		}
+
+		&:not(:last-of-type)::after {
+			content: "";
+
+			position: absolute;
+			top: 50%;
+			right: -15px;
+			transform: translateY(-50%);
+
+			width: 5px;
+			height: 5px;
+
+			background: $aqua;
+			border-radius: 100%;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		@include small-text;
+		
+		color: $gray-dark;
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			bottom: -4px;
+			left: 0;
+			right: 0;
+
+			height: 1px;
+			
+			background: $aqua;
+			border-radius: 1px;
+
+			transition: all 0.2s ease-out;
+		}
+
+		&.current::after {
+			display: none;
+
+			opacity: 0;
+			transition: all 0.2s ease-out;
+		}
+
+		&:hover {
+			text-decoration: none;
+
+			color: $gray-dark;
+			
+			&.current::after {
+				display: block;
+				opacity: 1;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,7 @@
+mixin breadcrumbs(items)
+	.breadcrumbs
+		.container
+			ul.breadcrumbs__list
+				each item in items
+					li.breadcrumbs__item
+						a(href=item.href class=item.class + " breadcrumbs__link")=item.name

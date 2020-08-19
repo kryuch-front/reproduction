@@ -1,0 +1,65 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+//- include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/video/video.pug
+
+
+block vars
+	- var page = 'faq';
+	- var header_class = "main-header main-header--programm"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/faq_bg.jpg"
+	- var b_title = "Родителям: часто задаваемые вопросы"
+	- var b_text = ""
+	- var b_btn_text = ""
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Часто задаваемые вопросы", class: "current"}])
+
+	section.page.page-programm
+		.container
+					h2.page-title Родителям: часто задаваемые вопросы
+					.reviews__tabs-wrapper
+							.reviews__tabs
+								.nav
+									a(href="#").reviews__tabs-item.active.js-switch-reviews Родителям
+									a(href="#").reviews__tabs-item.js-switch-reviews Суррогатным мамам
+									a(href="#").reviews__tabs-item.js-switch-reviews Донорам
+					#parent-faq.faq
+						.faq__item
+							a(href="#faq-1" data-toggle="collapse" aria-expanded="true" role="button").faq__item-name Суррогатные мамы без опыта
+							#faq-1.faq__item-text.page-content.collapse.show(data-parent="#parent-faq")
+								.faq__item-answer-title 
+									span Вы можете быть суррогатной мамой если:
+								.page-content
+									ul 
+										li Вам от 20 до 35 лет
+										li Есть ребёнок/дети рождённый естественным путём
+										li Отсутствует кесарево сечение
+										li Отсутствие лактации (кормление грудью) не менее 4 месяцев
+										li Отсутствие лишнего веса
+										li Отличное физическое и психическое здоровье
+										li Отсутствие вредных привычек, если вы курили, то должно пройти не менее 6 месяцев, после того как вы бросили. (мы сдаём анализы на наличие вредных привычек, так что не стоит тратить своё и наше время)
+									p Если вы подходите по всем критериям, заполните анкету на суррогатную маму и ближайшее время, с Вами свяжется наш менеджер, для дальнейшего прохождения обследований
+								a(href="#" data-video="dQw4w9WgXcQ").btn-default.btn-default--video.js-modal-video Посмотреть видео ответ
+						.faq__item
+							a(href="#faq-2" data-toggle="collapse" aria-expanded="false" role="button").faq__item-name Донорство яйцеклеток по «региональной цене»
+							#faq-2.faq__item-text.collapse(data-parent="#parent-faq")
+								.faq__item-answer-title 
+									span Вы можете быть суррогатной мамой если:
+								.page-content
+									p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+									p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+								a(href="#" data-video="dQw4w9WgXcQ").btn-default.btn-default--video.js-modal-video Посмотреть видео ответ
+						.faq__item
+							a(href="#faq-3" data-toggle="collapse" aria-expanded="false" role="button").faq__item-name Суррогатные мамы без опыта
+							#faq-3.faq__item-text.page-content.collapse(data-parent="#parent-faq")
+								.faq__item-answer-title 
+									span Вы можете быть суррогатной мамой если:
+								.page-content
+									p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+									p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+
+block modal 
+	include ../blocks/modal-video/modal-video.pug

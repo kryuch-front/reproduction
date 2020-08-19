@@ -1,0 +1,40 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/sidebar-advantages/sidebar-advantages.pug
+
+
+block vars
+	- var page = 'news';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "О нас"},{href:"#",name: "Новости", class: "current"}])
+
+	section.page.page-news
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					+sidebar-menu([{href:"#",name: "О нас"},{href:"#",name: "Преимущества и гарантии", class: "current"},{href:"#",name: "Отзывы"},{href:"#",name: "Клиники и партнеры"},{href:"#",name: "База знаний"},{href:"#",name: "Нововсти"}])
+					+sidebar-advantages([{text: "Многолетний опыт работы"},{text: "Низкая стоимость услуги"},{text: "Любая Клиника ЭКО"},{text: "Большой выбор кандидатов"},{text: "Быстрый поиск и организация программ"},{text: "Внимательность к требованиям клиента"},{text: "Фиксированные цены"},{text: "Полное отсутствие предоплаты"}])
+				.col-12.col-lg-9
+					h2.page-title Новости
+					.page-content
+						p На данной странице вы можете ознакомиться с новостями работы нашей компании и отрасли
+					.news-list
+						.row
+							- i = 0;
+							while i < 6
+								.col-12.col-sm-6.col-md-4
+									.news-item
+										.news-item__image
+											img(src="/dist/img/news-item.jpg", alt="")
+										.news-item__info
+											.news-item__date 12.07.2019
+											.news-item__title Открытие нового центра в г. Тюмени
+											a(href="" class="news-item__read") 
+												span Подробнее
+								- i++;

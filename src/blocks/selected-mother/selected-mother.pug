@@ -1,0 +1,30 @@
+.selected-mother.js-selected-mother
+	.selected-mother__title Выберите до 5 кандидатов в сурогатную мамы
+	form(action="" class="form selected-mother__form")
+		input(type="hidden" name="my_surmother" value="")
+		.selected-mother__wrapper
+			- var i = 0
+			while i < 5
+				div(data-id="").selected-mother__item.selected-mother__item--no-selected
+					.selected-mother__close.js-selected-mother__close
+					.selected-mother__change
+					.profile-name Добавьте кондидата
+					.selected-mother__item-info
+						.selected-mother__item-photo
+							img(src="/dist/img/catalog/no-girl.svg", alt="")
+						.profile-info.profile-info--select-mother
+							.profile-info__item
+								div(class="profile-info__item-name") Id:
+								div(class="profile-info__item-value js-profile-card-id")
+							.profile-info__item
+								div(class="profile-info__item-name") Город:
+								div(class="profile-info__item-value js-profile-card-city")
+							.profile-info__item
+								div(class="profile-info__item-name") Возраст:
+								div(class="profile-info__item-value js-profile-card-old")
+				-i++
+			
+		.selected-mother__btn
+			a(href="#" data-toggle="modal" data-target="#modal-select-mother" class="btn-aqua js-btn-submit") Оформить список менеджеру
+
+

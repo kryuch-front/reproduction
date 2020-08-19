@@ -1,0 +1,11 @@
+include profile-card.data.pug
+
+.profile-card
+	.profile-card__name Антонова Ульяна Виталиевна
+	.profile-card__info
+		.profile-card__photo
+			img(src="/dist/img/catalog/profile-photo.jpg", alt="")
+		+profile-info(profile_data)
+	.profile-card__surrogate-mother
+		| Ваша суррогатная мама: <br>
+		| <strong>Антонова Ульяна Виталиевна</strong>

@@ -1,0 +1,20 @@
+.tooltip {
+	&.show {
+		opacity: 1;
+	}
+	.tooltip-inner {
+		min-width: 100px;
+		padding: 4px 15px;
+
+		@include small-text;
+
+		background: $gradient;
+		border-radius: 60px;
+	}
+
+	.arrow {
+		&::before {
+			border-top-color: $purple;
+		}
+	}
+}

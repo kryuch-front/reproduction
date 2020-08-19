@@ -1,0 +1,64 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/video/video.pug
+include ../blocks/partners/partners.pug
+
+
+block vars
+	- var page = 'partners';
+	- var header_class = "main-header main-header--partners"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/faq_bg.jpg"
+	- var b_title = "Партнеры"
+	- var b_text = ""
+	- var b_btn_text = ""
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Наши партнеры", class: "current"}])
+
+	section.page.page-partners
+		.container
+			.row
+				.col-3.d-none.d-md-block
+					+sidebar-menu([{href:"#",name: "О нас"},{href:"#",name: "Преимущества и гарантии"},{href:"#",name: "Отзывы", class: "current"},{href:"#",name: "Клиники и партнеры"},{href:"#",name: "База знаний"},{href:"#",name: "Нововсти"}])
+				.col-12.col-md-9
+					h2.page-title Клиники и партнеры в Тюмени
+					.page-content 
+						p Сложно описать словами радость от счастья материнства. Долгих 7 лет мы с мужем пытались завести детей, но природа не позволяла это. Обратившись в компанию Росюрконсалтинг, мы получили полную информацию и подписали договор. Нам подобрали отличную сурмаму и через год появился наш сын. Сейчас глядя на маленького Ванечку мы и представить себе не можем какой однообразной была для нас жизнь без него. Наилучшие рекомендации куратору Евгению и всему коллективу компании. СПАСИБО!!!
+					.partners-block
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-1.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-2.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-3.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-1.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-2.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+						a(href="#").partners-block__item
+							.partners-block__item-image
+								img(src="/dist/img/partners-3.png" alt="")
+							.partners-block__item-name ООО"Сурмама"
+							.partners-block__item-addr ул. Республики, 15
+					.page-content 
+						h2.page-title Сотрудничество с другими агентствами
+						p Сложно описать словами радость от счастья материнства. Долгих 7 лет мы с мужем пытались завести детей, но природа не позволяла это. Обратившись в компанию Росюрконсалтинг, мы получили полную информацию и подписали договор. Нам подобрали отличную сурмаму и через год появился наш сын. Сейчас глядя на маленького Ванечку мы и представить себе не можем какой однообразной была для нас жизнь без него. Наилучшие рекомендации куратору Евгению и всему коллективу компании. СПАСИБО!!!
+

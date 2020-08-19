@@ -1,0 +1,10 @@
+mixin profile-info(values, name)
+	
+	div(class="profile-info")
+		if name 
+			.profile-name=name
+		for item in values
+			.profile-info__item
+				.profile-info__item-name=item.name+":"
+				.profile-info__item-value=item.value
+

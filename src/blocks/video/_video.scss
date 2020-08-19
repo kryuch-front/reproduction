@@ -1,0 +1,26 @@
+/* video start */
+
+.main-video {
+
+    &__body {
+        height: 859px;
+        padding: 155px 0;
+		position: relative;
+		
+		.container {
+			height: 100%;
+		}
+    }
+
+    .wave-top {
+        background: url('/dist/img/waves/video-wave-top.png') repeat-x center;
+        height: 60px;
+    }
+
+    .wave-bottom {
+        background: url('/dist/img/waves/video-wave-bottom.png') repeat-x center;
+        height: 141px;
+    }
+}
+
+/* video end */

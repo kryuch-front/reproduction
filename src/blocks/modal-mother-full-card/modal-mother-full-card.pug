@@ -1,0 +1,13 @@
+div(class="modal fade modal-mother-full-card" id="show-mother-full-card" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+	div(class="modal-dialog modal-dialog-centered" role="document")
+		.modal-content
+			.modal-header
+				button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+			.modal-body
+				.mother-full-card
+					//- +profile-photo("mother-full-card__slider",["/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"])
+					img(src="/dist/img/catalog/mom5.jpg")
+					.mother-full-card__info
+						+profile-info([{name: "Id", value: "10001"},{name: "Город", value: "Тюмень"},{name: "Возраст", value: "23 года"},{name: "Национальность", value: "русская"},{name: "Рост", value: "158-160 см"},{name: "Вес", value: "65 кг"},{name: "Цвет волос", value: "Русый"},{name: "Цвет глаз", value: "Зеленый"},{name: "Образование", value: "Высшее"},{name: "Семейное положение", value: "не замужем"},{name: "Наличие детей", value: "Да"},{name: "Опыт участия в программе", value: "нет"},{name: "Группа крови", value: "2"},{name: "Резус-фактор", value: "Положительный"},], "Самсонова Таисия Евгеньевна")
+						a(href="" class="btn-aqua mother-full-card__add js-add-mother" data-id="3003-T7-0" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года") Добавить в заявку
+				+profile-photo__row("",["/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"])

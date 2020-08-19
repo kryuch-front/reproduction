@@ -1,0 +1,92 @@
+// variables
+@import "variables";
+
+// global
+@import "global";
+@import "../blocks/breadcrumbs/breadcrumbs";
+@import "../blocks/pagination/pagination";
+@import "../blocks/tooltip/tooltip";
+@import "../blocks/block-sidebar-menu/sidebar-menu";
+@import "../blocks/anonymous-consultation/anonymous-consultation";
+@import "../blocks/block-surrogate-request/surrogate-request";
+@import "../blocks/pages/pages";
+@import "../blocks/sidebar-advantages/sidebar-advantages";
+@import "../blocks/gallery/gallery";
+@import "../blocks/modal/modal";
+@import "../blocks/forms/forms";
+@import "../blocks/modal-video/modal-video";
+
+// header
+@import "../blocks/main-header/main-header";
+@import "../blocks/main-banner/main-banner";
+
+// main
+@import "../blocks/categories/categories";
+@import "../blocks/region-price/region-price";
+@import "../blocks/advantages/advantages";
+@import "../blocks/video/video";
+@import "../blocks/about-mainpage/about-mainpage";
+@import "../blocks/form-consult/form-consult";
+@import "../blocks/partners/partners";
+@import "../blocks/map/map";
+@import "../blocks/order/order";
+
+// footer
+@import "../blocks/main-footer/main-footer";
+@import "../blocks/main-footer/modal";
+@import "../blocks/mobile-menu/mobile-menu";
+@import "../blocks/modal-menu/modal-menu";
+
+// profile
+@import "../blocks/profile-card/profile-card";
+@import "../blocks/block-profile-info/profile-info";
+@import "../blocks/block-profile-photo/profile-photo";
+@import "../blocks/profile/profile";
+
+// catalog
+@import "../blocks/catalog/catalog";
+@import "../blocks/selected-mother/selected-mother";
+@import "../blocks/mother-filter/mother-filter";
+@import "../blocks/mother-filter-result/mother-filter-result";
+@import "../blocks/card/card";
+
+// programm
+@import "../blocks/page-programm/page-programm";
+@import "../blocks/programm-card/programm-card";
+@import "../blocks/guarantee/guarantee";
+
+//faq
+@import "../blocks/faq/faq";
+
+//about-us
+@import "../blocks/about-us/about-us";
+
+//motherhood
+@import "../blocks/motherhood/motherhood";
+
+//reviews
+@import "../blocks/reviews/reviews";
+
+//news
+@import "../blocks/news/news";
+
+//contacts
+@import "../blocks/contacts/contacts";
+
+//contract
+@import "../blocks/contract/contract";
+
+//callback
+@import "../blocks/callback/callback";
+
+// 404
+@import "../blocks/404/404";
+
+// sitemap
+@import "../blocks/sitemap/sitemap";
+
+//modals
+@import "../blocks/modal-mother-full-card/modal-mother-full-card";
+
+//fix
+@import "fix";

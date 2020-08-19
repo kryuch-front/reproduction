@@ -1,0 +1,264 @@
+extends ../pug/layout.pug
+
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-profile-info/profile-info.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/sidebar-advantages/sidebar-advantages.pug
+include ../blocks/block-profile-photo/profile-photo.pug
+
+
+block vars
+	- var page = 'profile';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Личный кабинет"},{href:"#",name: "Редактирование профиля", class: "current"}])
+
+	section.page.page-profile
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					include ../blocks/profile-card/profile-card.pug
+					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
+					+sidebar-advantages([{text: "Многолетний опыт работы"},{text: "Низкая стоимость услуги"},{text: "Любая Клиника ЭКО"},{text: "Большой выбор кандидатов"},{text: "Быстрый поиск и организация программ"},{text: "Внимательность к требованиям клиента"},{text: "Фиксированные цены"},{text: "Полное отсутствие предоплаты"}])
+				.col-12.col-lg-9
+					.profile-change
+						h2.page-title Редоктирование профиля
+						.profile-change-id ID: 000008
+						.profile-change-media
+							.profile-change-photo
+								+profile-photo("mother-full-card__slider",["/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"])
+							.profile-change-video 
+								.profile-change-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+								.btn-video-play(data-video="dQw4w9WgXcQ" onclick="videoplay")
+					.profile-info
+						h2.page-title Информация о профиле
+						form(action="" class="form form-profile")
+							.form__body
+								.row
+									.col-12.col-sm-6.col-md-4
+										.form__field-name E-mail <span class="star">*</span>
+										input(type="text" class="form-input" placeholder="sev@gmail.com")
+								.row
+									.col-12
+										.form__block-name 
+											span Личные данные
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Фамилия Имя Отчество <span class="star">*</span>
+											input(type="text" class="form-input" placeholder="Ситникова Екатерина Виталиевна")
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Дата рождения
+											.form-input__wrap
+												input(type="text" class="form-input js-datepicker" placeholder="__ /__ /____" readonly)
+												.form-input-icon.form-input-icon--calendar
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Телефон: 
+											input(type="phone" class="form-input" placeholder="+7 (___) ___ - __ - __")
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Город проживания <span class="star">*</span>
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-md-8
+										.form__field.form__field--horizontal.mt30
+											label.custom-switch
+												input(type="checkbox" class="checkbox")
+												span.switch-handle
+												span.yes Да
+												span.no Нет
+											.form__field-name готовы на программу с переездом в Москву
+									.col-12
+										.form__field-name Ваши профили в соц. сетях
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--instagram
+												input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--vk
+												input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social.form__field-social-add
+											.form-input__wrap.js-add-social-input
+												.form-input-icon.form-input-icon--add
+												select.form-select.js-nice-select
+													option(value="")
+													option(value="fb") Facebook
+													option(value="ok") Одноклассники
+													option(value="wa") what’s app
+													option(value="tg") telegram
+									.col-12
+										.form__block-name 
+											span Расскажите о себе
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Национальность
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Гражданство
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name
+												| Группа крови, резус
+												span.form__field-hint.js-hint(data-toggle="modal" data-target="#resus-table")
+											select.form-select.js-nice-select
+												option(value="Первая положительная") Первая положительная
+												option(value="Вторая положительная") Вторая положительная
+												option(value="Третья положительная") Третья положительная
+												option(value="Четвертая положительная") Четвертая положительная
+												option(value="Первая отрицательная") Первая отрицательная
+												option(value="Вторая отрицательная") Вторая отрицательная
+												option(value="Третья отрицательная") Третья отрицательная
+												option(value="Четвертая отрицательная") Четвертая отрицательная
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Семейное положение
+											select.form-select.js-nice-select
+												option(value="Не замужем") Не замужем
+												option(value="Жената") Жената
+												option(value="Гражданский брак") Гражданский брак
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Цвет глаз
+											.form-select-color
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Серый").color.color--gray.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Голубой").color.color--blue.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Голубо-зеленый").color.color--blue-green.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Зеленый").color.color--green.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Карий").color.color--brown.js-tooltip
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Цвет волос
+											.form-select-color
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Черный").color.color--black.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Каштановый").color.color--brown.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Рыжий").color.color--orange.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Русый").color.color--gold.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Блондинка").color.color--blonde.js-tooltip
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Образование
+											select.form-select.js-nice-select
+												option(value="Среднее") Среднее
+												option(value="Высшее") Высшее
+												option(value="Неоконченное высшее") Неоконченное высшее
+												option(value="Среднеспециальное") Среднеспециальное
+												option(value="Среднее") Среднее
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Профессия
+											input(type="date" class="form-input" placeholder="")
+									.d-none.d-md-block.col-md-4
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Месяц рождения ребенка
+											select.form-select.js-nice-select
+												option(value="Январь") Январь
+												option(value="Февраль") Февраль
+												option(value="Март") Март
+												option(value="Апрель") Апрель
+												option(value="Май") Май
+												option(value="Июнь") Июнь
+												option(value="Июль") Июль
+												option(value="Август") Август
+												option(value="Сентябрь") Сентябрь
+												option(value="Октябрь") Октябрь
+												option(value="Ноябрь") Ноябрь
+												option(value="Декабрь") Декабрь
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Год рождения ребенка
+											select.form-select.js-nice-select
+												option(value="2004") 2004 г.
+												option(value="2003") 2003 г.
+												option(value="2002") 2002 г.
+												option(value="2001") 2001 г.
+												option(value="2000") 2000 г.
+												option(value="1999") 1999 г.
+												option(value="1998") 1998 г.
+												option(value="1997") 1997 г.
+												option(value="1996") 1996 г.
+												option(value="1995") 1995 г.
+												option(value="1994") 1994 г.
+												option(value="1993") 1993 г.
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											.form__field-name Пол ребенка
+											.form-checkbox-gradient
+												label.custom-checkbox-gradient
+													input(class="male-checkbox" type="radio" name="male" checked)
+													span.custom-checkbox-gradient__text Мужской
+												label.custom-checkbox-gradient
+													input(class="male-checkbox" type="radio" name="male")
+													span.custom-checkbox-gradient__text Женский
+									.col-12.col-sm-6.col-md-4
+										.form__field
+											button.form__btn-child.js-add-child Добавить ребенка
+									.col-12
+										.form__field
+											.form__field-name У вас был опыт суррогатного материнства? Чем закончился?
+											textarea(name="", cols="30", rows="10").form-textarea
+									.col-12
+										.form__field.form__field--horizontal.mt0
+											.form__field-name.ml0 Было кесарево сечение?
+											label.custom-switch
+												input(type="checkbox" class="checkbox")
+												span.switch-handle
+												span.yes Да
+												span.no Нет
+									.col-12
+										.form__field
+											.form__field-name Вы принимаете контрацептивы? Какие? Как долго?
+											textarea(name="", cols="30", rows="10").form-textarea
+									.col-12
+										.form__field
+											.form__field-name Дополнительная информация
+											textarea(name="", cols="30", rows="10").form-textarea
+									.col-12
+										.form__field-submit
+											button(href="" class="btn-default") Для изменения информации свяжитесь с вашим менеджером
+
+block modal
+
+	div(class="modal fade modal-resus" id="resus-table" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+			.modal-content
+				.modal-header
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					.resus-table
+						.resus-table__item
+							.resus-table__item-title Возможные группы крови <span class="gradient-text">ребёнка</span>
+							img(src="/dist/img/table-resus-child.svg", alt="")
+						.resus-table__item
+							.resus-table__item-title Возможные группы крови <span class="gradient-text">донора</span>
+							img(src="/dist/img/table-resus-donor.svg", alt="")
+						.resus-table__btn
+							a(href="#" class="btn-aqua") Подробнее

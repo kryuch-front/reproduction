@@ -1,0 +1,13 @@
+
+include ../../blocks/card/card.pug
+.mother-filter-result__wrapper
+	.row
+		- var i = 0;
+		while i < 4
+			.col-12.col-sm-6.col-md-4.col-xl-3
+				+card("3003-T7-"+i,["/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"],"Самсонова Таисия Евгеньевна", "Тюмень", "24 года")
+			.col-12.col-sm-6.col-md-4.col-xl-3
+				+card("1001-"+i,["/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"],"Макарова Татьяна Борисовна", "Тюмень", "24 года")
+			.col-12.col-sm-6.col-md-4.col-xl-3
+				+card("1002-"+i,["/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"],"Антонова Ульяна Виталиевна", "Тюмень", "24 года")
+			- i++

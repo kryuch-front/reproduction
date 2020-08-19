@@ -1,0 +1,142 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+//- include ../blocks/block-sidebar-menu/sidebar-menu.pug
+
+
+block vars
+	- var page = 'reviews';
+	- var header_class = "main-header main-header--reviews"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/faq_bg.jpg"
+	- var b_title = "Отзывы"
+	- var b_text = ""
+	- var b_btn_text = "Оставить свой отзыв"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "О нас"},{href:"#",name: "Отзывы", class: "current"}])
+
+	section.page.page-review
+		.container
+					h2.page-title Отзывы 
+						span.review-count (617)
+					.reviews
+						.reviews__text.page-content
+							p Счастье материнства – лучшее из того, что природа дарит женщине. Дети — это не только положительные эмоции, которые мы получаем буквально каждый день, но и в какой-то степени смысл нашего существования.
+						.reviews__tabs-wrapper
+							.reviews__tabs
+								.nav
+									a(href="#").reviews__tabs-item.active.js-switch-reviews Родители
+									a(href="#").reviews__tabs-item.js-switch-reviews Суррогатные мамы
+									a(href="#").reviews__tabs-item.js-switch-reviews Доноры
+							//- .reviews__tabs
+							//- 	.nav(role="tablist")
+							//- 		a(data-toggle="tab" href="#video-review" role="tab" aria-controls="video-review" aria-selected="false").reviews__tabs-item Видео-отзывы
+							//- 		a(data-toggle="tab" href="#text-review" role="tab" aria-controls="text-review" aria-selected="true").reviews__tabs-item.active.show Текстовые отзывы
+						.reviews-content.tab-content
+							//- .tab-pane.fade.hide#video-review(role="tabpanel") 
+								.reviews__list.reviews__list--video
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-video
+										.reviews__item-video__body(style="background: url('/dist/img/video-bg.png') no-repeat center;")
+											.btn-video-play.js-modal-video(data-video="dQw4w9WgXcQ")
+										.reviews__item-name Сидорова Наталья
+										.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-date 20.11.2019 в 10:32
+								.loadmore
+									a(href="#").loadmore__btn.btn-default.js-loadmore Показать еще
+							.tab-pane.fade.show.active#text-review(role="tabpanel")
+								.reviews__list
+									.reviews__item.reviews__item-text
+										.reviews__item-text-top
+											.reviews__item-name Сидорова Наталья
+											.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-text-content
+											p Сложно описать словами радость от счастья материнства. Долгих 7 лет мы с мужем пытались завести детей, но природа не позволяла это. Обратившись в компанию Росюрконсалтинг, мы получили полную информацию и подписали договор. Нам подобрали отличную сурмаму и через год появился наш сын. Сейчас глядя на маленького Ванечку мы и представить себе не можем какой однообразной была для нас жизнь без него. Наилучшие рекомендации куратору Евгению и всему коллективу компании. СПАСИБО!!!
+										.reviews__item-text-date 20.11.2019 в 10:32
+										a(href="#" data-video="dQw4w9WgXcQ").btn-default.btn-default--video.js-modal-video Посмотреть видео ответ
+									.reviews__item.reviews__item-text
+										.reviews__item-text-top
+											.reviews__item-name Сидорова Наталья
+											.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-text-content
+											p Сложно описать словами радость от счастья материнства. Долгих 7 лет мы с мужем пытались завести детей, но природа не позволяла это. Обратившись в компанию Росюрконсалтинг, мы получили полную информацию и подписали договор. Нам подобрали отличную сурмаму и через год появился наш сын. Сейчас глядя на маленького Ванечку мы и представить себе не можем какой однообразной была для нас жизнь без него. Наилучшие рекомендации куратору Евгению и всему коллективу компании. СПАСИБО!!!
+										.reviews__item-text-date 20.11.2019 в 10:32
+									.reviews__item.reviews__item-text
+										.reviews__item-text-top
+											.reviews__item-name Сидорова Наталья
+											.reviews__item-type Услуга: Сурогатное материнство
+										.reviews__item-text-content
+											p Сложно описать словами радость от счастья материнства. Долгих 7 лет мы с мужем пытались завести детей, но природа не позволяла это. Обратившись в компанию Росюрконсалтинг, мы получили полную информацию и подписали договор. Нам подобрали отличную сурмаму и через год появился наш сын. Сейчас глядя на маленького Ванечку мы и представить себе не можем какой однообразной была для нас жизнь без него. Наилучшие рекомендации куратору Евгению и всему коллективу компании. СПАСИБО!!!
+										.reviews__item-text-date 20.11.2019 в 10:32
+										a(href="#" data-video="dQw4w9WgXcQ").btn-default.btn-default--video.js-modal-video Посмотреть видео ответ
+								.loadmore
+									a(href="#").loadmore__btn.btn-default.js-loadmore Показать еще
+						.reviews__form 
+							.reviews__form-header
+								.reviews__form-title Оставьте свой отзыв
+								.reviews__form-show
+									a(href="#").btn-white.js-show-form-reviews Показать форму для заполнения
+							.reviews__form-wrapper
+								form(action="").form.form-reviews 
+									.row
+										.col-12.col-md-4
+											.form-reviews__field
+												.form-reviews__field-name Имя
+												input(class="form-input" type="text")
+										.col-12.col-md-4
+											.form-reviews__field
+												.form-reviews__field-name Полученная услуга
+												input(class="form-input" type="text")
+										.col-12.col-md-4
+											.form-reviews__field
+												.form-reviews__field-name Ссылка на видео
+												input(class="form-input" type="text")
+										.col-12
+											.form-reviews__field
+												.form-reviews__field-name Ваш отзыв
+												textarea(class="form-textarea" type="text")
+										.col-12
+											.form-reviews__field.form-reviews__check
+												input(type="checkbox")#form-reviews-agreement.d-none
+												label(for="form-reviews-agreement")
+													| Я согласен на обработку&nbsp;
+													a(href="#") персональных данных
+										.col-12
+											.form-reviews__captcha
+												.g-recaptcha(data-sitekey="6LeNGMUUAAAAAIdwqM4ZtR-qx-ipELQIlY3rR_bt")
+										.col-12
+											.form-reviews__field
+												input(type="submit" value="Отправить отзыв").btn-aqua.form-reviews__submit
+
+block modal 
+	include ../blocks/modal-video/modal-video.pug

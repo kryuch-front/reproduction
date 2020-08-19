@@ -1,0 +1,13 @@
+mixin sidebar-menu(menu)
+	.sidebar-menu 
+		ul.sidebar-menu__list 
+			each item in menu
+				if item.icon
+					li.sidebar-menu__item.sidebar-menu__item--icon
+						img(src=item.icon, alt="")
+						a(href=item.href).sidebar-menu__link=item.name
+				else
+					li(class="sidebar-menu__item "+item.class)
+						a(href=item.href).sidebar-menu__link=item.name
+
+		

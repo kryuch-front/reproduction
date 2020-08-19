@@ -1,0 +1,156 @@
+.faq {
+  &-tabs {
+    &__item {
+      &-text {
+        color: $dark;
+      }
+
+      &-name {
+        top: 18px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    margin-top: 21px;
+
+    border-radius: 10px;
+    background: $white;
+
+    &:first-of-type {
+      margin-top: 30px;
+    }
+
+    &-name {
+      display: block;
+      padding: 17px 25px;
+
+      @include heading5;
+
+      color: $white;
+      background: $aqua-diagonal;
+      border-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      transition: all 0.2s ease-out;
+
+      @media (max-width: $screen-xs) {
+        padding: 12px 35px 12px 15px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $white;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: url("/dist/img/ico/white-toggle.svg") no-repeat center;
+        right: 27px;
+        top: 18px;
+        width: 25px;
+        height: 25px;
+        transform: rotate(-180deg);
+        transition: all 0.2s ease-out;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media (max-width: $screen-xs) {
+          right: 5px;
+          top: 10px;
+        }
+      }
+    }
+
+    &-name[aria-expanded="false"] {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &::after {
+        transform: rotate(0);
+      }
+    }
+
+    &-answer-title {
+      margin-bottom: 11px;
+
+      @include subtitle();
+
+      @media (max-width: $screen-xs) {
+        line-height: 18px;
+      }
+
+      span {
+        background: $aqua;
+        color: #7dbc91;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &-text {
+      padding: 15px 25px 30px;
+      font-size: 16px;
+
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: 1px solid #7dbc91;
+      border-top: 0;
+
+      @media (max-width: $screen-xs) {
+        padding: 15px 10px 20px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      p + p {
+        margin-top: 5px;
+      }
+
+      .btn-default--video {
+        position: relative;
+
+        margin-top: 30px;
+        width: 310px;
+        padding: 17px 60px 17px 20px;
+
+        @media (max-width: $screen-xs) {
+          width: 100%;
+          margin-top: 20px;
+          padding: 10px 40px 10px 10px;
+        }
+
+        &::after {
+          content: "";
+
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          transform: translateY(-50%);
+
+          width: 22px;
+          height: 22px;
+
+          background: url("/dist/img/white-play.svg");
+
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+
+          @media (max-width: $screen-xs) {
+            right: 15px;
+
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

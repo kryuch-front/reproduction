@@ -1,0 +1,39 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/block-profile-info/profile-info.pug
+
+
+block vars
+	- var page = 'contract';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Договора", class: "current"}])
+	section.page.page-contract
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					include ../blocks/profile-card/profile-card.pug
+					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
+				.col-12.col-lg-9
+					.contracts
+						.contracts__item.contracts__item--pdf
+							.contracts__item-name Типовой договор для родителей
+							a(href="#" download).contracts__item-download 
+								span (скачать в .pdf, 4 Mb)
+						.contracts__item.contracts__item--pdf
+							.contracts__item-name Типовой договор для родителей
+							a(href="#" download).contracts__item-download 
+								span (скачать в .pdf, 4 Mb)
+						.contracts__item.contracts__item--pdf
+							.contracts__item-name Типовой договор для родителей
+							a(href="#" download).contracts__item-download 
+								span (скачать в .pdf, 4 Mb)
+						.contracts__item.contracts__item--pdf
+							.contracts__item-name Типовой договор для родителей
+							a(href="#" download).contracts__item-download 
+								span (скачать в .pdf, 4 Mb)
+				

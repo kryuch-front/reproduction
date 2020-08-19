@@ -1,0 +1,19 @@
+extends ../pug/layout.pug
+
+block vars
+	- var page = '404';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	section.page.page-404
+		.container
+			.error
+				.error__title Ой, что-то сломалось...
+				.error__text Ошибка
+				.error__number 404
+				.error__btns 
+					a(href="#").btn-default Перейти на карту сайта
+					a(href="#").btn-white-bordered-gradient на главную страницу
+				.error__image
+					img(src="/dist/img/aist.svg", alt="")

@@ -1,0 +1,67 @@
+extends ../pug/layout.pug
+
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-profile-info/profile-info.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+
+block vars
+	- var page = 'order-1';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Личный кабинет"},{href:"#",name: "Заявка на подбор донора яйцеклеток", class: "current"}])
+
+	section.page.page-order
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
+					include ../blocks/anonymous-consultation/anonymous-consultation.pug
+				.col-12.col-lg-9
+					h2.page-title Заявка на подбор донора яйцеклеток
+					.page-content
+						blockquote <strong>Внимание!</strong>Выбор донора яйцеклеток происходит по каталогу с возможностью просмотра помимо анкеты донора еще и нескольких взрослых фотографий. Девушки в каталоге собраны привлекательные, строго до 32 лет. При заинтересованности в кандидате, Вы можете запросить у менеджера агентства расширенную информацию по донору, пообщаться с девушкой по телефону, запросить видео
+					.order.order-donor
+						form(action="").form.form-order.form-order-surmother
+							.form__body
+								.row
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name Фамилия Имя Отчество <span>*</span>
+											input(type="text" class="form-input" placeholder="Ситникова Екатерина Виталиевна")
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name E-mail <span>*</span>
+											input(type="text" class="form-input" placeholder="sev@gmail.com")
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name Номер телефона
+											input(type="phone" class="form-input" placeholder="+7 (___) ___ - __ - __")
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name Город проживания <span>*</span>
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-8
+										.form__field
+											.form__field-name В какой клинике планируете программу? Название клиники и город <span>*</span>
+											input(type="text" class="form-input" placeholder="")
+									.col-12
+										.form__field
+											.form__field-name Ф.И.О. вашего лечащего врача?
+											input(type="text" class="form-input" placeholder="")
+									.col-12
+										.form__field
+											.form__field-name Ваши пожелания
+											textarea(name="", cols="30", rows="10").form-textarea
+									.col-12
+										.form__field 
+											label.form__agreement
+												input(type="checkbox" name="agreement")
+												span.form__agreement-text Согласен на обработку персональных данныхв соответствии с <a href="">политикой конфиденциальности</a>
+									.col-12
+										.form__field.form__field-captcha.form-field__captcha
+											.g-recaptcha(data-sitekey="6LeNGMUUAAAAAIdwqM4ZtR-qx-ipELQIlY3rR_bt")
+									.col-12
+										.form__field.form__field-submit.form__field-submit--donor
+											button(class="btn-aqua") Отправить заявку на подбор донора

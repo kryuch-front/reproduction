@@ -1,0 +1,274 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/video/video.pug
+
+
+block vars
+	- var page = 'motherhood';
+	- var header_class = "main-header main-header--programm"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/baner_bg4.jpg"
+	- var b_title = "Родителям: Суррогатное материнство"
+	- var b_text = "Агенство донорства яйцеклеток и суррогатного материнства с 12-летним опытом. Работаем по России в Тюмени, Екатеринбурге, Кургане, Краснодаре и другихгородах России"
+	- var b_btn_text = "Нужна помощь в подборе программы"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Суррогатное материнство", class: "current"}])
+
+	section.page.page-motherhood
+		.mothrerhood-desc
+			.container
+				.block-title Родителям: Суррогатное материнство
+				.motherhood-desc
+					p.motherhood-desc__text-block Бесплодие лечится! Современные медицинские технологии позволяют «обмануть» природу и добиться зачатия и благополучного вынашивания ребенка. Не стоит  отчаиваться и терять драгоценное время.
+					.row 
+						.col-lg-3.motherhood-desc__img
+							img(src="/dist/img/motherhood-stat.png", alt="")
+						.col-lg-9.motherhood-desc__text
+							p По оценке специалистов примерно у 15-20% пар есть сложности в достижении беременности. Вы не одиноки.
+							p Однако, когда речь заходит о суррогатном материнстве, обычно цена, а не бездействие и отчаяние, становится главным ограничителем на пути к материнству. 
+		.motherhood-cities
+			.wave-top
+			.container 
+				p Найдите агентство Репродукция в своём городе! Мы есть уже во многих городах и работаем по ценам региона! Мы поможем подобрать Вам девушку из вашего города, Вы заплатите только за подбор и обезопасите себя от рисков.Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. В базе агентства всегда есть суррогатные мамы.
+			.wave-bottom
+
+		.motherhood-programm
+			.container 
+				.block-title Суррогатное материнство. Цены на услуги агенства
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Подбор суррогатной мамы из вашего города
+								.programm-card__price 
+									span 100 000 руб.
+								a(href="#info-tabs-1" data-toggle="collapse" aria-expanded="false" role="button").programm-card__more Что включено в стоимость услуги:
+								.faq-tabs__item-text.collapse#info-tabs-1(data-parent="#faq-item-parent")
+									ul.programm-card__list
+										li Работа менеджера по поиску и подбору
+										li Юридическое сопровождение и консультации
+										li Предоставление проработанного договора между суррогатной мамой и родителями с учётом всех рисков и обязательств
+										li Предоставление личного куратора 24/7 до получения результата наступления (не наступления) беременности
+										li Оплата всех приёмов суррогатной мамы у врача до начала программы подготовки эндометрия
+										li Транспортные расходы суррогатной мамы (в пределах города, области, края) до начала программы подготовки эндометрия
+										li Расходы по замене суррогатной мамы до переноса эмбрионов, если это потребуется (неограниченное количество раз). Замена может потребоваться в ситуации, если сурмама не прошла по результатам анализов, повела себя недобросовестно, скрыла важную информацию, которая влияет на возможность участия в программе, передумала, заболела, оказалась мошенницей, начала конфликтовать и т.д.
+								.programm-card__button
+									a(href="#" class="btn-aqua") Оставить заявку
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Подбор суррогатной мамы из вашего города с курированием всей беременности
+								.programm-card__price 
+									span 350 000 руб.
+								a(href="#info-tabs-2" data-toggle="collapse" aria-expanded="false" role="button").programm-card__more Что включено в стоимость услуги:
+								.faq-tabs__item-text.collapse#info-tabs-2(data-parent="#faq-item-parent")
+									ul.programm-card__list
+										li Подбор суррогатной мамы из вашего города или региона 
+										li Юридическое сопровождение и консультации на протяжении всего периода беременности 
+										li Предоставление личного куратора 24/7 на весь период беременности
+									p Куратор осуществляет полный контроль исполнения обязательств, относительно образа жизни и условий проживания сурмамы, помогает в различных бытовых ситуациях, предоставляет периодический финансовый отчет о текущих и дополнительных расходах, а так же может зафиксировать факты нарушений суррогатной матерью условий договора. Куратор может помочь в организации услуг по ведению беременности и родовспоможению и, в дальнейшем, по оформлению документов на родившегося ребенка.
+									.programm-card__button
+										a(href="#" class="btn-aqua") Оставить заявку
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Подбор суррогатной мамы из вашего города или регионас полным сопровождением
+								.programm-card__price 
+									span 2 000 000 руб.
+								a(href="#info-tabs-3" data-toggle="collapse" aria-expanded="false" role="button").programm-card__more Что включено в стоимость услуги:
+								.faq-tabs__item-text.collapse#info-tabs-3(data-parent="#faq-item-parent")
+									ul.programm-card__list
+										li Подбор суррогатной мамы из вашего города или региона с курированием на протяжении всей беременности
+										li Полный спектр консультационных, финансовых, юридических и организационных услуг до полного завершения программы, в том числе оплата медикаментозного  обеспечения, медицинских услуг по ведению беременности, сервисные роды. 
+									.programm-card__button
+										a(href="#" class="btn-aqua") Оставить заявку
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Программы с индивидуальными условиями подбора
+								.programm-card__price 
+									a(href="#").btn-default Узнать стоимость
+								a(href="#info-tabs-4" data-toggle="collapse" aria-expanded="false" role="button").programm-card__more Что включено в стоимость услуги:
+								.faq-tabs__item-text.collapse#info-tabs-4(data-parent="#faq-item-parent")
+									p К нам часто обращаются родители, целью которых является получение  услуг по подбору и сопровождению, но по цене региона.Например:
+									ul.programm-card__list
+										li Родители проживают в Москве или Санкт-Петербурге, суррогатная мама нужна из любого или определенного  региона России, подсадка и роды в Москве или Спб (нахождение первый и последний месяц беременности в городе проживания родителей)
+										li Родители проживают в регионе, подсадка в клинике другого города, сурмама нужна из региона проживания родителей
+										li Родители иностранцы,  подсадка в регионе, сурмама нужна из региона, где есть наш филиал, с полным сопровождением или курированием
+										li Родители хотят остаться «инкогнито», программа с полным сопровождением и без личного контакта
+										li Другие программы
+									p Если ваша программа имеет ряд особенностей, свяжитесь с нами для уточнения цены и условий подбора.
+									.programm-card__button
+										a(href="#" class="btn-aqua") Оставить заявку						
+				.block-title Цены на услуги суррогатных мам
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы без опыта, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 800 000 - 900 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы с опытом, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 900 000 - 1 100 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Ежемесячно
+										.col-md-6
+											.programm-card__rate-price
+												span 25 000 - 30 000 руб.
+								.programm-card__button
+									a(href="#" class="btn-aqua") Подробнее
+		.motherhood-faq
+			.motherhood-faq__bcg
+			.wave-top
+			.container#faq-item-parent
+				.block-title--white Вы решили искать суррогатную маму самостоятельно? <br> Развенчиваем мифы самостоятельного поиска
+				p.block-text--white Подумайте хорошо, прежде чем принять решение в пользу самостоятельного поиска. Вы ведь не идёте к столяру, когда вам нужен сантехник и не доверите строительство дома художнику? Любым узкоспециализированным направлением должны заниматься профессионалы!  Только они знают все «подводные камни» и смогут обезопасить вас от многих неприятностей.
+				.faq-tabs
+					.faq-tabs__item
+						a(href="#faq-tabs-1" data-toggle="collapse" aria-expanded="true" role="button").faq-tabs__item-name Я могу сэкономить
+						.faq-tabs__item-text.collapse.show#faq-tabs-1(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее
+					.faq-tabs__item
+						a(href="#faq-tabs-2" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name Я могу контролировать
+						.faq-tabs__item-text.collapse#faq-tabs-2(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее	
+					.faq-tabs__item
+						a(href="#faq-tabs-3" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name Я буду искать сама, у меня есть время
+						.faq-tabs__item-text.collapse#faq-tabs-3(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее
+					.faq-tabs__item
+						a(href="#faq-tabs-4" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name Я уже нашла обследованную сурмаму
+						.faq-tabs__item-text.collapse#faq-tabs-4(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее
+					.faq-tabs__item
+						a(href="#faq-tabs-5" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name У меня есть свой договор
+						.faq-tabs__item-text.collapse#faq-tabs-5(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее
+					.faq-tabs__item
+						a(href="#faq-tabs-6" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name Я хочу чтобы никто не знал
+						.faq-tabs__item-text.collapse#faq-tabs-6(data-parent="#faq-item-parent")
+							p Без суррогатной мамы Вам не справиться? Но Вы с трудом может себе позволить столичные цены и «пакетные услуги»? Мы поможем! Ведь мы можем подобрать Вам девушку из региона, провести программу бюджетно и Вы заплатите только за подбор.
+							p Ничего лишнего и это доступно многим. Кроме того, оплата у вас будет по факту, а это значит, что Вы ничем не рискуете. Мы можем удовлетворить любой запрос и найти суррогатную маму из любого города.
+							a(href="#").btn-default Подробнее
+			.wave-bottom
+
+		.motherhood-steps 
+			.container 
+				.block-title Алгоритм работы
+				.motherhood-steps__list
+					.row
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 01
+								.motherhood-steps__list-item__text
+									p Консультация в офисе агентства или по телефону
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 02
+								.motherhood-steps__list-item__text
+									p Заполнение заявки на подбор и закрепление за вами менеджера
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 03
+								.motherhood-steps__list-item__text
+									p Выбор суррогатной мамы
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 04
+								.motherhood-steps__list-item__text
+									p Узи кандидатки у вашего лечащего врача для оценки состояния её матки
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 05
+								.motherhood-steps__list-item__text
+									p При одобрении по узи, знакомство с суррогатной мамой
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 06
+								.motherhood-steps__list-item__text
+									p Прохождение обследования согласно Приказа №107н МЗ РФ под контролем куратора
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 07
+								.motherhood-steps__list-item__text
+									p Заключение договоров при полном одобрении врача
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 08
+								.motherhood-steps__list-item__text
+									p Начало программы подготовки эндометрия
+			
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 09
+								.motherhood-steps__list-item__text
+									p Назначение даты переноса эмбрионов
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 10
+								.motherhood-steps__list-item__text
+									p Расчёт с агентством за услугу подбора
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 11
+								.motherhood-steps__list-item__text
+									p Перенос эмбрионов и ожидание результата
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 12
+								.motherhood-steps__list-item__text
+									p Работа агентства продолжится, если будет выбрана услуга курирования или полного сопровождения	
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 13
+								.motherhood-steps__list-item__text
+									p Весь спектр услуг по сопровождению беременности
+						.col-lg-3.col-md-6.col-sm-12
+							.motherhood-steps__list-item
+								.motherhood-steps__list-item__icon
+									span 14
+								.motherhood-steps__list-item__text
+									p Роды и оформление документов на малыша
+				p Процент наступления беременности в циклах с суррогатным материнством достаточно высокий, но в то же время он зависит и от возраста женщины, у которой получены яйцеклетки. В тех случаях, когда используются донорские яйцеклетки и суррогатная мать, то есть когда качество яйцеклеток и состояние матки оптимально, эффективность лечения является самой высокой в современной репродуктивной медицине. Во всех других случаях, частота наступления беременности в циклах ЭКО с привлечением суррогатной мамы бывает в среднем 50/50.
+				p Если беременность не состоялась с первой попытки, при обоюдном согласии, вы можете продолжить работу с вашей суррогатной мамой. В большинстве случаев беременность удаётся получить.
+				a(href="").btn-default Заявка на подбр суррогатной мамы 

@@ -1,0 +1,144 @@
+.profile {
+	&-change {
+		position: relative;
+		margin: 0 0 50px;
+
+		@media (max-width: $screen-xs) {
+			margin: 0 0 25px;
+		}
+
+		&-id {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			font-style: normal;
+			font-weight: 300;
+			font-size: 26px;
+			line-height: 130%;
+
+			color: $gray-dark;
+
+			@media (max-width: $screen-xs) {
+				position: static;
+
+				margin-bottom: 10px;
+
+				font-size: 18px;
+			}
+		}
+
+		&-media {
+			display: flex;
+			justify-content: space-between;
+			align-self: stretch;
+			
+			@media (max-width: $screen-xs) {
+				flex-wrap: wrap;
+			}
+		}
+
+		&-photo {
+			flex: 0 0 310px;
+			width: 310px;
+			height: 400px;
+			border-radius: 10px;
+			overflow: hidden;
+
+			@media (max-width: $screen-sm) {
+				flex: 0 0 50%;
+				width: 50%;
+			}
+
+			@media (max-width: $screen-xs) {
+				flex: 0 0 100%;
+				width: 100%;
+				margin-bottom: 10px;
+
+			}
+
+			.profile-photo {
+				width: 100%;
+				height: 100%;
+
+				.image-wrap {
+					min-height: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+
+		&-video {
+			position: relative;
+			overflow: hidden;
+
+			align-self: stretch;
+			width: 100%;
+			margin-left: 30px;
+
+			border-radius: 10px;
+
+			@media (max-width: $screen-sm) {
+				margin-left: 15px;
+			}
+
+			@media (max-width: $screen-xs) {
+				flex: 0 0 100%;
+				height: 300px;
+				margin-left: 0;
+
+			}
+
+			&__body {
+				width: 100%;
+				height: 100%;
+			}
+
+			.btn-video-play {
+				z-index: 10;
+			}
+		}
+	}
+}
+
+.form-profile {
+
+	.form__field--horizontal .form__field-name {
+		margin-right: 20px;
+		margin-left: 20px;
+
+		&.ml0 {
+			margin-left: 0;
+		}
+
+		@media (max-width: $screen-xs) {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+
+	.form__field--horizontal.mt30 {
+		margin-top: 31px;
+
+		@media (max-width: $screen-xs) {
+			margin-top: 0;
+		}
+	}
+
+	.btn-default {
+		width: 100%;
+		max-width: 100%;
+		padding: 20px 30px;
+		border: 1px solid transparent;
+
+		@include heading4();
+
+		border-radius: 5px;
+
+		@media (max-width: $screen-xs) {
+			font-size: 14px;
+			padding: 10px;
+		}
+	}
+
+}

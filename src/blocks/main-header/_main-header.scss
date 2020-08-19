@@ -1,0 +1,341 @@
+/* main-header start */
+
+.main-header {
+  position: relative;
+  height: 100vh;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__bg.mobile {
+    background: $aqua;
+    transform: rotate(-180deg);
+  }
+
+  &__top {
+    padding: 45px 0 20px;
+
+    @media (max-width: $screen-xs) {
+      padding: 15px 0;
+    }
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      background: linear-gradient(90deg, #6288e4 0%, #ab86e4 100%);
+      padding: 20px;
+      box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: $screen-xs) {
+        padding: 10px 0;
+      }
+      .main-header__top-logo img {
+        max-width: 300px;
+
+        @media (max-width: $screen-md) {
+          max-width: 270px;
+        }
+
+        @media (max-width: $screen-xs) {
+          max-width: 230px;
+        }
+      }
+      .main-header__top-logo--dark {
+        background: none;
+      }
+    }
+
+    &-logo {
+      //   padding: 17px 33px;
+
+      @media (max-width: $screen-xs) {
+        padding: 0;
+      }
+      img {
+        max-width: 393px;
+
+        @media (max-width: $screen-md) {
+          max-width: 270px;
+        }
+        @media (max-width: $screen-xs) {
+          max-width: 230px;
+          height: 42px;
+        }
+      }
+      //   &--dark {
+      //     background-color: rgba(52, 52, 52, 0.3);
+      //     border-radius: 200px;
+      //   }
+    }
+    &-logo--dark {
+      @media (max-width: $screen-xs) {
+        display: none;
+      }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-socials {
+      // margin-left: 75px;
+      display: flex;
+      justify-content: flex-end;
+
+      &_item {
+        margin-left: 15px;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $gradient;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        &--gradient {
+          background: #ffffff;
+        }
+
+        &--transparent {
+          background: transparent;
+        }
+      }
+    }
+
+    &-phone {
+      margin-left: 40px;
+
+      &_part {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+
+      &_num {
+        display: block;
+        color: $white;
+        font-size: 22px;
+        // line-height: 26px;
+        font-weight: 500;
+
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom-color: $white;
+          color: $white;
+        }
+
+        @media (max-width: $screen-md) {
+          font-size: 18px;
+        }
+      }
+      &_desc {
+        font-size: 16px;
+        color: $white;
+        // line-height: 19px;
+        font-weight: 400;
+        display: block;
+        // margin-top: 5px;
+
+        @media (max-width: $screen-md) {
+          font-size: 12px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    &-btn {
+      position: relative;
+      padding-top: 32px;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+
+      @media (max-width: $screen-xs) {
+        padding-top: 24px;
+        font-size: 12px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("/dist/img/ico/burger.svg") no-repeat center;
+        width: 33px;
+        height: 20px;
+        top: 5px;
+      }
+    }
+
+    &-btn--original {
+      position: relative;
+      padding-top: 27px;
+      display: flex;
+      justify-content: center;
+      color: $fiord;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: none;
+        color: $fiord;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("/dist/img/ico/burger-black.svg") no-repeat center;
+        width: 33px;
+        height: 20px;
+        top: 5px;
+      }
+    }
+
+    /* in modal */
+
+    &-city {
+      display: block;
+      border-bottom: 1px dashed #ffffff;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      padding: 2px 0;
+      position: relative;
+      margin-left: 160px;
+
+      @media (max-width: $screen-lg) {
+        margin-left: 50px;
+      }
+
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("/dist/img/ico/location.svg") no-repeat center;
+        width: 18px;
+        height: 26px;
+        left: -32px;
+      }
+    }
+
+    &-btn--close {
+      position: relative;
+      padding: 0;
+      text-shadow: none;
+      opacity: 1;
+      font-size: 18px;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      padding-top: 32px;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+      color: #fff;
+
+      &:hover {
+        text-decoration: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("/dist/img/ico/close.svg") no-repeat center;
+        width: 33px;
+        height: 20px;
+        top: 5px;
+      }
+    }
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    &-item {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom-color: $white;
+        color: $white;
+      }
+    }
+
+    &-btn {
+      font-size: 16px;
+      padding: 15px 40px;
+      font-weight: 500;
+    }
+
+    &-hr {
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      margin: 0 0 20px 0px;
+      opacity: 0.4;
+    }
+  }
+
+  &--bg {
+    height: auto;
+
+    .main-header__top {
+      padding: 30px 0;
+
+      @media (max-width: $screen-lg) {
+        padding: 10px 0;
+      }
+    }
+
+    .main-header__menu {
+      padding: 22px 0;
+
+      background: $aqua-diagonal;
+
+      @media (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &--programm {
+    .main-banner__btn {
+      max-width: 530px;
+    }
+  }
+}
+/* main-header end */

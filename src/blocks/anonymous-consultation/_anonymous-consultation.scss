@@ -1,0 +1,122 @@
+.anonymous-consultation {
+	
+	&__title {
+		margin-bottom: 5px;
+
+		@include heading4;
+
+		color: $black-text;
+	}
+
+	&__text {
+		@include small-text;
+
+		line-height: 110%;
+
+		color: $gray-dark;
+	}
+
+	&__person {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 22px 0 26px;
+
+		&-name {
+			width: 100%;
+			margin-bottom: 10px;
+
+			@include default-text;
+		}
+
+		&-image {
+			width: 120px;
+			height: 120px;
+
+			overflow: hidden;
+
+			border-radius: 10px;
+		}
+
+		&-info{
+			width: calc(100% - 135px);
+
+			@include super-small-text;
+
+			color: $gray-dark;
+
+			@media (max-width: $screen-lg) {
+				width: 100%;
+				margin-top: 15px;
+			}
+			
+			p {
+				margin: 0 0 5px;
+			}
+		}
+		
+		&-phone {
+			display: block;
+			margin: 10px 0;
+			color: $gray-dark;
+
+			&:hover {
+				color: $gray-dark;
+				text-decoration: underline;
+			}
+		}
+
+		&-social {
+			display: flex;
+			margin: 10px -5px 0;
+
+			&-item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 25px;
+				height: 25px;
+				margin: 0 5px;
+
+				border-radius: 50px;
+				background: $gradient;
+				transition: all 0.2s ease-out;
+
+				img {
+					width: 13px;
+				}
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
+	.form-callback {
+		&__field {
+			width: 100%;
+			margin-bottom: 35px;
+
+			&-name {
+				margin-bottom: 10px;
+
+				@include default-text-light;
+				line-height: 140%;
+				color: $black-text;
+			}
+
+			.form-input {
+				width: 100%;
+				padding: 12px 25px;
+
+				@include default-text-light;
+
+				border-radius: 50px;
+				border: 1px solid #CACACA;
+
+				color: #AAAAAA;
+			}
+		}
+	}
+}

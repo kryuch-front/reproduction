@@ -1,0 +1,9 @@
+mixin profile-photo(mods, images) 
+	div(class="js-profile-photo-slider profile-photo "+mods)
+		for url in images
+				img(src=url, alt="")
+
+mixin profile-photo__row(mods, images)
+	div(class="mother-full-card__row"+mods)
+		for url in images
+				img(src=url, alt="")

@@ -1,0 +1,133 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/pagination/pagination.pug
+include ../blocks/block-profile-info/profile-info.pug
+include ../blocks/block-profile-photo/profile-photo.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+
+
+block vars
+	- var page = 'catalog';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Личный кабинет"},{href:"#",name: "Редактирование профиля", class: "current"}])
+
+	section.catalog.page
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					include ../blocks/profile-card/profile-card.pug
+					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
+					include ../blocks/selected-mother/selected-mother.pug
+				.col-12.col-lg-9
+					h1.catalog__title Каталог сурогатных мам
+					include ../blocks/mother-filter/mother-filter.pug
+					.mother-filter-result
+						.mother-filter-result__title Результаты поиска
+						include ../blocks/mother-filter-result/mother-filter-result.pug
+						+pagination(5)
+
+block modal
+	include ../blocks/modal-mother-full-card/modal-mother-full-card.pug
+
+	div(class="modal fade modal-catalog-vip" id="catalog-vip" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+			.modal-content
+				.modal-header
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					.catalog-vip__text
+						| Вы находитетесь в демо-версии, подробная информация для вас не доступна. Если вы хотите получить полный доступ, пожалуйста, <a href="#" class="js-open-modal-sign-up" data-target="#sign-up">зарегистрируйтесь на сайте</a>
+
+	div(class="modal fade modal-sign-up" id="sign-up" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered" role="document")
+			.modal-content
+				.modal-header
+					.modal-title Регистрация
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					form(action="" class="form form-sign-up")
+						.form__field
+							input(type="text" class="form-input" placeholder="Номер телефона")
+						.form__field 
+							label.form__agreement
+								input(type="checkbox" name="agreement")
+								span.form__agreement-text Согласен на обработку <a href="#">персональных данных</a>
+						.form__field.form__field-submit
+							button(class="btn-default") Получить код
+					
+	div(class="modal fade modal-success" id="modal-success" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+			.modal-content
+				.modal-header
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					.success
+						.success__img
+							img(src="/dist/img/ico/done.svg", alt="")
+						.success__text
+							| Ваша заявка принята.<br>Менежер свяжется с вами в ближайшее время
+
+	div(class="modal fade modal-resus" id="resus-table" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+			.modal-content
+				.modal-header
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					.resus-table
+						.resus-table__item
+							.resus-table__item-title Возможные группы крови <span class="gradient-text">ребёнка</span>
+							img(src="/dist/img/table-resus-child.svg", alt="")
+						.resus-table__item
+							.resus-table__item-title Возможные группы крови <span class="gradient-text">донора</span>
+							img(src="/dist/img/table-resus-donor.svg", alt="")
+						.resus-table__btn
+							a(href="#" class="btn-aqua") Подробнее
+	
+	div(class="modal fade modal-select-mother" id="modal-select-mother" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+			.modal-content
+				.modal-header
+					.modal-title Заявка на подбор суррогатной мамы
+					.modal-subtitle
+						span.gradient-text Вы выбрали
+					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+				.modal-body
+					.selected-mother__wrapper
+						- var i = 0
+						while i < 5
+							div(data-id="").selected-mother__item.selected-mother__item--no-selected
+								.selected-mother__close.js-selected-mother__close
+								.profile-name Самсонова Таисия Евгеньевна
+								.selected-mother__item-info
+									.selected-mother__item-photo
+										img(src="/dist/img/catalog/mom1.jpg", alt="")
+									.profile-info.profile-info--select-mother
+										.profile-info__item
+											div(class="profile-info__item-name") Id: 
+											div(class="profile-info__item-value js-profile-card-id") 3003-T7-0
+										.profile-info__item
+											div(class="profile-info__item-name") Город:
+											div(class="profile-info__item-value js-profile-card-city") Тюмень
+										.profile-info__item
+											div(class="profile-info__item-name") Возраст:
+											div(class="profile-info__item-value js-profile-card-old") 24 года
+							-i++
+						.selected-mother__btn
+							a(href="" class="btn-aqua js-btn-submit") Оформить список менеджеру
+	
+
+	div().buttons-open-modal
+		a(href="#" data-toggle="modal" data-target="#modal-filter").buttons-open-modal__btn.btn-open-filter Фильтер
+		a(href="#" data-toggle="modal" data-target="#modal-select-mother").buttons-open-modal__btn.btn-open-mother Выбранные доноры
+
+	div(class="modal fade modal-filter" id="modal-filter" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+			div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+				.modal-content
+					.modal-header
+						button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
+					.modal-body
+						include ../blocks/mother-filter/mother-filter.pug

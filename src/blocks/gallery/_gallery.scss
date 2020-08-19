@@ -1,0 +1,107 @@
+.gallery {
+	position: relative;
+	margin: 30px 0 50px;
+
+	@media (max-width: $screen-sm) {
+		margin: 30px 0;
+	}
+
+	@media (max-width: $screen-xs) {
+		margin: 20px 0;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		@include heading2();
+
+		color: $black-text;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		@include default-text-light;
+		line-height: 140%;
+		color: $gray-dark;
+	}
+
+	&-slider {
+		position: relative;
+		overflow: hidden;
+
+		width: 100%;
+		height: 500px;
+
+		border-radius: 5px;
+
+		@media (max-width: $screen-lg) {
+			height: 420px;
+		}
+
+		@media (max-width: $screen-sm) {
+			height: 300px;
+		}
+
+		@media (max-width: $screen-xs) {
+			height: 220px;
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			object-fit: cover;
+		}
+
+		.tmb-wrap {
+			&-table {
+				padding: 0 26px;
+
+				@media (max-width: $screen-xs) {
+					padding: 0 10px;
+				}
+
+				div {
+					position: relative;
+					
+					border: none;
+					cursor: pointer;
+
+					&::after {
+						content: "";
+
+						position: absolute;
+						bottom: 30px;
+						left: 0;
+						right: 0;
+
+						height: 3px;
+						margin: 0 10px;
+
+						background: #fafafa;
+						border-radius: 6px;
+
+						transition: all 0.2s;
+
+						@media (max-width: $screen-xs) {
+							bottom: 15px;
+
+							height: 2px;
+							margin: 0 5px;
+						}
+					}
+
+					
+					&:hover::after, &.active::after {
+						background: $aqua-diagonal;
+					}
+				}
+			}
+		}
+	}
+}

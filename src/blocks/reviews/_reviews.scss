@@ -1,0 +1,524 @@
+.reviews {
+  position: relative;
+
+  @media (max-width: $screen-xs) {
+    padding-top: 60px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: -49px;
+    right: 0;
+
+    @media (max-width: $screen-xs) {
+      top: 10px;
+      right: auto;
+      left: 0;
+    }
+
+    .btn-white-bordered-gradient {
+      padding: 8px 15px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__tabs {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+    width: fit-content;
+    margin: 20px 0;
+
+    background: $white;
+
+    @media (max-width: $screen-md) {
+      display: block;
+      margin: 25px 0;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: $screen-md) {
+        display: block;
+      }
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      right: -1px;
+      left: -1px;
+      z-index: -1;
+
+      background: $gradient;
+
+      border-radius: 50px;
+
+      @media (max-width: $screen-xs) {
+        border-radius: 10px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding: 14px 40px;
+
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: $fiord;
+
+      background: $white;
+
+      &:first-of-type {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        @media (max-width: $screen-xs) {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 10px;
+        }
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        @media (max-width: $screen-xs) {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+      }
+
+      &:hover,
+      &.active,
+      &.show {
+        background: $gradient;
+        color: $white;
+        text-decoration: none;
+      }
+
+      @media (max-width: $screen-md) {
+        padding: 8px 30px;
+        line-height: 16px;
+      }
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+      }
+    }
+
+    &-item + &-item {
+      &:after {
+        content: "";
+        position: absolute;
+
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        width: 1px;
+
+        background: $gradient;
+
+        @media (max-width: $screen-xs) {
+          top: 0;
+          bottom: auto;
+          right: 0;
+
+          width: 100%;
+          height: 1px;
+        }
+      }
+    }
+  }
+
+  &-content {
+    margin: 50px 0 70px;
+
+    @media (max-width: $screen-md) {
+      margin: 30px 0 50px;
+    }
+
+    @media (max-width: $screen-xs) {
+      margin: 25px 0 30px;
+    }
+  }
+
+  &__list {
+    &--video {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+  }
+
+  &__item {
+    &-date {
+      @include small-text;
+      color: $gray-dark;
+    }
+
+    .btn-default--video {
+      position: relative;
+      margin-top: 30px;
+      width: 310px;
+      padding: 17px 60px 17px 20px;
+    }
+
+    .btn-default--video::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      background: url(/dist/img/white-play.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+
+    &-name {
+      @include heading4;
+
+      color: $black;
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-type {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 140%;
+
+      color: $gray-dark;
+
+      @media (max-width: $screen-md) {
+        font-size: 16px;
+      }
+    }
+
+    &-video {
+      position: relative;
+
+      width: calc(33.33333% - 30px);
+      margin: 15px;
+
+      @media (max-width: $screen-sm) {
+        width: calc(50% - 30px);
+      }
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin: 10px 15px;
+      }
+
+      &__body {
+        position: relative;
+
+        display: block;
+        width: 100%;
+        height: 270px;
+        border-radius: 10px;
+
+        @media (max-width: $screen-blg) {
+          height: 240px;
+        }
+
+        @media (max-width: $screen-lg) {
+          height: 200px;
+        }
+
+        .btn-video-play {
+          width: 60px;
+          height: 60px;
+
+          &::after {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      .reviews__item-name {
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+
+      .reviews__item-type {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-text {
+      margin: 30px 0;
+      padding: 30px 35px;
+
+      border: 1px solid #f5f5f5;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06),
+        0px 4px 6px rgba(0, 0, 0, 0.06);
+      border-radius: 10px;
+
+      @media (max-width: $screen-md) {
+        margin: 25px 0;
+      }
+
+      @media (max-width: $screen-xs) {
+        padding: 15px;
+      }
+
+      &-date {
+        @include small-text;
+        color: $gray-dark;
+
+        margin-bottom: 25px;
+      }
+
+      &-top {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 10px;
+
+        @media (max-width: $screen-xs) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &-name {
+        @include heading4;
+
+        color: $black;
+      }
+
+      &-type {
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+
+        color: $gray-dark;
+      }
+
+      &-content {
+        margin: 10px 0 17px;
+        @include default-text-light;
+        line-height: 140%;
+
+        color: $gray-dark;
+
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px 50px;
+
+      background: $gradient;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04),
+        0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04),
+        0px 24px 32px rgba(0, 0, 0, 0.04);
+      border-radius: 5px;
+
+      @media (max-width: $screen-lg) {
+        padding: 30px;
+      }
+
+      @media (max-width: $screen-md) {
+        padding: 20px 30px;
+      }
+
+      @media (max-width: $screen-sm) {
+        flex-wrap: wrap;
+        padding: 15px;
+      }
+    }
+
+    &-title {
+      padding-right: 30px;
+
+      @include heading2;
+
+      color: $white;
+
+      @media (max-width: $screen-sm) {
+        width: 100%;
+        margin-bottom: 15px;
+        padding-right: 0;
+
+        text-align: center;
+      }
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-show {
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+
+      // TODO btn text typographics and color
+      .btn-white {
+        max-width: 340px;
+
+        @media (max-width: $screen-lg) {
+          padding: 13px 20px;
+        }
+
+        @media (max-width: $screen-sm) {
+          margin: 0 auto;
+        }
+
+        @media (max-width: $screen-xs) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-wrapper {
+      display: none;
+      padding: 30px 0;
+
+      opacity: 0;
+      transition: all 0.2s;
+
+      &.show {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.form-reviews {
+  &__field {
+    margin: 20px 0;
+
+    @media (max-width: $screen-md) {
+      margin: 10px 0;
+    }
+
+    &-name {
+      @include default-text;
+
+      color: #606060;
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 30px;
+
+    @include default-text-light;
+    color: #aaaaaa;
+
+    border: 1px solid #cacaca;
+    border-radius: 50px;
+  }
+
+  .form-textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    padding: 12px 30px;
+
+    @include default-text-light;
+    color: #aaaaaa;
+
+    resize: none;
+    border: 1px solid #cacaca;
+    border-radius: 20px;
+  }
+
+  &__check {
+    margin: 0 0 40px;
+
+    @media (max-width: $screen-sm) {
+      margin: 0 0 20px;
+    }
+
+    label {
+      line-height: 100%;
+      font-weight: 300;
+      color: #ffffff;
+      padding-left: 30px;
+      position: relative;
+      cursor: pointer;
+      user-select: none;
+      color: $gray-dark;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+
+        border-radius: 3px;
+        background-color: #ffffff;
+        border: 1px solid #cacaca;
+      }
+
+      a {
+        text-decoration: none;
+
+        color: #7dbc91;
+      }
+    }
+
+    // TODO add arrow-done
+    input:checked + label::before {
+      background: red;
+    }
+  }
+
+  &__submit {
+    width: 360px;
+    margin-top: 40px;
+
+    font-weight: 600;
+
+    @media (max-width: $screen-sm) {
+      margin-top: 20px;
+    }
+  }
+}

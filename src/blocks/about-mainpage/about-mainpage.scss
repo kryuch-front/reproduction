@@ -1,0 +1,40 @@
+.about-mainpage {
+  color: $gray-dark;
+  padding-bottom: 80px;
+
+  .bold {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  &__categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  .btn-default {
+    padding: 15px 72px;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    width: auto;
+    max-width: 50%;
+
+    @media (max-width: $screen-lg) {
+      padding: 15px 35px;
+    }
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 20px;
+      max-width: 100%;
+      padding: 20px 35px;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding: 20px 15px;
+    }
+  }
+}

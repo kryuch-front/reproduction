@@ -1,0 +1,60 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/video/video.pug
+
+
+block vars
+	- var page = 'programm-desc-4';
+	- var header_class = "main-header main-header--programm"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/baner_bg4.jpg"
+	- var b_title = "Виды программ сурогатного материнства"
+	- var b_text = "Агенство донорства яйцеклеток и суррогатного материнства с 12-летним опытом. Работаем по России в Тюмени, Екатеринбурге, Кургане, Краснодаре и другихгородах России"
+	- var b_btn_text = "Нужна помощь в подборе программы"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Виды программ сурогатного материнства", class: "current"}])
+
+	section.page.page-programm
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					+sidebar-menu([{href:"#",name: "Показания к сур.материнству"},{href:"#",name: "Этапы программы сур.материнства"},{href:"#",name: "Виды программ сурогатного материнства", class: "current"},{href:"#",name: "Анкета будущих родителей", icon:"/dist/img/programm_desc/anketa.svg"},{href:"#",name: "Личный кабинет", icon:"/dist/img/programm_desc/lk.svg"}])
+					include ../blocks/anonymous-consultation/anonymous-consultation.pug
+				.col-12.col-lg-9
+					h2.page-title Виды программ сурогатного материнства
+					.page-content
+						p Счастье материнства – лучшее из того, что природа дарит женщине. Дети — это не только положительные эмоции, которые мы получаем буквально каждый день, но и в какой-то степени смысл нашего существования.
+						.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm1.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Подбора суррогатной мамы
+								.programm-card__price 
+									span 100 000 - 120 000 руб.
+								ul.programm-card__list
+									li <strong>Консультация</strong> по предоставляемой услуге
+									li <strong>Подбор суррогатной мамы</strong> из базы Агентства. Мы работаем в режиме «нон-стоп» для того, чтобы без промедления предоставить Вам проверенного и одобренного врачом «аиста». В базе Агентства всегда есть девушки, готовые придти на помощь.
+									li <strong>Двукратное медицинское обследование</strong> в соответствии с приказом №107-н МЗ РФ. Все наши суррогатные мамы проходят первичное медицинское обследование для определения возможности участия в программе и вынашивания беременности, а также повторное обследование перед процедурой.
+								.programm-card__button
+									a(href="#" class="btn-aqua") Перейти на детальную страницу
+						.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Донор по программе «на двоих» (в Тюмени)
+								.programm-card__price 
+									span 100 000 руб.
+								.programm-card__desc Самый большой плюс этой программы – это её бюджетность. <strong>Суть программы в том, что все яйцеклетки, полученные у Донора, делятся поровну между двумя реципиентами.</strong>
+								ul.programm-card__list
+									li подбор донора из базы менеджером по фотографии
+									li консультации по предоставляемой услуге
+									li оплата приёмов до начала стимуляции
+									li Медицинское обследование выбранного донора в соответствии с приказом №107МЗ РФ, в том числе генетические исследования
+								.programm-card__button
+									a(href="#" class="btn-aqua") Подробнее
+					include ../blocks/block-surrogate-request/surrogate-request.pug
+
+	

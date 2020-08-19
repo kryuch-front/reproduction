@@ -1,0 +1,19 @@
+.about-us {
+  position: relative;
+  background: url(/dist/img/bg-adv-price.png) no-repeat center;
+  background-size: cover;
+  padding: 125px 0;
+  min-height: 500px;
+  overflow: hidden;
+  color: #fff;
+
+  .wave-top {
+    background: url(/dist/img/waves/region-wave-top.png) repeat-x center;
+    height: 46px;
+  }
+
+  .wave-bottom {
+    background: url(/dist/img/waves/region-wave-bottom.png) repeat-x center;
+    height: 119px;
+  }
+}

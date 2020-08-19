@@ -1,0 +1,35 @@
+.profile-info {
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include small-text;
+
+		color: $gray-dark;
+
+		&:not(:last-of-type) {
+			margin-bottom: 7px;
+
+			@media (max-width: $screen-lg) {
+				margin-bottom: 5px;
+			}
+		}
+
+		@media (max-width: $screen-lg) {
+			font-size: 14px;
+			line-height: 18px;
+		}
+
+		&-name {
+			padding-right: 5px;
+	
+			font-weight: normal;
+		}
+	}
+}
+
+.profile-name {
+	margin-bottom: 20px;
+
+	@include small-text-normal;
+}

@@ -1,0 +1,219 @@
+.motherhood {
+  &-desc {
+    margin-bottom: 50px;
+
+    &__img,
+    &__text {
+      align-self: center;
+    }
+
+    &__text-block {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-cities {
+    position: relative;
+    background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+    background-size: cover;
+    padding: 125px 0;
+    overflow: hidden;
+    color: #fff;
+
+    .wave-top {
+      background: url(/dist/img/waves/region-wave-top.png) repeat-x center;
+      height: 46px;
+    }
+
+    .wave-bottom {
+      background: url(/dist/img/waves/region-wave-bottom.png) repeat-x center;
+      height: 119px;
+    }
+  }
+
+  &-faq {
+    position: relative;
+    background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+    background-size: cover;
+    padding: 125px 0;
+    overflow: hidden;
+
+    .wave-top {
+      background: url("/dist/img/waves/region-wave-top.png");
+      background-repeat: repeat-x;
+      background-position: center;
+      height: 46px;
+    }
+
+    .wave-bottom {
+      background: url("/dist/img/waves/region-wave-bottom.png");
+      background-repeat: repeat-x;
+      background-position: center;
+      height: 119px;
+    }
+  }
+
+  &-steps {
+    background: url("/dist/img/spermagoal.png") no-repeat left;
+    &__list {
+      margin-bottom: 50px;
+      &-item {
+        margin: 15px 0px;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        padding: 25px 15px 15px 15px;
+        min-height: 250px;
+        transition: 0.3s;
+
+        &:hover {
+          // border: 1px solid #d5d5d5;
+          background-color: #ffffff;
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04),
+            0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        }
+
+        &__icon {
+          display: block;
+          position: relative;
+          margin: 0 auto;
+          margin-bottom: 15px;
+          width: 80px;
+          height: 80px;
+          border: 1px solid #d5d5d5;
+          // background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+          opacity: 0.9;
+          border-radius: 55px;
+          transition: 0.3s;
+          span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            color: #7dbc91;
+            font-weight: 500;
+            line-height: 1;
+            letter-spacing: 1px;
+            transition: 0.3s;
+          }
+        }
+
+        &:hover &__icon {
+          background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+          span {
+            color: #fff;
+          }
+        }
+
+        &__text {
+          text-align: center;
+        }
+      }
+    }
+
+    .btn-default {
+      margin: 54px auto;
+      max-width: 520px;
+      padding: 15px 70px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.text-block {
+  position: relative;
+  background-size: cover;
+  padding: 50px 0;
+  // margin-bottom: 100px;
+  // min-height: 300px;
+  overflow: hidden;
+  color: #fff;
+
+  .wave-top {
+    background: url(/dist/img/waves/region-wave-top.png) repeat-x center;
+    height: 46px;
+  }
+
+  .wave-bottom {
+    background: url(/dist/img/waves/region-wave-bottom.png) repeat-x center;
+    height: 119px;
+  }
+}
+
+.motherhood-programm {
+  margin-bottom: 100px;
+  &__desc {
+    ul {
+      li {
+        a:hover {
+          color: #7dbc91;
+        }
+
+        &::before {
+          content: "\2022";
+          color: $aqua;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
+
+.motherhood-donor {
+  &__desc {
+    position: relative;
+    background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+    background-size: cover;
+    padding: 125px 0;
+    min-height: 500px;
+    overflow: hidden;
+    color: #fff;
+
+    .wave-top {
+      background: url(/dist/img/waves/region-wave-top.png) repeat-x center;
+      height: 46px;
+    }
+
+    .wave-bottom {
+      background: url(/dist/img/waves/region-wave-bottom.png) repeat-x center;
+      height: 119px;
+    }
+  }
+}
+
+.video-block {
+  margin-bottom: 50px;
+}
+
+.info-block {
+  margin-bottom: 100px;
+}
+
+.manager-contacts {
+  list-style-type: none;
+  padding-left: 0;
+  img {
+    margin-right: 10px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.donor-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .programm-card__name {
+    margin: 0;
+  }
+
+  .programm-card__price {
+    position: static;
+  }
+}

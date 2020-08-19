@@ -1,0 +1,69 @@
+/* advantages start */
+
+.advantages {
+  background: url("/dist/img/spermagoal.png") no-repeat left;
+
+  @media (max-width: $screen-xs) {
+    background: none;
+  }
+
+  &__desc {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 59px;
+
+    @media (max-width: $screen-lg) {
+      margin-top: 30px;
+    }
+
+    &-img {
+      width: 110px;
+      height: 110px;
+      background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+      opacity: 0.9;
+      border-radius: 55px;
+
+      @media (max-width: $screen-lg) {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media (max-width: $screen-md) {
+        width: 80px;
+        height: 80px;
+      }
+
+      img {
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &-text {
+      margin-top: 37px;
+
+      @media (max-width: $screen-lg) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .btn-default {
+    margin: 54px auto;
+    max-width: 442px;
+    padding: 20px 70px;
+    font-size: 21px;
+
+    @media (max-width: $screen-xs) {
+      font-size: 18px;
+      padding: 20px 30px;
+    }
+  }
+}
+/* advantages end */

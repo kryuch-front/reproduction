@@ -1,0 +1,70 @@
+.guarantee {
+  margin: 50px 0 100px;
+
+  &-content {
+    padding: 50px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+      0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+  }
+
+  @media (max-width: $screen-lg) {
+    margin: 50px 0 40px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+
+    @include heading2();
+
+    color: $black;
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    min-height: 31px;
+    padding-left: 51px;
+    margin-bottom: 33px;
+
+    @include default-text-light;
+
+    color: $black;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding-left: 30px;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 31px;
+      height: 31px;
+
+      background: url("/dist/img/ico/guarantee-done.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+
+      @media (max-width: $screen-xs) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}

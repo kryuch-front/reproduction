@@ -1,0 +1,188 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/video/video.pug
+
+
+block vars
+	- var page = 'motherhood-info';
+	- var header_class = "main-header main-header--programm"
+	- var menu_btn_class = "btn-default main-header__menu-btn"
+	- var header_bg = "/dist/img/programm_desc/baner_bg4.jpg"
+	- var b_title = "Суррогатным мама"
+	- var b_text = "Нам нужны аисты: помоги людям обрести полноценную семью и сделай доброе дело. Благородная помощь за вознаграждение."
+	- var b_btn_text = "Узнать как"
+	- var b_second_btn_text = "Заполнить анкету"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Суррогатным мамам"}])
+
+	section.page.page-motherhood-info
+		.mothrerhood-desc
+			.container
+				.block-title Суррогатным мамам
+				.motherhood-desc
+					p.motherhood-desc__text-block Стать суррогатной мамой  часто становится единственным решением для молодой женщины, чтобы помочь своей семье вырваться из финансового ада. Финансовая мотивация становится основной, а заработанные деньги часто тратятся на погашение долгов, взносов по ипотеке, покупку жилья или вклад в будущее семьи. Многие женщины, становясь суррогатными мамами, очень этого стыдятся, но тут нет ничего постыдно, ведь задача любого родителя оберегать, защищать и обеспечивать свою семью. Женщины идут в суррогатные мамы ради своей семьи в первую очередь, а потом уже ради помощи другому человеку.
+					p.motherhood-desc__text-block Однако принимать решение  об участии в программе стоит со всей серьёзностью и ответственностью, ведь вам придётся нести ответственность за жизнь вынашиваемого ребенка. Кроме того, программа суррогатного материнства требует выполнения обязательств по договору: вы будете обязаны принимать гормональные препараты в начале «суррогатной» беременности для её сохранения и закрепления и следовать всем назначениям врача на протяжении беременности, так же вы должны быть психологически готовы.
+					p.motherhood-desc__text-block Не стоит так же быть легкомысленными в принятии решения, изучите тему и не рискуйте, подыскивая родителей самостоятельно. Ведь главная из причин сотрудничества с агентством - это 100% гарантия получения Вашего вознаграждения, полная финансовая и юридическая защищённость. 
+					
+		.text-block(style="background: url(/dist/img/bg-adv-price.png) no-repeat center;")
+			.wave-top
+			.container 
+				.row
+					.col-lg-10
+						.block-title--white Требования к суррогатным: мамам
+						ul 
+							li возраст от 20 до 34 лет (для московских программ до 32 лет);
+							li физическое и психическое здоровье
+							li отсутствие лишнего веса, вес не более 85 кг
+							li рост от 160 см
+							li наличие не менее одного здорового ребенка
+							li согласие супруга (при его наличии) на участие в программе
+							li отсутствие оперативных вмешательств на матке
+							li отсутствие наркотической, алкогольной зависимости
+							li заполненная анкета
+			.wave-bottom          
+
+		.motherhood-programm#programm-card-parent
+			.container 
+				.block-title Cуррогатное материнство. Виды программ
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Суррогатное материнство (по месту жительства)
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы без опыта, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 800 000 - 900 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы с опытом, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 900 000 - 1 100 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Ежемесячно
+										.col-md-6
+											.programm-card__rate-price
+												span 20 000 - 25 000 руб.
+								.programm-card__button
+									a(href="#" class="btn-aqua") Узнать подробности программы
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Суррогатное материнство с полным переездом в Москву или Санкт-Петербург
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы без опыта, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 1 000 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Суррогатные мамы с опытом, гонорар
+										.col-md-6
+											.programm-card__rate-price
+												span 1 200 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Ежемесячно
+										.col-md-6
+											.programm-card__rate-price
+												span 20 000 - 30 000 руб.
+								.programm-card__button
+									a(href="#" class="btn-aqua") Узнать подробности программы
+				.programm-card
+							.programm-card__image
+								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+							.programm-card__info
+								.programm-card__name Дополнительные выплаты
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Доплата за двойню
+										.col-md-6
+											.programm-card__rate-price
+												span 150 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Доплата за «кесарево сечение»
+										.col-md-6
+											.programm-card__rate-price
+												span 100 000 руб.
+								.programm-card__rate
+									.row
+										.col-md-6
+											.programm-card__rate-name Выплата на «беременные» вещи
+										.col-md-6
+											.programm-card__rate-price
+												span 25 000 руб.
+								.programm-card__button
+									//- a(href="#" class="btn-aqua") Узнать подробности программы	
+				.motherhood-programm__desc 
+					ul 
+						li Гонорар выплачивается сурмаме по факту рождения ребенка. Никаких промежуточных выплат нет
+						li Ежемесячное содержание расходуется  на правильное питание во время беременности
+						li Затраты, связанные с «суррогатной» беременностью (ведение беременности, медицинские обследования, процедуры, медикаментозное обеспечение, сервисное родоразрешение и т.п) происходит за счёт родителей и не входит в сумму ежемесячных выпат и сумму гонорара.
+						li Все сурмамы, вступающие в программу, обследуются в соответствии с требованиями 
+							a(href="#").bold приказа Министерства Здравоохранения РФ от 30.08.2012 № 107н
+						li Все врачебные консультации и обследования для суррогатных мам проводятся бесплатно
+						li Для иногородних сурмам - возмещение транспортных и прочих расходов в программе
+
+		.motherhood-faq(style="background: url(/dist/img/bg-adv-price.png) no-repeat center;")
+			.wave-top
+			.container#faq-item-parent
+				.block-title--white Алгоритм работы
+				.faq-tabs
+					.faq-tabs__item
+						a(href="#faq-tabs-1" data-toggle="collapse" aria-expanded="true" role="button").faq-tabs__item-name 1. Заполнение анкеты на сайте агентства
+						.faq-tabs__item-text.collapse.show#faq-tabs-1(data-parent="#faq-item-parent")
+							p Если вы выбрали программу по месту жительства, мы будет предлагать вашу анкету к рассмотрению местным родителям. Если по анкете вами заинтересуются, менеджер агентства с вами свяжется и пригласит вас на узи в клинику репродукции.
+							p Если вас интересует программа с переездом, наш менеджер свяжется с вами раньше, проведёт анкетирование более расширенно и запишет вас на узи на 10-12 день менструального цикла.
+					.faq-tabs__item
+						a(href="#faq-tabs-2" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 2. Приём у врача репродуктолога
+						.faq-tabs__item-text.collapse#faq-tabs-2(data-parent="#faq-item-parent")
+							p Первичный приём и узи органов малого таза определит, подходите вы для программы или нет. Если врач по результату узи и собеседованию утвердит вашу кандидатуру, то будет назначено обширное обследование, необходимое для вступления в программу.
+							p Если вы выбрали программу в регионе, обследование вы будете проходить под контролем куратора из вашего города.
+							p Если программа планируется с переездом, то следующий этап будет посещение врача-репродуктолога в Москве или Санкт-Петербурге. При одобрении врача, вы пройдёте комплексное обследование за счёт агентства. Поездка будет туда и обратно будет так же оплачена.
+					.faq-tabs__item
+						a(href="#faq-tabs-3" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 3. Новый цикл и начало программы
+						.faq-tabs__item-text.collapse#faq-tabs-3(data-parent="#faq-item-parent")
+							p При хороших результатах анализов врач начнёт программу подготовки эндометрия к переносу эмбрионов.  Вам назначат препараты, чтобы создать оптимальные условия для будущей беременности. Нужно будет грамотно их принимать.  Договор у вас будет либо с родителями, либо с агентством, если родители выбрали программу с сопровождением.
+							p В программе с переездом на начало цикла вы прилетите в столицу. Договор подписываете с агентством.
+					.faq-tabs__item
+						a(href="#faq-tabs-4" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 4. Перенос эмбрионов в полость матки
+						.faq-tabs__item-text.collapse#faq-tabs-4(data-parent="#faq-item-parent")
+							p Процедура проходит безболезненно и вам выплачивается первая зарплата. Вы продолжаете принимать препараты и очень ответственно относитесь к происходящему. Важно не нарушать установленный режим и избегать стрессов.
+					.faq-tabs__item
+						a(href="#faq-tabs-5" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 5. Результат анализа крови на ХГЧ
+						.faq-tabs__item-text.collapse#faq-tabs-5(data-parent="#faq-item-parent")
+							p Спустя 10-14 дней от дня переноса эмбрионов анализ покажет наступила беременность или нет. Если беременность наступила, через 7-10 дней будет назначено узи для подтверждения маточной беременности, так же врач должен удостовериться, что малыш развивается. Далее вы встанете на учёт по беременности.
+					.faq-tabs__item
+						a(href="#faq-tabs-6" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 6. Беременность и роды
+						.faq-tabs__item-text.collapse#faq-tabs-6(data-parent="#faq-item-parent")
+							p Во время беременности вы будете под пристальным присмотром врачей и кураторов.
+							p В региональной программе вы будете общаться с родителями малыша напрямую. В программе с переездом родителей вы увидеть не сможете. Роды и наблюдение беременности будут сервисными.
+					.faq-tabs__item
+						a(href="#faq-tabs-7" data-toggle="collapse" aria-expanded="false" role="button").faq-tabs__item-name 7. Получение вознаграждения
+						.faq-tabs__item-text.collapse#faq-tabs-7(data-parent="#faq-item-parent")
+							p Вознаграждение суррогатная мама получает в день или в течении пары дней после родов, после подписания согласия на передачу рожденного ребенка родителям. Кроме вознаграждения вы получаете безмерную благодарность от семьи, которой смогли помочь.
+			.wave-bottom
+
+		.motherhood-steps 
+			.container 
+				p Агентство Репродукция предлагает вам программы без отрыва от своей семьи в регионе или с переездом в одну из столиц России. Выбирайте программу, удобную и комфортную для вас, как в финансовом, так и в эмоциональном плане, а мы в свою очередь сделаем всё возможное, чтобы ваша программа прошла спокойно, финансово и юридически безопасно.
+				a(href="").btn-default Заполнить анкету 

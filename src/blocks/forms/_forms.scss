@@ -1,0 +1,1058 @@
+.form {
+  &__block-name {
+    margin: 40px 0 25px;
+    @include subtitle();
+
+    @media (max-width: $screen-lg) {
+      margin: 20px 0 15px;
+    }
+
+    span {
+      background: $gradient;
+      color: #6288e4;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__field {
+    margin-bottom: 35px;
+
+    @media (max-width: $screen-lg) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs) {
+      margin-bottom: 10px;
+    }
+
+    &-name {
+      position: relative;
+
+      @include default-text;
+
+      @media (max-width: $screen-lg) {
+        font-size: 16px;
+      }
+
+      .star {
+        color: #eb665d;
+      }
+    }
+
+    &--horizontal {
+      display: flex;
+      align-items: center;
+      margin-top: 35px;
+
+      @media (max-width: $screen-lg) {
+        margin-top: 20px;
+      }
+
+      .form__field-name {
+        margin-right: 30px;
+        margin-left: 30px;
+
+        @media (max-width: $screen-lg) {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+
+        @media (max-width: $screen-xs) {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+
+        &.ml0 {
+          margin-left: 0;
+        }
+      }
+
+      &.mt0 {
+        margin-top: 0;
+      }
+    }
+
+    &-social {
+      @media (max-width: $screen-xs) {
+        margin-bottom: 0;
+      }
+
+      .form-input__wrap .form-input {
+        padding: 12px 30px 12px 50px;
+
+        @media (max-width: $screen-lg) {
+          padding: 7px 20px 7px 40px;
+        }
+      }
+
+      &-add {
+        cursor: pointer;
+
+        .form-input__wrap .form-select {
+          width: 56px;
+          padding: 12px 10px;
+        }
+
+        .nice-select {
+          background: transparent;
+
+          &::after {
+            display: none;
+          }
+
+          &:focus {
+            width: 100%;
+            padding: 12px 30px 12px 50px;
+          }
+
+          li.option {
+            position: relative;
+            padding-left: 50px;
+
+            &:first-of-type {
+              display: none;
+            }
+
+            &::after {
+              content: "";
+
+              position: absolute;
+              left: 13px;
+              top: 9px;
+
+              width: 28px;
+              height: 28px;
+
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+
+            &[data-value="fb"]::after {
+              background-image: url("/dist/img/ico/icon-instagram.svg");
+            }
+
+            &[data-value="ok"]::after {
+              background-image: url("/dist/img/ico/icon-vk.svg");
+            }
+
+            &[data-value="wa"]::after {
+              background-image: url("/dist/img/ico/icon-instagram.svg");
+            }
+
+            &[data-value="tg"]::after {
+              background-image: url("/dist/img/ico/icon-vk.svg");
+            }
+          }
+        }
+      }
+    }
+
+    &-hint {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+
+      font-size: 0;
+      line-height: 0;
+
+      background: url("/dist/img/ico/hint-gradient.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+      border-radius: 100%;
+
+      cursor: pointer;
+    }
+
+    &-submit {
+      .btn-aqua {
+        padding: 13px 30px;
+        border: 1px solid transparent;
+
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        @media (max-width: $screen-lg) {
+          height: 40px;
+          padding: 10px 20px;
+          margin: 20px 0;
+          // max-width: 230px;
+        }
+      }
+    }
+
+    &-clear {
+      .btn-white-bordered {
+        @media (max-width: $screen-lg) {
+          height: 40px;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    &.mt0 {
+      margin-top: 0;
+    }
+  }
+
+  &-input {
+    position: relative;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 30px 12px 30px;
+
+    @include default-text-light;
+    color: #aaaaaa;
+
+    border-radius: 50px;
+    border: 1px solid #cacaca;
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+      line-height: 16px;
+
+      padding: 7px 20px;
+    }
+
+    &::placeholder {
+      @include default-text-light;
+      color: #aaaaaa;
+
+      @media (max-width: $screen-lg) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+
+    &:focus {
+      color: #aaaaaa;
+    }
+
+    &__wrap {
+      position: relative;
+
+      .form-input {
+        padding: 12px 50px 12px 30px;
+
+        @media (max-width: $screen-lg) {
+          height: 40px;
+          min-height: 40px;
+          padding: 12px 30px 12px 15px;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      z-index: 10;
+
+      &--search {
+        right: 20px;
+        top: 23px;
+
+        width: 20px;
+        height: 20px;
+
+        background-image: url("/dist/img/ico/search-icon.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          right: 15px;
+          top: 22px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &--calendar {
+        right: 20px;
+        top: 23px;
+
+        width: 20px;
+        height: 20px;
+
+        background-image: url("/dist/img/ico/calendar.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          top: 17px;
+        }
+      }
+
+      &--instagram {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-instagram.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 14px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--vk {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-vk.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 14px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--add {
+        left: 14px;
+        top: 20px;
+        z-index: -1;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-add.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 14px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  &-textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    resize: none;
+
+    border: 1px solid #cacaca;
+    border-radius: 20px;
+
+    @media (max-width: $screen-xs) {
+      height: 80px;
+    }
+  }
+
+  &-select-color {
+    max-height: 47px;
+    padding: 10px;
+    margin-top: 10px;
+
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+
+    border: 1px solid #cacaca;
+    border-radius: 50px;
+
+    @media (max-width: $screen-lg) {
+      padding: 7px 10px;
+      height: 40px;
+      max-height: 40px;
+    }
+
+    .custom-color-checkbox {
+      margin: 0 10px;
+
+      .color-checkbox {
+        display: none;
+      }
+
+      .color-checkbox:checked + .color::after {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+
+    .color {
+      position: relative;
+
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      cursor: pointer;
+
+      @media (max-width: $screen-lg) {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (max-width: $screen-sm) {
+        width: 20px;
+        height: 20px;
+      }
+
+      &--gray {
+        background: #d5d5d5;
+      }
+
+      &--blue {
+        background: #6da1c6;
+      }
+
+      &--blue-green {
+        background: linear-gradient(90deg, #389be1 0%, #66c970 100%);
+      }
+
+      &--green {
+        background: #2b8934;
+      }
+
+      &--brown {
+        background: #6c3333;
+      }
+
+      &--black {
+        background: #0b0800;
+      }
+
+      &--orange {
+        background: #ae4629;
+      }
+
+      &--gold {
+        background: #c1a273;
+      }
+
+      &--blonde {
+        background: #f1d8ae;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: block;
+        width: 17px;
+        height: 12px;
+
+        background-image: url("/dist/img/catalog/color-selected.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.2s ease-out;
+
+        @media (max-width: $screen-lg) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &-range {
+    position: relative;
+
+    max-height: 47px;
+    min-height: 47px;
+    padding: 10px 35px 10px 20px;
+    margin-top: 10px;
+
+    border: 1px solid #cacaca;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    @media (max-width: $screen-lg) {
+      max-height: 40px;
+      min-height: 40px;
+      padding: 13px 35px 13px 20px;
+    }
+
+    .js-range {
+      border: 0;
+      width: 100%;
+
+      .ui-slider-range {
+        top: 50%;
+
+        height: 9px;
+
+        background: $aqua-diagonal;
+        border: 0;
+
+        @media (max-width: $screen-lg) {
+          top: 3px;
+          height: 5px;
+        }
+      }
+
+      .ui-slider-handle {
+        width: 37px;
+        height: 37px;
+        border-radius: 100%;
+
+        @include small-text-normal;
+        text-align: center;
+        line-height: 37px;
+
+        outline: none;
+        border: 0;
+        color: $white;
+
+        cursor: pointer;
+
+        @media (max-width: $screen-lg) {
+          top: -7px;
+
+          width: 25px;
+          height: 25px;
+
+          font-size: 14px;
+          line-height: 25px;
+        }
+
+        &:first-of-type {
+          background: $aqua;
+        }
+
+        &:last-of-type {
+          background: $aqua;
+        }
+      }
+    }
+
+    .js-range-min {
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+      @include small-text-normal;
+
+      color: #aaaaaa;
+
+      @media (max-width: $screen-lg) {
+        top: -2px;
+        left: -5px;
+
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .js-range-max {
+      position: absolute;
+      top: 4px;
+      right: -15px;
+
+      @include small-text-normal;
+
+      color: #aaaaaa;
+
+      @media (max-width: $screen-lg) {
+        top: -2px;
+        right: -16px;
+
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &-checkbox-gradient {
+    display: flex;
+    justify-self: space-between;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .custom-checkbox-gradient {
+      width: 145px;
+      margin-bottom: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      input {
+        display: none;
+      }
+
+      &__text {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #aaaaaa;
+        text-align: center;
+
+        border-radius: 50px;
+        border: 1px solid #cacaca;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        @media (max-width: $screen-lg) {
+          padding: 7px 10px;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .male-checkbox:checked + .custom-checkbox-gradient__text {
+      background: $gradient;
+      color: $white;
+      border-color: transparent;
+    }
+  }
+
+  &__btn-child {
+    margin: 5px 0 0;
+    padding: 15px 50px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+    border-radius: 50px;
+    background-color: $white;
+    border: 1px solid #cacaca;
+    color: $gray-dark;
+    cursor: pointer;
+
+    @media (max-width: $screen-lg) {
+      padding: 7px 20px;
+      font-size: 16px;
+      line-height: 14px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-top: 31px;
+    }
+
+    @media (max-width: $screen-xs) {
+      margin-top: 0;
+    }
+
+    &:hover {
+      background: $gradient;
+      color: $white;
+      border-color: transparent;
+    }
+  }
+
+  &__agreement {
+    position: relative;
+
+    input {
+      display: none;
+    }
+
+    &-text {
+      display: block;
+      padding-left: 35px;
+
+      @media (max-width: $screen-lg) {
+        line-height: 130%;
+        font-size: 16px;
+      }
+
+      @media (max-width: $screen-xs) {
+        padding-left: 15px;
+        font-size: 12px;
+      }
+
+      a {
+        color: $black-text;
+        font-weight: 500;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+
+        border: 1px solid #cacaca;
+        border-radius: 3px;
+
+        @media (max-width: $screen-xs) {
+          top: 0;
+
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  &__radio {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px -15px 0;
+
+    @media (max-width: $screen-sm) {
+      margin: 20px -5px 0;
+    }
+
+    @media (max-width: $screen-xs) {
+      flex-wrap: wrap;
+      margin: 0;
+    }
+
+    .custom-radio-label {
+      position: relative;
+      margin: 0 15px;
+      padding-left: 45px;
+
+      cursor: pointer;
+
+      @media (max-width: $screen-lg) {
+        padding-left: 35px;
+      }
+
+      @media (max-width: $screen-sm) {
+        margin: 0 5px;
+        padding-left: 27px;
+      }
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+
+    .custom-radio {
+      display: none;
+    }
+
+    .custom-radio__text {
+      display: block;
+
+      @media (max-width: $screen-lg) {
+        font-size: 16px;
+        line-height: 120%;
+      }
+
+      @media (max-width: $screen-sm) {
+        font-size: 14px;
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 35px;
+        height: 35px;
+
+        border-radius: 100%;
+        border: 1px solid #cacaca;
+
+        @media (max-width: $screen-lg) {
+          width: 25px;
+          height: 25px;
+        }
+
+        @media (max-width: $screen-sm) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+
+        width: 16px;
+        height: 16px;
+
+        border-radius: 100%;
+        background: $gradient;
+        transition: all 0.2s;
+
+        @media (max-width: $screen-lg) {
+          left: 6px;
+
+          width: 14px;
+          height: 14px;
+        }
+
+        @media (max-width: $screen-sm) {
+          left: 4px;
+
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    .custom-radio:checked + .custom-radio__text::before {
+      opacity: 1;
+    }
+  }
+
+  /* sign up start */
+  &-sign-up {
+    .form__field {
+      margin-bottom: 15px;
+    }
+
+    .form__field-submit {
+      margin-top: 40px;
+      margin-bottom: 0;
+
+      a {
+        @media (max-width: $screen-sm) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: $screen-sm) {
+        margin-top: 20px;
+      }
+
+      @media (max-width: $screen-xs) {
+        margin-top: 0;
+      }
+
+      .btn-default {
+        width: 100%;
+        max-width: 100%;
+
+        @media (max-width: $screen-xs) {
+          padding: 7px 10px;
+        }
+      }
+    }
+
+    .form__agreement {
+      &-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+
+        color: $gray-dark;
+
+        @media (max-width: $screen-xs) {
+          display: block;
+
+          font-size: 12px;
+          line-height: 130%;
+        }
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+  /* sign up end */
+}
+
+.nice-select {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 50px 12px 30px;
+  margin-top: 10px;
+
+  @include default-text-light;
+  color: #aaaaaa;
+
+  border-radius: 50px;
+  border: 1px solid #cacaca;
+
+  @media (max-width: $screen-lg) {
+    height: 40px;
+    min-height: 40px;
+    padding: 12px 30px 12px 15px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $screen-xs) {
+    margin-bottom: 10px;
+  }
+
+  .list {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 12px;
+
+    .option {
+      padding: 12px 30px;
+      margin-bottom: 0;
+
+      @include default-text-light;
+      color: #aaaaaa;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #cacaca;
+      }
+
+      @media (max-width: $screen-lg) {
+        min-height: 32px;
+        padding: 7px 10px;
+
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &::after {
+    width: 13px;
+    height: 13px;
+    margin-top: -9px;
+    right: 25px;
+
+    border-bottom: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+
+    @media (max-width: $screen-lg) {
+      width: 9px;
+      height: 9px;
+      margin-top: -6px;
+      right: 15px;
+    }
+  }
+}
+
+.custom-switch {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+  max-width: 100%;
+  min-height: 47px;
+  max-height: 47px;
+  padding: 12px 15px;
+  margin-bottom: 0;
+
+  border: 1px solid #cacaca;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  @media (max-width: $screen-lg) {
+    align-items: center;
+    min-width: 85px;
+    min-height: 32px;
+    max-height: 32px;
+  }
+
+  .no {
+    text-align: right;
+    transition: opacity 0.1s;
+  }
+
+  .yes,
+  .no {
+    @include default-text;
+    color: #606060;
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .switch-handle {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+
+    background-color: #3f4862;
+    background-image: url("/dist/img/catalog/switch-no.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+
+    transition: left 0.2s;
+
+    @media (max-width: $screen-lg) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkbox:checked + .switch-handle {
+    left: 60px;
+
+    background-image: url("/dist/img/catalog/checked.svg"), $aqua;
+
+    @media (max-width: $screen-lg) {
+      left: 50px;
+    }
+  }
+
+  .checkbox:checked ~ .no {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,51 @@
+.callback {
+	&__text {
+		@include default-text-light();
+		color: $black-text;
+
+		a {
+			font-weight: 500;
+			color: $black-text;
+		}
+	}
+
+	&__social {
+		display: flex;
+		margin: 30px -7.5px 0;
+
+		@media (max-width: $screen-xs) {
+			margin: 15px -5px 0;
+		}
+
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			margin: 0 7.5px;
+
+			border-radius: 50px;
+			background: $gradient;
+			transition: all 0.2s ease-out;
+
+			@media (max-width: $screen-xs) { 
+				width: 30px;
+				height: 30px;
+				margin: 0 5px;
+			}
+
+			img {
+				width: 20px;
+
+				@media (max-width: $screen-xs) { 
+					width: 17px;
+				}	
+			}
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

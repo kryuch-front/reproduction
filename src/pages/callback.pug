@@ -1,0 +1,32 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+include ../blocks/block-profile-info/profile-info.pug
+
+block vars
+	- var page = 'callback';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Обратная связь", class: "current"}])
+	section.page.page-callback
+		.container
+			.row
+				.d-none.d-lg-block.col-lg-3
+					include ../blocks/profile-card/profile-card.pug
+					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
+				.col-12.col-lg-9
+					.callback
+						.callback__text
+							p По любым вопросам обращайтесь по телефону <a href="tel:+79829048525">+ 7 (982) 904-85-25</a> или по указанным каналам связи ниже
+						.callback__social
+							a(href="#").callback__social-item
+								img(src="/dist/img/ico/whatsapp-white.svg", alt="")
+							a(href="#").callback__social-item
+								img(src="/dist/img/ico/viber-vhite.svg", alt="")
+							a(href="#").callback__social-item
+								img(src="/dist/img/ico/vk-white.svg", alt="")
+							a(href="#").callback__social-item
+								img(src="/dist/img/ico/mail-white.svg", alt="")

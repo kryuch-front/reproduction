@@ -1,0 +1,185 @@
+extends ../pug/layout.pug
+//- mixins
+include ../blocks/breadcrumbs/breadcrumbs.pug
+
+block vars
+	- var page = 'sitemap';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Карта сайта", class: "current"}])
+	section.page.page-sitemap
+		.container
+			h2.page-title Карта сайта
+			.sitemap
+				.row
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item
+							.sitemap__item-title
+								span Родителям
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа суррогатного материнства
+									span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Программа суррогатного материнства
+									a(href="#").sitemap__item-cat-item Этапы программы сур. материнства
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа донорства ооцитов
+									span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Показания к донорству ооцитов
+									a(href="#").sitemap__item-cat-item Этапы программы донорства ооцитов
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item
+							.sitemap__item-title
+								span Суррогатным мамам
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа суррогатного материнства
+										span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Программа суррогатного материнства
+									a(href="#").sitemap__item-cat-item Этапы программы сур. материнства
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа донорства ооцитов
+										span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Показания к донорству ооцитов
+									a(href="#").sitemap__item-cat-item Этапы программы донорства ооцитов
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item
+							.sitemap__item-title
+								span Донорам ооцитов
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа суррогатного материнства
+									span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Программа суррогатного материнства
+									a(href="#").sitemap__item-cat-item Этапы программы сур. материнства
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ суррогатного материнства в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Программа донорства ооцитов
+									span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Показания к донорству ооцитов
+									a(href="#").sitemap__item-cat-item Этапы программы донорства ооцитов
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+									a(href="#").sitemap__item-cat-item.sitemap__item-subcat Виды программ донорства ооцитов в Москве
+										span.sitemap-arrow.js-sitemap
+										.sitemap__item-subcat-wrap
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Эконом»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Стандарт»
+											a(href="#").sitemap__item-cat-item.sitemap__item-subcat-item Программа «Премиум»
+					.col-12.col-sm-6.d-lg-none
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item
+							.sitemap__item-title
+								span О компании
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name О нас
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Преимущества и гарантии
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Клиники и партнеры
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Блог
+									span.sitemap-arrow.js-sitemap
+								.sitemap__item-cat-wrap
+									a(href="#").sitemap__item-cat-item Детальная страница блога
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Отзывы
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item
+							.sitemap__item-title.d-none.d-lg-block
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Контакты
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Ошибка 404
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Карта сайта
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Политика конфиденциальности
+							.sitemap__item-cat 
+								a(href="#").sitemap__item-cat-name Согласие на обработку персональных данных
+					.col-12.col-sm-6.col-lg-4
+						.sitemap__item.sitemap-contacts
+							.sitemap__item-title
+								span Контакты
+							.sitemap-contacts__addr г.Тюмень, ул. Осипенко
+							.sitemap-contacts-social
+								a(href="#").sitemap-contacts-social-item
+									img(src="/dist/img/ico/whatsapp-white.svg", alt="")
+								a(href="#").sitemap-contacts-social-item
+									img(src="/dist/img/ico/viber-vhite.svg", alt="")
+								a(href="#").sitemap-contacts-social-item
+									img(src="/dist/img/ico/vk-white.svg", alt="")
+								a(href="#").sitemap-contacts-social-item
+									img(src="/dist/img/ico/mail-white.svg", alt="")
+							.sitemap-contacts__btn
+								a(href="#").btn-default Заказать обратный звонок
+					

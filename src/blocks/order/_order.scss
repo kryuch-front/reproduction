@@ -1,0 +1,47 @@
+.form-order {
+
+	.form__field-submit {
+		.btn-aqua {
+			width: 100%;
+			max-width: 530px;
+			padding: 12px 30px;
+			border: 1px solid transparent;
+
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+
+			border-radius: 50px;
+
+			@media (max-width: $screen-xs) {
+				padding: 7px 10px;
+				font-size: 14px;
+			}
+		}
+
+		&--donor  {
+			.btn-aqua {
+				max-width: 360px;
+			}
+		}
+
+		&--request {
+			.btn-aqua {
+				max-width: 360px;
+			}
+		}
+	}
+}
+
+.page-order__bg {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+
+	display: none;
+	
+	img {
+		width: 800px;
+	}
+}

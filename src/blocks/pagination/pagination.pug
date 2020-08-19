@@ -1,0 +1,12 @@
+mixin pagination(maxpage)
+	- var i = 1;
+	.custom-pagination
+		.custom-pagination__wrap
+			span.custom-pagination__arrow.custom-pagination__arrow--left
+			while i <= maxpage
+				if i == 1
+					a(href="").custom-pagination__page.custom-pagination__page--current=i
+				else
+					a(href="").custom-pagination__page=i
+				-i++
+			span.custom-pagination__arrow.custom-pagination__arrow--right
