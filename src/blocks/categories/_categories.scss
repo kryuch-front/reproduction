@@ -20,6 +20,10 @@
     justify-content: flex-end;
     flex-direction: column;
 
+    @media (max-width: $screen-xs) {
+      padding: 30px 20px;
+    }
+
     &:hover &-bg img {
       transform: scale(1.2);
       filter: brightness(0.5);
@@ -48,6 +52,10 @@
       position: relative;
       z-index: 1;
       transform: translateY(calc(100% - 50px));
+
+      @media (max-width: $screen-xs) {
+        transform: none;
+      }
     }
 
     &-mainlink {
@@ -58,13 +66,19 @@
       margin-bottom: 15px;
 
       @media (max-width: $screen-xs) {
-        font-size: 26px;
+        font-size: 20px;
+        line-height: 1.3;
       }
     }
 
     &-links_list {
       opacity: 0;
       transition: all 0.2s ease-out;
+
+      @media (max-width: $screen-xs) {
+        opacity: 1;
+        line-height: 1.3;
+      }
     }
 
     &:hover &-links_list {
@@ -74,6 +88,11 @@
     &-link {
       display: block;
       margin-bottom: 5px;
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
     }
 
     &-links {

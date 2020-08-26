@@ -30,13 +30,13 @@
             <div class="main-header__top">
                 <div class="container">
                     <div class="main-header__top-list">
-                        <div class="main-header__top-logo">
+                        <a class="main-header__top-logo" href="/">
                             <img src="/dist/img/logo.svg" alt="">
-                        </div>
+                        </a>
                         <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
                         <div class="main-header__top-phone d-none d-xl-block">
                             <div class="main-header__top-phone_part">
-                                <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="https://wa.me/89224730888">
+                                <a class="main-header__top-socials_item main-header__top-socials_item--transparent" href="https://wa.me/89224730888">
                                     <img src="/dist/img/ico/whatsapp-original.svg" alt="">
                                 </a>
                             </div>
@@ -53,8 +53,7 @@
             <div class="main-header__menu">
                 <div class="container">
                     <div class="row">
-                        <hr class="main-header__menu-hr">
-                        <div class="col-xl-9 col-lg-12 d-none d-lg-block">
+                        <div class="col-xl-9 col-lg-9 d-none d-lg-block">
                             <div class="main-header__menu-list">
                                 <a class="main-header__menu-item" href="#">Родителям</a>
                                 <a class="main-header__menu-item" href="#">Донорам яйцеклеток</a>
@@ -62,19 +61,19 @@
                                 <a class="main-header__menu-item" href="#">Об агенстве</a>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-12 d-none d-lg-block">
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="main-header__top-socials d-none d-md-flex">
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//vk.com" target="_blank">
-                                    <img src="/dist/img/ico/vk-original.svg" alt="">
+                                    <img src="/dist/img/ico/vk-gradient.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//instagram.com" target="_blank">
-                                    <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                    <img src="/dist/img/ico/instagram-gradient.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//ok.ru" target="_blank">
                                     <img src="/dist/img/ico/envelope.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//youtube.com" target="_blank">
-                                    <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                    <img src="/dist/img/ico/youtube-gradient.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -91,7 +90,7 @@
                         <a class="js-banner-scroll btn-arrow" href="#"></a>
                     </div>
                 </div>
-                <div class="main-adv d-none d-sm-block">
+                <div class="main-adv d-none d-sm-none d-md-block">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-3">
@@ -182,15 +181,16 @@
                                 <div class="programm-card__price">
                                     <span>100 000 руб.</span>
                                 </div>
-                                <div class="programm-card__desc">Самый большой плюс этой программы – это её бюджетность. <strong>Суть программы в том, что все яйцеклетки, полученные у Донора, делятся поровну между двумя реципиентами.</strong>
-                                </div>
-                                <a class="programm-card__more" href="#info-tabs-1" data-toggle="collapse" aria-expanded="true" role="button">Что включено в стоимость услуги:</a>
-                                <div class="faq-tabs__item-text collapse show" id="info-tabs-1" data-parent="#faq-item-parent">
+                                <a class="programm-card__more" href="#info-tabs-1" data-toggle="collapse" aria-expanded="false" role="button">Что включено в стоимость услуги:</a>
+                                <div class="faq-tabs__item-text collapse" id="info-tabs-1" data-parent="#faq-item-parent">
                                     <ul class="programm-card__list">
-                                        <li>подбор донора из базы менеджером по фотографии</li>
-                                        <li>консультации по предоставляемой услуге</li>
-                                        <li>оплата приёмов до начала стимуляции</li>
-                                        <li>Медицинское обследование выбранного донора в соответствии с приказом №107МЗ РФ, в том числе генетические исследования</li>
+                                        <li>Работа менеджера по поиску и подбору</li>
+                                        <li>Юридическое сопровождение и консультации</li>
+                                        <li>Предоставление проработанного договора между суррогатной мамой и родителями с учётом всех рисков и обязательств</li>
+                                        <li>Предоставление личного куратора 24/7 до получения результата наступления (не наступления) беременности</li>
+                                        <li>Оплата всех приёмов суррогатной мамы у врача до начала программы подготовки эндометрия</li>
+                                        <li>Транспортные расходы суррогатной мамы (в пределах города, области, края) до начала программы подготовки эндометрия</li>
+                                        <li>Расходы по замене суррогатной мамы до переноса эмбрионов, если это потребуется (неограниченное количество раз). Замена может потребоваться в ситуации, если сурмама не прошла по результатам анализов, повела себя недобросовестно, скрыла важную информацию, которая влияет на возможность участия в программе, передумала, заболела, оказалась мошенницей, начала конфликтовать и т.д.</li>
                                     </ul>
                                 </div>
                                 <div class="programm-card__button">
@@ -207,14 +207,15 @@
                                 <div class="programm-card__price">
                                     <span>350 000 руб.</span>
                                 </div>
-                                <div class="programm-card__desc">Самый большой плюс этой программы – это её бюджетность. <strong>Суть программы в том, что все яйцеклетки, полученные у Донора, делятся поровну между двумя реципиентами.</strong>
+                                <a class="programm-card__more" href="#info-tabs-2" data-toggle="collapse" aria-expanded="false" role="button">Что включено в стоимость услуги:</a>
+                                <div class="faq-tabs__item-text collapse" id="info-tabs-2" data-parent="#faq-item-parent">
+                                    <ul class="programm-card__list">
+                                        <li>Подбор суррогатной мамы из вашего города или региона </li>
+                                        <li>Юридическое сопровождение и консультации на протяжении всего периода беременности </li>
+                                        <li>Предоставление личного куратора 24/7 на весь период беременности</li>
+                                    </ul>
+                                    <p>Куратор осуществляет полный контроль исполнения обязательств, относительно образа жизни и условий проживания сурмамы, помогает в различных бытовых ситуациях, предоставляет периодический финансовый отчет о текущих и дополнительных расходах, а так же может зафиксировать факты нарушений суррогатной матерью условий договора. Куратор может помочь в организации услуг по ведению беременности и родовспоможению и, в дальнейшем, по оформлению документов на родившегося ребенка.</p>
                                 </div>
-                                <ul class="programm-card__list">
-                                    <li>подбор донора из базы менеджером по фотографии</li>
-                                    <li>консультации по предоставляемой услуге</li>
-                                    <li>оплата приёмов до начала стимуляции</li>
-                                    <li>Медицинское обследование выбранного донора в соответствии с приказом №107МЗ РФ, в том числе генетические исследования</li>
-                                </ul>
                                 <div class="programm-card__button">
                                     <a class="btn-aqua" href="#">Оставить заявку</a>
                                 </div>
@@ -225,18 +226,43 @@
                                 <img src="/dist/img/programm_desc/programm2.jpg" alt="">
                             </div>
                             <div class="programm-card__info">
-                                <div class="programm-card__name">Программы с индивидуальным подбором</div>
+                                <div class="programm-card__name">Подбор суррогатной мамы из вашего города или регионас полным сопровождением</div>
                                 <div class="programm-card__price">
-                                    <span>350 000 руб.</span>
+                                    <span>2 000 000 руб.</span>
                                 </div>
-                                <div class="programm-card__desc">Самый большой плюс этой программы – это её бюджетность. <strong>Суть программы в том, что все яйцеклетки, полученные у Донора, делятся поровну между двумя реципиентами.</strong>
+                                <a class="programm-card__more" href="#info-tabs-3" data-toggle="collapse" aria-expanded="false" role="button">Что включено в стоимость услуги:</a>
+                                <div class="faq-tabs__item-text collapse" id="info-tabs-3" data-parent="#faq-item-parent">
+                                    <ul class="programm-card__list">
+                                        <li>Подбор суррогатной мамы из вашего города или региона с курированием на протяжении всей беременности</li>
+                                        <li>Полный спектр консультационных, финансовых, юридических и организационных услуг до полного завершения программы, в том числе оплата медикаментозного обеспечения, медицинских услуг по ведению беременности, сервисные роды. </li>
+                                    </ul>
                                 </div>
-                                <ul class="programm-card__list">
-                                    <li>подбор донора из базы менеджером по фотографии</li>
-                                    <li>консультации по предоставляемой услуге</li>
-                                    <li>оплата приёмов до начала стимуляции</li>
-                                    <li>Медицинское обследование выбранного донора в соответствии с приказом №107МЗ РФ, в том числе генетические исследования</li>
-                                </ul>
+                                <div class="programm-card__button">
+                                    <a class="btn-aqua" href="#">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="programm-card">
+                            <div class="programm-card__image">
+                                <img src="/dist/img/programm_desc/programm2.jpg" alt="">
+                            </div>
+                            <div class="programm-card__info">
+                                <div class="programm-card__name">Программы с индивидуальными условиями подбора</div>
+                                <div class="programm-card__price">
+                                    <a class="btn-default" href="#">Узнать стоимость</a>
+                                </div>
+                                <a class="programm-card__more" href="#info-tabs-4" data-toggle="collapse" aria-expanded="false" role="button">Что включено в стоимость услуги:</a>
+                                <div class="faq-tabs__item-text collapse" id="info-tabs-4" data-parent="#faq-item-parent">
+                                    <p>К нам часто обращаются родители, целью которых является получение услуг по подбору и сопровождению, но по цене региона.Например:</p>
+                                    <ul class="programm-card__list">
+                                        <li>Родители проживают в Москве или Санкт-Петербурге, суррогатная мама нужна из любого или определенного региона России, подсадка и роды в Москве или Спб (нахождение первый и последний месяц беременности в городе проживания родителей)</li>
+                                        <li>Родители проживают в регионе, подсадка в клинике другого города, сурмама нужна из региона проживания родителей</li>
+                                        <li>Родители иностранцы, подсадка в регионе, сурмама нужна из региона, где есть наш филиал, с полным сопровождением или курированием</li>
+                                        <li>Родители хотят остаться «инкогнито», программа с полным сопровождением и без личного контакта</li>
+                                        <li>Другие программы</li>
+                                    </ul>
+                                    <p>Если ваша программа имеет ряд особенностей, свяжитесь с нами для уточнения цены и условий подбора.</p>
+                                </div>
                                 <div class="programm-card__button">
                                     <a class="btn-aqua" href="#">Оставить заявку </a>
                                 </div>
@@ -516,22 +542,20 @@
                             <a class="main-footer__phone_num" href="tel:88005001088">8-800-500-10-88</a>
                             <div class="main-footer__phone_desc">Бесплатный номер РФ</div>
                         </div>
-                        <div class="main-footer__phone">
-                            <a class="main-footer__phone_num" href="tel:89224730888">8-922-473-08-88</a>
-                        </div>
+                        <div class="main-footer__phone"></div>
                         <div class="main-footer__adress">г.Тюмень, ул. Осипенко</div>
                         <div class="main-footer__socials">
                             <a class="socials_item" href="//vk.com" target="_blank">
-                                <img src="/dist/img/ico/vk-original.svg" alt="">
+                                <img src="/dist/img/ico/vk-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//instagram.com" target="_blank">
-                                <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                <img src="/dist/img/ico/instagram-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//ok.ru" target="_blank">
-                                <img src="/dist/img/ico/envelope.svg" alt="">
+                                <img src="/dist/img/ico/envelope-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//youtube.com" target="_blank">
-                                <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                <img src="/dist/img/ico/youtube-white.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -625,13 +649,13 @@
                 <div class="main-header__top">
                     <div class="container">
                         <div class="main-header__top-list">
-                            <div class="main-header__top-logo main-header__top-logo--dark">
+                            <a class="main-header__top-logo main-header__top-logo--dark" href="/">
                                 <img src="/dist/img/logo.svg" alt="">
-                            </div>
+                            </a>
                             <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
                             <div class="main-header__top-phone d-none d-xl-block">
                                 <div class="main-header__top-phone_part">
-                                    <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="https://wa.me/89224730888">
+                                    <a class="main-header__top-socials_item main-header__top-socials_item--transparent" href="https://wa.me/89224730888">
                                         <img src="/dist/img/ico/whatsapp-original.svg" alt="">
                                     </a>
                                 </div>
@@ -721,16 +745,16 @@
                                     <div class="modal-menu__category-item">г.Тюмень, ул. Осипенко</div>
                                     <div class="main-header__top-socials footer-modifier">
                                         <a class="main-header__top-socials_item" href="//vk.com" target="_blank">
-                                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                                            <img src="/dist/img/ico/vk-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//instagram.com" target="_blank">
-                                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                            <img src="/dist/img/ico/instagram-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//ok.ru" target="_blank">
-                                            <img src="/dist/img/ico/envelope.svg" alt="">
+                                            <img src="/dist/img/ico/envelope-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//youtube.com" target="_blank">
-                                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                            <img src="/dist/img/ico/youtube-white.svg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn-default main-header__menu-btn" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>
@@ -754,10 +778,7 @@
                     <a class="modal-city__item" href="#">Ростов-на-Дону</a>
                     <a class="modal-city__item" href="#">Волгоград</a>
                     <a class="modal-city__item" href="#">Воронеж</a>
-                    <a class="modal-city__item" href="#">Саратов</a>
-                    <a class="modal-city__item" href="#">Благовещенск</a>
-                    <a class="modal-city__item" href="#">Хабаровск</a>
-                    <a class="modal-city__item" href="#">Владивосток</a>
+                    <a class="modal-city__item" href="#">Белгород</a>
                 </div>
             </div>
         </div>
@@ -889,16 +910,16 @@
                     <div class="mobile-menu__adress">г.Тюмень, ул. Осипенко</div>
                     <div class="mobile-menu__socials">
                         <a class="socials_item" href="//vk.com" target="_blank">
-                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                            <img src="/dist/img/ico/vk-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//instagram.com" target="_blank">
-                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                            <img src="/dist/img/ico/instagram-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//ok.ru" target="_blank">
-                            <img src="/dist/img/ico/envelope.svg" alt="">
+                            <img src="/dist/img/ico/envelope-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//youtube.com" target="_blank">
-                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                            <img src="/dist/img/ico/youtube-white.svg" alt="">
                         </a>
                     </div>
                     <a class="btn-default" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>

@@ -19,10 +19,10 @@ block content
 		.container
 			h1.catalog__title Выбор суррогатной мамы
 			p Расставьте пожалуйста девушек по приоритету, начиная с той, кто нравится больше.
-			p Вы можете передвигать кандидаток, удерживая анкету правой кнопкой мыши на компьютере или при помощи пальца на мобильной версии.
+			p Вы можете передвигать кандидаток, удерживая анкету левой кнопкой мыши на компьютере или при помощи пальца на мобильной версии.
 
 			.selected-mother__form
-				.row
+				.row.js-sortable
 					- var i = 0;
 					while i < 5
 						.col-12.col-sm-6.col-md-4.col-xl-3
@@ -35,4 +35,8 @@ block content
 							+cardSwitch("1002-"+i,["/dist/img/catalog/mom3.jpg","/dist/img/catalog/mom1.jpg","/dist/img/catalog/mom2.jpg","/dist/img/catalog/mom4.jpg","/dist/img/catalog/mom5.jpg"],"Антонова Ульяна Виталиевна", "Тюмень", "24 года")
 						- i++
 
-			
+	block modal
+		include ../blocks/modal-mother-full-card/modal-mother-full-card.pug				
+
+	block modal 
+		include ../blocks/modal-video/modal-video.pug

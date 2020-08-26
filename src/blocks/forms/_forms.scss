@@ -45,6 +45,10 @@
       align-items: center;
       margin-top: 35px;
 
+      @media (max-width: $screen-sm) {
+        justify-content: space-between;
+      }
+
       @media (max-width: $screen-lg) {
         margin-top: 20px;
       }
@@ -193,6 +197,13 @@
         @media (max-width: $screen-lg) {
           height: 40px;
           padding: 10px 20px;
+          margin: 20px 0;
+        }
+
+        @media (max-width: $screen-sm) {
+          height: 40px;
+          padding: 10px 20px;
+          margin: 0;
         }
       }
     }
@@ -387,6 +398,12 @@
 
     @media (max-width: $screen-lg) {
       padding: 7px 10px;
+      height: 40px;
+      max-height: 40px;
+    }
+
+    @media (max-width: $screen-md) {
+      padding: 10px;
       height: 40px;
       max-height: 40px;
     }

@@ -25,6 +25,11 @@
 
     @media (max-width: $screen-md) {
       width: auto;
+      margin: 0 auto 50px auto;
+    }
+
+    @media (max-width: $screen-xs) {
+      margin: 0 auto 20px auto;
     }
 
     &-img {
@@ -86,13 +91,10 @@
     @media (max-width: $screen-lg) {
       width: 595px;
     }
+
     @media (max-width: $screen-md) {
-      width: calc(100% - 310px);
-    }
-    @media (max-width: $screen-xs) {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 20px;
+      margin: 0 auto;
+      width: 80%;
     }
 
     form {
@@ -136,20 +138,19 @@
     }
 
     @media (max-width: $screen-md) {
+      position: relative;
+      margin: 40px auto 0 auto;
+      width: 100%;
+      justify-content: center;
       flex-direction: row;
-      left: 0;
-      bottom: 10px;
-      top: unset;
-      right: unset;
-      width: 270px;
-      justify-content: space-around;
+
+      a {
+        margin: 0 15px;
+      }
     }
 
-    @media (max-width: $screen-xs) {
-      position: relative;
-      margin-top: 40px;
-      margin-left: auto;
-      margin-right: auto;
+    @media (max-width: $screen-md) {
+      margin: 0 auto 0 auto;
     }
   }
 }

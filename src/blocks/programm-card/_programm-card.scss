@@ -95,6 +95,12 @@
 
     @include heading4;
     font-size: 20px;
+
+    @media (max-width: $screen-md) {
+      font-size: 18px;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
   }
 
   &__price {
@@ -109,10 +115,8 @@
 
     @media (max-width: $screen-md) {
       position: static;
-    }
-
-    @media (max-width: $screen-xs) {
-      margin: 5px 0 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
     }
 
     span {
@@ -165,7 +169,7 @@
       }
 
       @media (max-width: $screen-md) {
-        margin: 10px 0 15px 0;
+        margin: 30px 0 15px 0;
       }
 
       @media (max-width: $screen-xs) {

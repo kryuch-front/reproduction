@@ -1,189 +1,202 @@
 .selected-mother {
-	margin: 60px 0;
+  margin: 60px 0;
 
-	@media (max-width: $screen-lg) {
-		margin: 40px 0;
-	}
+  @media (max-width: $screen-lg) {
+    margin: 40px 0;
+  }
 
-	&__title {
-		margin-bottom: 30px;
+  &__title {
+    margin-bottom: 30px;
 
-		@include default-text-light;
+    @include default-text-light;
 
-		@media (max-width: $screen-lg) {
-			margin-bottom: 15px;
+    @media (max-width: $screen-lg) {
+      margin-bottom: 15px;
 
-			font-size: 16px;
-		}
-	}
+      font-size: 16px;
+    }
+  }
 
-	&__form {
-		overflow: hidden;
-	}
+  &__form {
+    overflow: hidden;
+  }
 
-	&__close {
-		position: absolute;
-		top: 0;
-		right: 5px;
+  &__close {
+    // position: absolute;
+    // top: 0;
+    // right: 5px;
 
-		width: 20px;
-		height: 20px;
+    // width: 20px;
+    // height: 20px;
 
-		background-color: $fiord;
-		background-image: url('/dist/img/icon-close-white.svg');
-		background-size: 8px;
-		background-position: center center;
-		background-repeat: no-repeat;
-		border-radius: 100%;
-		opacity: 1;
+    // background-color: $fiord;
+    // background-image: url('/dist/img/icon-close-white.svg');
+    // background-size: 8px;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // border-radius: 100%;
+    // opacity: 1;
 
-		transition: all 0.2s ease-out;
-		cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    z-index: 5;
 
-		&:hover {
-			opacity: 0.8;
-		}
+    width: 30px;
+    height: 30px;
 
-		@media (max-width: $screen-lg) {
-			right: 0;
-		}
-	}
+    background-color: #3f4862;
+    background-image: url(/dist/img/icon-close-white.svg);
+    background-size: 11px;
+    background-position: center center;
+    background-repeat: no-repeat;
 
-	&__change {
-		position: absolute;
-		top: 50%;
-		right: 9px;
+    border-radius: 100%;
+    opacity: 1;
 
-		width: 11px;
-		height: 37px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 
-		background-image: url('/dist/img/change-arrow.svg');
-		background-size: contain;
-		background-position: center center;
-		background-repeat: no-repeat;
-		opacity: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 
-		transition: all 0.2s ease-out;
-		cursor: move;
+  &__change {
+    position: absolute;
+    top: 50%;
+    right: 9px;
 
-		&:hover {
-			opacity: 0.8;
-		}
+    width: 11px;
+    height: 37px;
 
-		@media (max-width: $screen-lg) {
-			right: 0;
-		}
-	}
+    background-image: url("/dist/img/change-arrow.svg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
 
-	&__item {
-		position: relative;
+    transition: all 0.2s ease-out;
+    cursor: move;
 
-		margin: 30px 0;
-		padding-right: 30px;
+    &:hover {
+      opacity: 0.8;
+    }
 
-		user-select: none; 
-		cursor: move;
+    @media (max-width: $screen-lg) {
+      right: 0;
+    }
+  }
 
-		@media (max-width: $screen-lg) {
-			margin: 15px 0;
-		}
+  &__item {
+    position: relative;
 
-		&-name {
-			margin-bottom: 10px;
+    margin: 30px 0;
+    padding-right: 30px;
 
-			@include small-text-normal;
-		}
+    user-select: none;
+    cursor: move;
 
-		&-info {
-			display: flex;
-			align-items: center;
-		}
+    @media (max-width: $screen-lg) {
+      margin: 15px 0;
+    }
 
-		&-photo {
-			position: relative;
-			overflow: hidden;
+    &-name {
+      margin-bottom: 10px;
 
-			width: 100px;
-			height: 100px;
-			margin-right: 18px;
+      @include small-text-normal;
+    }
 
-			border-radius: 100%;
+    &-info {
+      display: flex;
+      align-items: center;
+    }
 
-			@media (max-width: $screen-lg) {
-				width: 70px;
-				height: 70px;
-				margin-right: 15px;
-			}
+    &-photo {
+      position: relative;
+      overflow: hidden;
 
-			img {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
+      width: 100px;
+      height: 100px;
+      margin-right: 18px;
 
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		}
+      border-radius: 100%;
 
-		&--no-selected {
-			cursor: default;
+      @media (max-width: $screen-lg) {
+        width: 70px;
+        height: 70px;
+        margin-right: 15px;
+      }
 
-			.selected-mother__close {
-				display: none;
-			}
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-			.selected-mother__change {
-				opacity: 0.5;
-				cursor: default;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
 
-				&:hover {
-					opacity: 0.5;
-				}
-			}
-		}
-	}
+    &--no-selected {
+      cursor: default;
 
-	&__btn {
-		width: 100%;
-		position: relative;
-		margin-top: 50px;
+      .selected-mother__close {
+        display: none;
+      }
 
-		@media (max-width: $screen-lg) {
-			margin-top: 30px;
-		}
+      .selected-mother__change {
+        opacity: 0.5;
+        cursor: default;
 
-		.submit-aqua{ 
-			margin: 0 auto;
-		}
-		
-		.submit-aqua-hover {
-			margin: 0 auto;
-		}
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
 
-		.btn-aqua {
-			padding: 10px 10px;
-		}
-	}
+  &__btn {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
 
-	.profile-info {
-		width: auto;
-	}
+    @media (max-width: $screen-lg) {
+      margin-top: 30px;
+    }
 
-	&__text {
-		padding: 32px 30px;
+    .submit-aqua {
+      margin: 0 auto;
+    }
 
-		@include default-text-light();
-		line-height: 140%;
-		color: #000;
+    .submit-aqua-hover {
+      margin: 0 auto;
+    }
 
-		background: #FAFAFA;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.06);
-		border-radius: 10px;
+    .btn-aqua {
+      padding: 10px 10px;
+    }
+  }
 
-		@media (max-width: $screen-lg) {
-			padding: 20px 15px;
-		}
-	}
+  .profile-info {
+    width: auto;
+  }
+
+  &__text {
+    padding: 32px 30px;
+
+    @include default-text-light();
+    line-height: 140%;
+    color: #000;
+
+    background: #fafafa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+
+    @media (max-width: $screen-lg) {
+      padding: 20px 15px;
+    }
+  }
 }

@@ -1,130 +1,135 @@
 .custom-pagination {
-	margin-top: 50px;
+  margin-top: 50px;
 
-	@media (max-width: $screen-sm) {
-		margin-top: 25px;
-	}
+  @media (max-width: $screen-sm) {
+    margin-top: 0px;
+  }
 
-	&__wrap {
-		display: flex;
-	}
+  &__wrap {
+    display: flex;
 
-	&__page {
-		display: block;
-		width: 43px;
-		height: 43px;
+    @media (max-width: $screen-sm) {
+      justify-content: center;
+    }
+  }
 
-		@include heading5;
-		line-height: 43px;
-		text-align: center;
+  &__page {
+    display: block;
+    width: 43px;
+    height: 43px;
 
-		border-radius: 5px;
-		border: 1px solid #F5F5F5;
-		color: $black;
+    @include heading5;
+    line-height: 43px;
+    text-align: center;
 
-		transition: all 0.2s ease-out;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    color: $black;
 
-		&:not(:last-of-type) {
-			margin-right: 18px;
+    transition: all 0.2s ease-out;
 
-			@media (max-width: $screen-sm) {
-				margin-right: 5px;
-			}
-		}
+    &:not(:last-of-type) {
+      margin-right: 18px;
 
-		&:hover, &--current {
-			text-decoration: none;
+      @media (max-width: $screen-sm) {
+        margin-right: 5px;
+      }
+    }
 
-			background: $aqua;
-			color: $white;
-		}
+    &:hover,
+    &--current {
+      text-decoration: none;
 
-		@media (max-width: $screen-sm) {
-			width: 30px;
-			height: 30px;
+      background: $aqua;
+      color: $white;
+    }
 
-			font-size: 12px;
-			line-height: 30px;
-		}
-	}
+    @media (max-width: $screen-sm) {
+      width: 40px;
+      height: 40px;
 
-	&__arrow {
-		position: relative;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
 
-		display: block;
-		width: 43px;
-		height: 43px;
+  &__arrow {
+    position: relative;
 
-		line-height: 43px;
+    display: block;
+    width: 43px;
+    height: 43px;
 
-		border-radius: 5px;
-		border: 1px solid #F5F5F5;
-		cursor: pointer;
+    line-height: 43px;
 
-		@media (max-width: $screen-sm) {
-			width: 30px;
-			height: 30px;
-			
-			line-height: 30px;
-		}
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
 
-		&::after {
-			content: "";
+    @media (max-width: $screen-sm) {
+      width: 40px;
+      height: 40px;
 
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
+      line-height: 40px;
+    }
 
-			display: block;
-			width: 16px;
-			height: 16px;
+    &::after {
+      content: "";
 
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
-			transition: all 0.2s ease-out;
+      display: block;
+      width: 16px;
+      height: 16px;
 
-			@media (max-width: $screen-sm) {
-				width: 12px;
-				height: 12px;
-			}
-		}
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
 
-		&--left {
-			margin-right: 18px;
+      transition: all 0.2s ease-out;
 
-			@media (max-width: $screen-sm) {
-				margin-right: 5px;
-			}
+      @media (max-width: $screen-sm) {
+        width: 12px;
+        height: 12px;
+      }
+    }
 
-			&::after {
-				background-image: url('/dist/img/catalog/pagination-arrow-l.svg');
-			}
-		}
+    &--left {
+      margin-right: 18px;
 
-		&--right {
-			margin-left: 18px;
+      @media (max-width: $screen-sm) {
+        margin-right: 5px;
+      }
 
-			@media (max-width: $screen-sm) {
-				margin-left: 5px;
-			}
+      &::after {
+        background-image: url("/dist/img/catalog/pagination-arrow-l.svg");
+      }
+    }
 
-			&::after {
-				background-image: url('/dist/img/catalog/pagination-arrow-r.svg');
-			}
-		}
+    &--right {
+      margin-left: 18px;
 
-		&:hover {
-			text-decoration: none;
+      @media (max-width: $screen-sm) {
+        margin-left: 5px;
+      }
 
-			background: $aqua;
-			color: $white;
+      &::after {
+        background-image: url("/dist/img/catalog/pagination-arrow-r.svg");
+      }
+    }
 
-			&::after {
-				filter: brightness(0) invert(1);
-			}
-		}
-	}
+    &:hover {
+      text-decoration: none;
+
+      background: $aqua;
+      color: $white;
+
+      &::after {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
 }

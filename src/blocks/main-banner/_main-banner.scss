@@ -63,7 +63,7 @@
     margin-bottom: 55px;
     display: none;
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-sm) {
       display: block;
     }
     @media (max-width: $screen-5s) {
@@ -84,6 +84,10 @@
   position: absolute;
   bottom: 60px;
   width: 100%;
+
+  @media (max-width: $screen-lg) {
+    bottom: 30px;
+  }
 
   &__item {
     &-title {

@@ -4,6 +4,10 @@
   position: relative;
   height: 100vh;
 
+  .main-header__top-city::before {
+    background: url(/dist/img/ico/location.svg) no-repeat center;
+  }
+
   &__bg {
     position: absolute;
     top: 0;
@@ -38,6 +42,31 @@
       background: linear-gradient(90deg, #6288e4 0%, #ab86e4 100%);
       padding: 20px;
       box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+
+      .main-header__top-city::before {
+        background: url(/dist/img/ico/location.svg) no-repeat center !important;
+      }
+
+      .main-header__top-city {
+        color: #ffffff;
+      }
+
+      .main-header__top-btn--original {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+        &::before {
+          background: url(/dist/img/ico/burger.svg) no-repeat center;
+        }
+      }
+
+      .main-header__top-phone_part {
+        a,
+        div {
+          color: #ffffff;
+        }
+      }
 
       @media (max-width: $screen-xs) {
         padding: 10px 0;
@@ -238,7 +267,7 @@
       &::before {
         content: "";
         position: absolute;
-        background: url("/dist/img/ico/location.svg") no-repeat center;
+        background: url("/dist/img/ico/location-black.svg") no-repeat center;
         width: 18px;
         height: 26px;
         left: -32px;
@@ -330,11 +359,19 @@
         display: none;
       }
     }
+
+    .main-header__top-city::before {
+      background: url(/dist/img/ico/location-black.svg) no-repeat center;
+    }
   }
 
   &--programm {
     .main-banner__btn {
       max-width: 530px;
+    }
+
+    .main-header__top-city::before {
+      background: url(/dist/img/ico/location.svg) no-repeat center;
     }
   }
 }

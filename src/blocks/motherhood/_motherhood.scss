@@ -54,7 +54,7 @@
   }
 
   &-steps {
-    background: url("/dist/img/spermagoal.png") no-repeat left;
+    // background: url("/dist/img/spermagoal.png") no-repeat left;
     &__list {
       margin-bottom: 50px;
       &-item {
@@ -108,6 +108,30 @@
         &__text {
           text-align: center;
         }
+
+        @media (max-width: $screen-sm) {
+          width: 70%;
+          margin: 25px auto;
+          padding: 0;
+          border: none;
+          border-radius: 0;
+          min-height: auto;
+
+          &:hover {
+            // border: 1px solid #d5d5d5;
+            background-color: #ffffff;
+            box-shadow: none;
+          }
+        }
+
+        @media (max-width: $screen-xs) {
+          width: 100%;
+          margin: 25px auto;
+          padding: 0;
+          border: none;
+          border-radius: 0;
+          min-height: auto;
+        }
       }
     }
 
@@ -124,7 +148,7 @@
 .text-block {
   position: relative;
   background-size: cover;
-  padding: 50px 0;
+  padding: 100px 0;
   // margin-bottom: 100px;
   // min-height: 300px;
   overflow: hidden;
@@ -186,6 +210,8 @@
 
 .video-block {
   margin-bottom: 50px;
+  width: 100%;
+  height: auto;
 }
 
 .info-block {
@@ -208,6 +234,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $screen-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .programm-card__name {
     margin: 0;

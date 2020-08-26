@@ -22,18 +22,14 @@
         <link href="dist/css/main.css" rel="stylesheet">
     </head>
     <body>
-        <header class="main-header main-header--programm">
-            <div class="main-header__bg d-none d-md-block">
-                <img src="/dist/img/programm_desc/baner_bg3.jpg" alt="">
-            </div>
-            <div class="main-header__bg mobile"></div>
+        <header class="main-header main-header--bg">
             <div class="main-header__top">
                 <div class="container">
                     <div class="main-header__top-list">
                         <a class="main-header__top-logo" href="/">
-                            <img src="/dist/img/logo.svg" alt="">
+                            <img src="/dist/img/logo-gradient.svg" alt="">
                         </a>
-                        <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
+                        <a class="main-header__top-city color-fiord" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
                         <div class="main-header__top-phone d-none d-xl-block">
                             <div class="main-header__top-phone_part">
                                 <a class="main-header__top-socials_item main-header__top-socials_item--transparent" href="https://wa.me/89224730888">
@@ -41,12 +37,11 @@
                                 </a>
                             </div>
                             <div class="main-header__top-phone_part">
-                                <a class="main-header__top-phone_num" href="tel:88005001080">8-800-500-10-88</a>
-                                <div class="main-header__top-phone_desc">Бесплатный номер РФ</div>
+                                <a class="main-header__top-phone_num color-fiord" href="tel:88005001080">8-800-500-10-88</a>
+                                <div class="main-header__top-phone_desc color-fiord">Бесплатный номер РФ</div>
                             </div>
                         </div>
-                        <a class="js-btn-modal-menu main-header__top-btn d-none d-sm-flex" href="#">меню</a>
-                        <a class="js-mobile-menu main-header__top-btn d-block d-sm-none" href="#">меню</a>
+                        <a class="js-btn-modal-menu main-header__top-btn--original" href="#">меню</a>
                     </div>
                 </div>
             </div>
@@ -79,53 +74,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-banner">
-                    <div class="container">
-                        <div class="main-banner__img">
-                            <img src="/dist/img/baby-mobile.png" alt="">
-                        </div>
-                        <div class="main-banner__title">Этапы программы сурогатного материнства</div>
-                        <div class="main-banner__text">Агенство донорства яйцеклеток и суррогатного материнства с 12-летним опытом. Работаем по России в Тюмени, Екатеринбурге, Кургане, Краснодаре и другихгородах России</div>
-                        <a class="btn-default main-banner__btn" href="#">Нужна помощь в подборе программы</a>
-                        <a class="js-banner-scroll btn-arrow" href="#"></a>
-                    </div>
-                </div>
-                <div class="main-adv d-none d-sm-none d-md-block">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="main-adv__item">
-                                    <div class="main-adv__item-title">
-                                        <span data-start="1">13</span>&nbsp; лет
-                                    </div>
-                                    <div class="main-adv__item-text">боремся с бесплодием</div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="main-adv__item">
-                                    <div class="main-adv__item-title">
-                                        <span data-start="1">11</span>&nbsp; городов
-                                    </div>
-                                    <div class="main-adv__item-text">присутствия</div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="main-adv__item">
-                                    <div class="main-adv__item-title">>&nbsp;<span data-start="1000">3000</span>&nbsp; кандидатов</div>
-                                    <div class="main-adv__item-text">в каталоге</div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="main-adv__item">
-                                    <div class="main-adv__item-title">
-                                        <span data-start="1000">0</span>&nbsp; руб предоплата
-                                    </div>
-                                    <div class="main-adv__item-text">оплата по финишу</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </header>
         <main>
@@ -136,150 +84,304 @@
                             <a class="undefined breadcrumbs__link" href="#">Главная</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="undefined breadcrumbs__link" href="#">Родителям</a>
+                            <a class="undefined breadcrumbs__link" href="#">Личный кабинет</a>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a class="current breadcrumbs__link" href="#">Виды программ сурогатного материнства</a>
+                            <a class="current breadcrumbs__link" href="#">Редактирование профиля</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <section class="page page-programm">
+            <section class="catalog page">
                 <div class="container">
-                    <div class="row">
-                        <div class="d-none d-lg-block col-lg-3">
-                            <div class="sidebar-menu">
-                                <ul class="sidebar-menu__list">
-                                    <li class="sidebar-menu__item undefined">
-                                        <a class="sidebar-menu__link" href="#">Показания к сур.материнству</a>
-                                    </li>
-                                    <li class="sidebar-menu__item current">
-                                        <a class="sidebar-menu__link" href="#">Этапы программы сур.материнства</a>
-                                    </li>
-                                    <li class="sidebar-menu__item undefined">
-                                        <a class="sidebar-menu__link" href="#">Виды программ сурогатного материнства</a>
-                                    </li>
-                                    <li class="sidebar-menu__item sidebar-menu__item--icon">
-                                        <img src="/dist/img/programm_desc/anketa.svg" alt="" />
-                                        <a class="sidebar-menu__link" href="#">Анкета будущих родителей</a>
-                                    </li>
-                                    <li class="sidebar-menu__item sidebar-menu__item--icon">
-                                        <img src="/dist/img/programm_desc/lk.svg" alt="" />
-                                        <a class="sidebar-menu__link" href="#">Личный кабинет</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="anonymous-consultation">
-                                <div class="anonymous-consultation__title">Анонимная консультация</div>
-                                <div class="anonymous-consultation__text">Вас проконсультирует руководитель компании</div>
-                                <div class="anonymous-consultation__person">
-                                    <div class="anonymous-consultation__person-name">Екатерина Минеева</div>
-                                    <div class="anonymous-consultation__person-image">
-                                        <img src="/dist/img/programm_desc/consultant.jpg" alt="">
-                                    </div>
-                                    <div class="anonymous-consultation__person-info">
-                                        <div class="anonymous-consultation__person-text">
-                                            <p>Более 12 лет опыта</p>
-                                            <p>Имеет юридическое образование</p>
+                    <h1 class="catalog__title">Выбор суррогатной мамы</h1>
+                    <p>Расставьте пожалуйста девушек по приоритету, начиная с той, кто нравится больше.</p>
+                    <p>Вы можете передвигать кандидаток, удерживая анкету левой кнопкой мыши на компьютере или при помощи пальца на мобильной версии.</p>
+                    <div class="selected-mother__form">
+                        <div class="row js-sortable">
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="3003-T7-0">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                         </div>
-                                        <a class="anonymous-consultation__person-phone" href="tel:+79621234556">
-                                            <img src="/dist/img/phone-gradient.svg" alt="">
-                                            <span>+7(962) 123-45-56</span>
-                                        </a>
-                                        <div class="anonymous-consultation__person-social">
-                                            <a class="anonymous-consultation__person-social-item" href="#">
-                                                <img src="/dist/img/ico/whatsapp-white.svg" alt="">
-                                            </a>
-                                            <a class="anonymous-consultation__person-social-item" href="#">
-                                                <img src="/dist/img/ico/viber-vhite.svg" alt="">
-                                            </a>
-                                            <a class="anonymous-consultation__person-social-item" href="#">
-                                                <img src="/dist/img/ico/vk-white.svg" alt="">
-                                            </a>
-                                            <a class="anonymous-consultation__person-social-item" href="#">
-                                                <img src="/dist/img/ico/mail-white.svg" alt="">
-                                            </a>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <div class="profile-name">Самсонова Таисия Евгеньевна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">3003-T7-0</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-callback">
-                                    <form class="form">
-                                        <div class="form-callback__field">
-                                            <div class="form-callback__field-name">Ваш номер телефона</div>
-                                            <input class="form-input js-phone-mask" type="tel" placeholder="+7 (___) ___-__-__">
-                                        </div>
-                                        <div class="form-callback__field-submit">
-                                            <a class="btn-aqua" href="">Заказать звонок</a>
-                                        </div>
-                                    </form>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-9">
-                            <h2 class="page-title">Этапы программы сурогатного материнства</h2>
-                            <div class="page-content">
-                                <p>Счастье материнства – лучшее из того, что природа дарит женщине. Дети — это не только положительные эмоции, которые мы получаем буквально каждый день, но и в какой-то степени смысл нашего существования.</p>
-                                <div class="list-steps">
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">1</div>
-                                        <div class="list-steps__item-text">Вы связывайтесь с нами по телефону, электронной почте, заполненной заявке на подбор или через сообщение на сайте. При получении заявки на подбор с вами свяжется наш менеджер, проконсультирует вас по интересующим вопросам</div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="1001-1">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                        </div>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
                                     </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">2</div>
-                                        <div class="list-steps__item-text">
-                                            <strong>ВНИМАНИЕ! ЗАЯВКА НА ПОДБОР – ОБЯЗАТЕЛЬНА!</strong> совместно подбираем кандидатуру суррогатной матери под ваши условия
+                                    <div class="profile-info">
+                                        <div class="profile-name">Макарова Татьяна Борисовна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">1001-1</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
                                         </div>
                                     </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">3</div>
-                                        <div class="list-steps__item-text">Далее мы ведём выбранную Вами кандидатку на консультацию и узи к Вашему лечащему врачу-репродуктологу для оценки состояния её матки, на основании которого врач даёт предварительное заключение о её возможности вынашивания здорового ребенка</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">4</div>
-                                        <div class="list-steps__item-text">Если Ваш репродуктолог на основании УЗИ утверждает кандидатуру, мы оповещаем Вас об этом и начинаем подготовку девушки к программе. Под руководством нашего куратора суррогатная мама проходит комплексное медицинское обследование в соответствии с требованиями приказа МЗ РФ от 30.08.2012 № 107н «О порядке использования вспомогательных репродуктивных технологий, противопоказаниях и ограничениях к их применению». Мы следим за за выполнением кандидаткой всех назначений врача, своевременным прохождением обследований, приёмов и т.п.)</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">5</div>
-                                        <div class="list-steps__item-text">В случае если ваш врач откажет нашему кандидату, мы предоставим полноценную замену или возвращаемся к подбору</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">6</div>
-                                        <div class="list-steps__item-text">СМ проходит необходимое медицинское обследование, после чего врач назначает синхронизацию Вашего цикла с циклом СМ или донора яйцеклеток (в зависимости от программы);</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">7</div>
-                                        <div class="list-steps__item-text">Мы разрабатываем все юридические документы, необходимые в программе, согласовываем нюансы договорных отношений и Вы, с кандидаткой, подписываете Договор суррогатного материнства;</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">8</div>
-                                        <div class="list-steps__item-text">На момент начала подготовки СМ к подсадке эмбрионов мы подписываем Договор подбора и Вы рассчитываетесь с агентством;</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">9</div>
-                                        <div class="list-steps__item-text">На 18-22 день менструального цикла происходит подсадка эмбрионов в полость матки суррогатной матери;</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">10</div>
-                                        <div class="list-steps__item-text">Желаем вам удачи и ждём результата ХГЧ через 14 дней;</div>
-                                    </div>
-                                    <div class="list-steps__item">
-                                        <div class="list-steps__item-number">11</div>
-                                        <div class="list-steps__item-text">Вы так же можете взять у нас в агентстве «личного менеджера» для вашей СМ.</div>
-                                    </div>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
                                 </div>
                             </div>
-                            <div class="block-surrogate-request">
-                                <div class="block-surrogate-request__text">Хочу стать сурогатной мамой</div>
-                                <div class="block-surrogate-request__button">
-                                    <a class="btn-white" href="">
-                                        <span>Перейти к заполнению анкеты</span>
-                                    </a>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="1002-2">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                        </div>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <div class="profile-name">Антонова Ульяна Виталиевна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">1002-2</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
+                                        </div>
+                                    </div>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="3003-T7-3">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                        </div>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <div class="profile-name">Самсонова Таисия Евгеньевна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">3003-T7-3</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
+                                        </div>
+                                    </div>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="1001-4">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                        </div>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <div class="profile-name">Макарова Татьяна Борисовна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">1001-4</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
+                                        </div>
+                                    </div>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                <div class="card js-card-sort" data-id="1002-5">
+                                    <div class="card__top">
+                                        <div class="js-profile-photo-slider profile-photo card__slider">
+                                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                        </div>
+                                        <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                        <div class="selected-mother__close js-selected-mother__close"></div>
+                                    </div>
+                                    <div class="profile-info">
+                                        <div class="profile-name">Антонова Ульяна Виталиевна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">1002-5</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">24 года</div>
+                                        </div>
+                                    </div>
+                                    <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="modal fade modal-mother-full-card" id="show-mother-full-card" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mother-full-card">
+                                <img src="/dist/img/catalog/mom5.jpg">
+                                <div class="mother-full-card__info">
+                                    <div class="profile-info">
+                                        <div class="profile-name">Самсонова Таисия Евгеньевна</div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Id:</div>
+                                            <div class="profile-info__item-value">10001</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Город:</div>
+                                            <div class="profile-info__item-value">Тюмень</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Возраст:</div>
+                                            <div class="profile-info__item-value">23 года</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Национальность:</div>
+                                            <div class="profile-info__item-value">русская</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Рост:</div>
+                                            <div class="profile-info__item-value">158-160 см</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Вес:</div>
+                                            <div class="profile-info__item-value">65 кг</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Цвет волос:</div>
+                                            <div class="profile-info__item-value">Русый</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Цвет глаз:</div>
+                                            <div class="profile-info__item-value">Зеленый</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Образование:</div>
+                                            <div class="profile-info__item-value">Высшее</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Семейное положение:</div>
+                                            <div class="profile-info__item-value">не замужем</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Наличие детей:</div>
+                                            <div class="profile-info__item-value">Да</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Опыт участия в программе:</div>
+                                            <div class="profile-info__item-value">нет</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Группа крови:</div>
+                                            <div class="profile-info__item-value">2</div>
+                                        </div>
+                                        <div class="profile-info__item">
+                                            <div class="profile-info__item-name">Резус-фактор:</div>
+                                            <div class="profile-info__item-value">Положительный</div>
+                                        </div>
+                                    </div>
+                                    <a class="btn-aqua mother-full-card__add js-add-mother" href="" data-id="3003-T7-0" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года">Добавить в заявку</a>
+                                </div>
+                            </div>
+                            <div class="mother-full-card__row">
+                                <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-video" id="modal-video" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="main-footer">
             <div class="container">
@@ -676,6 +778,16 @@
                 </div>
             </div>
         </section>
+        <div class="modal fade modal-video" id="modal-video" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
         <script src="./dist/vendor/jquery/jquery.min.js"></script>
         <script src="./dist/vendor/jquery/jquery-ui.js"></script>
         <script src="./dist/vendor/bootstrap/js/popper.min.js"></script>

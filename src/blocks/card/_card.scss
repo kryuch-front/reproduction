@@ -61,8 +61,8 @@
 
   &__video {
     position: absolute;
-    top: 15px;
-    left: 10px;
+    top: 3%;
+    left: 3%;
     z-index: 4;
 
     display: block;
@@ -71,13 +71,6 @@
 
     background: $aqua-diagonal;
     border-radius: 100%;
-
-    @media (max-width: $screen-lg) {
-      left: 5px;
-
-      width: 26px;
-      height: 26px;
-    }
 
     &::after {
       content: "";
@@ -96,10 +89,6 @@
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
-
-      @media (max-width: $screen-lg) {
-        width: 14px;
-      }
     }
   }
 
@@ -135,5 +124,15 @@
     @media (max-width: $screen-lg) {
       margin-bottom: 10px;
     }
+
+    @media (max-width: $screen-md) {
+      font-size: 18px !important;
+    }
+  }
+}
+
+.js-sortable {
+  .card {
+    cursor: move;
   }
 }

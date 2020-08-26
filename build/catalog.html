@@ -27,29 +27,19 @@
                 <div class="container">
                     <div class="main-header__top-list">
                         <a class="main-header__top-logo" href="/">
-                            <img src="/dist/img/logo.svg" alt="">
+                            <img src="/dist/img/logo-gradient.svg" alt="">
                         </a>
-                        <div class="main-header__top-socials d-none d-md-flex">
-                            <a class="main-header__top-socials_item" href="//vk.com" target="_blank">
-                                <img src="/dist/img/ico/vk-original.svg" alt="">
-                            </a>
-                            <a class="main-header__top-socials_item" href="//instagram.com" target="_blank">
-                                <img src="/dist/img/ico/instagram-original.svg" alt="">
-                            </a>
-                            <a class="main-header__top-socials_item" href="//ok.ru" target="_blank">
-                                <img src="/dist/img/ico/envelope.svg" alt="">
-                            </a>
-                            <a class="main-header__top-socials_item" href="//youtube.com" target="_blank">
-                                <img src="/dist/img/ico/youtube-original.svg" alt="">
-                            </a>
-                        </div>
+                        <a class="main-header__top-city color-fiord" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
                         <div class="main-header__top-phone d-none d-xl-block">
-                            <a class="main-header__top-phone_num color-fiord" href="tel:88005001080">8-800-500-10-88</a>
-                            <div class="main-header__top-phone_desc color-fiord">Бесплатный номер РФ</div>
-                        </div>
-                        <div class="main-header__top-phone d-none d-xl-block">
-                            <a class="main-header__top-phone_num color-fiord" href="tel:89224730888">8-922-473-08-88</a>
-                            <a class="main-header__top-phone_desc color-fiord" href="mailto:baby@babyural.ru">baby@babyural.ru</a>
+                            <div class="main-header__top-phone_part">
+                                <a class="main-header__top-socials_item main-header__top-socials_item--transparent" href="https://wa.me/89224730888">
+                                    <img src="/dist/img/ico/whatsapp-original.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="main-header__top-phone_part">
+                                <a class="main-header__top-phone_num color-fiord" href="tel:88005001080">8-800-500-10-88</a>
+                                <div class="main-header__top-phone_desc color-fiord">Бесплатный номер РФ</div>
+                            </div>
                         </div>
                         <a class="js-btn-modal-menu main-header__top-btn--original" href="#">меню</a>
                     </div>
@@ -58,8 +48,7 @@
             <div class="main-header__menu">
                 <div class="container">
                     <div class="row">
-                        <hr class="main-header__menu-hr">
-                        <div class="col-xl-9 col-lg-12 d-none d-lg-block">
+                        <div class="col-xl-9 col-lg-9 d-none d-lg-block">
                             <div class="main-header__menu-list">
                                 <a class="main-header__menu-item" href="#">Родителям</a>
                                 <a class="main-header__menu-item" href="#">Донорам яйцеклеток</a>
@@ -67,19 +56,19 @@
                                 <a class="main-header__menu-item" href="#">Об агенстве</a>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-12 d-none d-lg-block">
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="main-header__top-socials d-none d-md-flex">
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//vk.com" target="_blank">
-                                    <img src="/dist/img/ico/vk-original.svg" alt="">
+                                    <img src="/dist/img/ico/vk-gradient.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//instagram.com" target="_blank">
-                                    <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                    <img src="/dist/img/ico/instagram-gradient.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//ok.ru" target="_blank">
                                     <img src="/dist/img/ico/envelope.svg" alt="">
                                 </a>
                                 <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="//youtube.com" target="_blank">
-                                    <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                    <img src="/dist/img/ico/youtube-gradient.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -297,12 +286,13 @@
                         </div>
                         <div class="col-12 col-lg-9">
                             <h1 class="catalog__title">Каталог сурогатных мам</h1>
-                            <div class="mother-filter">
+                            <div class="mother-filter" id="filter-tab-parent">
                                 <div class="mother-filter__desc">Отфильтруйте по необходимым параметрам и выберете 5 кандидатов для сурогатного материанства. Выбор нужно формировать в следующем порядке: больше всего понравилась - менее понравилась.</div>
+                                <a class="mother-filter__open btn-default js-toggle" href="#">Выбор по параметрам</a>
                                 <form class="form form-filter" action="">
                                     <div class="form__body">
                                         <div class="row">
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Поиск по id</div>
                                                     <div class="form-input__wrap">
@@ -311,7 +301,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Город</div>
                                                     <select class="form-select js-nice-select">
@@ -322,7 +312,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Национальность</div>
                                                     <select class="form-select js-nice-select">
@@ -332,7 +322,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Цвет глаз</div>
                                                     <div class="form-select-color">
@@ -359,7 +349,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Цвет волос</div>
                                                     <div class="form-select-color">
@@ -386,9 +376,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
-                                                    <div class="form__field-name">Группа крови <span class="form__field-hint js-hint" data-toggle="modal" data-target="#resus-table"></span>
+                                                    <div class="form__field-name">Группа крови<span class="form__field-hint js-hint" data-toggle="modal" data-target="#resus-table"></span>
                                                     </div>
                                                     <select class="form-select js-nice-select">
                                                         <option value="Первая положительная">Первая положительная</option>
@@ -402,7 +392,29 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form__field">
+                                                    <div class="form__field-name">Образование</div>
+                                                    <select class="form-select js-nice-select">
+                                                        <option value="Среднее">Среднее</option>
+                                                        <option value="Высшее">Высшее</option>
+                                                        <option value="Неоконченное высшее">Неоконченное высшее</option>
+                                                        <option value="Среднеспециальное">Среднеспециальное</option>
+                                                        <option value="Среднее">Среднее</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                                <div class="form__field">
+                                                    <div class="form__field-name">Семейное положение</div>
+                                                    <select class="form-select js-nice-select">
+                                                        <option value="Не замужем">Не замужем</option>
+                                                        <option value="Жената">Замужем</option>
+                                                        <option value="Гражданский брак">Гражданский брак </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Возраст</div>
                                                     <div class="form-range">
@@ -415,7 +427,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Рост</div>
                                                     <div class="form-range">
@@ -428,7 +440,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                                 <div class="form__field">
                                                     <div class="form__field-name">Вес</div>
                                                     <div class="form-range">
@@ -443,30 +455,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-12 col-sm-4">
-                                                <div class="form__field">
-                                                    <div class="form__field-name">Образование</div>
-                                                    <select class="form-select js-nice-select">
-                                                        <option value="Среднее">Среднее</option>
-                                                        <option value="Высшее">Высшее</option>
-                                                        <option value="Неоконченное высшее">Неоконченное высшее</option>
-                                                        <option value="Среднеспециальное">Среднеспециальное</option>
-                                                        <option value="Среднее">Среднее</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-4">
-                                                <div class="form__field">
-                                                    <div class="form__field-name">Семейное положение</div>
-                                                    <select class="form-select js-nice-select">
-                                                        <option value="Не замужем">Не замужем</option>
-                                                        <option value="Жената">Жената</option>
-                                                        <option value="Гражданский брак">Гражданский брак</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-4"></div>
-                                            <div class="col-12 col-sm-5 col-xl-4">
+                                            <div class="col-12 col-sm-5 col-xl-3">
                                                 <div class="form__field form__field--horizontal">
                                                     <div class="form__field-name ml0">Наличие детей</div>
                                                     <label class="custom-switch">
@@ -477,7 +466,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-7 col-xl-7">
+                                            <div class="col-12 col-sm-7 col-xl-3">
                                                 <div class="form__field form__field--horizontal">
                                                     <div class="form__field-name ml0">Опыт участия в программе</div>
                                                     <label class="custom-switch">
@@ -488,12 +477,14 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-4">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-3">
                                                 <div class="form__field-submit">
                                                     <a class="btn-aqua" href="">Поиск по параметрам</a>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-3">
+                                            <div class="col-12 col-sm-6 col-md-3">
                                                 <div class="form__field-clear">
                                                     <a class="btn-white-bordered js-form-clear" href="">Очистить</a>
                                                 </div>
@@ -506,7 +497,7 @@
                                 <div class="mother-filter-result__title">Результаты поиска</div>
                                 <div class="mother-filter-result__wrapper">
                                     <div class="row">
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="3003-T7-0">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -516,7 +507,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="3003-T7-0" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -539,7 +530,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1001-0">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -549,7 +540,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1001-0" data-image="/dist/img/catalog/mom2.jpg" data-name="Макарова Татьяна Борисовна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -572,7 +563,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1002-0">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -582,7 +573,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1002-0" data-image="/dist/img/catalog/mom3.jpg" data-name="Антонова Ульяна Виталиевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -605,7 +596,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="3003-T7-1">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -615,7 +606,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="3003-T7-1" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -638,7 +629,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1001-1">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -648,7 +639,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1001-1" data-image="/dist/img/catalog/mom2.jpg" data-name="Макарова Татьяна Борисовна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -671,7 +662,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1002-1">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -681,7 +672,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1002-1" data-image="/dist/img/catalog/mom3.jpg" data-name="Антонова Ульяна Виталиевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -704,7 +695,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="3003-T7-2">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -714,7 +705,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="3003-T7-2" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -737,7 +728,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1001-2">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -747,7 +738,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1001-2" data-image="/dist/img/catalog/mom2.jpg" data-name="Макарова Татьяна Борисовна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -770,7 +761,7 @@
                                                 <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                                             <div class="card" data-id="1002-2">
                                                 <div class="card__top">
                                                     <div class="js-profile-photo-slider profile-photo card__slider">
@@ -780,7 +771,7 @@
                                                         <img src="/dist/img/catalog/mom4.jpg" alt="" />
                                                         <img src="/dist/img/catalog/mom5.jpg" alt="" />
                                                     </div>
-                                                    <a class="card__video" href=""></a>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
                                                     <a class="card__select js-mother-select btn-aqua" href="" data-id="1002-2" data-image="/dist/img/catalog/mom3.jpg" data-name="Антонова Ульяна Виталиевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
                                                         <span>Выбрать</span>
                                                     </a>
@@ -790,6 +781,105 @@
                                                     <div class="profile-info__item">
                                                         <div class="profile-info__item-name">Id:</div>
                                                         <div class="profile-info__item-value">1002-2</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Город:</div>
+                                                        <div class="profile-info__item-value">Тюмень</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Возраст:</div>
+                                                        <div class="profile-info__item-value">24 года</div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                            <div class="card" data-id="3003-T7-3">
+                                                <div class="card__top">
+                                                    <div class="js-profile-photo-slider profile-photo card__slider">
+                                                        <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                                    </div>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                                    <a class="card__select js-mother-select btn-aqua" href="" data-id="3003-T7-3" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
+                                                        <span>Выбрать</span>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-info">
+                                                    <div class="profile-name">Самсонова Таисия Евгеньевна</div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Id:</div>
+                                                        <div class="profile-info__item-value">3003-T7-3</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Город:</div>
+                                                        <div class="profile-info__item-value">Тюмень</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Возраст:</div>
+                                                        <div class="profile-info__item-value">24 года</div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                            <div class="card" data-id="1001-3">
+                                                <div class="card__top">
+                                                    <div class="js-profile-photo-slider profile-photo card__slider">
+                                                        <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                                    </div>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                                    <a class="card__select js-mother-select btn-aqua" href="" data-id="1001-3" data-image="/dist/img/catalog/mom2.jpg" data-name="Макарова Татьяна Борисовна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
+                                                        <span>Выбрать</span>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-info">
+                                                    <div class="profile-name">Макарова Татьяна Борисовна</div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Id:</div>
+                                                        <div class="profile-info__item-value">1001-3</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Город:</div>
+                                                        <div class="profile-info__item-value">Тюмень</div>
+                                                    </div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Возраст:</div>
+                                                        <div class="profile-info__item-value">24 года</div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn-aqua card__view js-card-view" href="" data-toggle="modal" data-target="#show-mother-full-card">Смотреть профиль</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                                            <div class="card" data-id="1002-3">
+                                                <div class="card__top">
+                                                    <div class="js-profile-photo-slider profile-photo card__slider">
+                                                        <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                                                        <img src="/dist/img/catalog/mom5.jpg" alt="" />
+                                                    </div>
+                                                    <a class="card__video js-modal-video" href="" data-video="dQw4w9WgXcQ"></a>
+                                                    <a class="card__select js-mother-select btn-aqua" href="" data-id="1002-3" data-image="/dist/img/catalog/mom3.jpg" data-name="Антонова Ульяна Виталиевна" data-city="Тюмень" data-old="24 года" data-toggle="tooltip" title="Добавлено в заявку">
+                                                        <span>Выбрать</span>
+                                                    </a>
+                                                </div>
+                                                <div class="profile-info">
+                                                    <div class="profile-name">Антонова Ульяна Виталиевна</div>
+                                                    <div class="profile-info__item">
+                                                        <div class="profile-info__item-name">Id:</div>
+                                                        <div class="profile-info__item-value">1002-3</div>
                                                     </div>
                                                     <div class="profile-info__item">
                                                         <div class="profile-info__item-name">Город:</div>
@@ -833,22 +923,20 @@
                             <a class="main-footer__phone_num" href="tel:88005001088">8-800-500-10-88</a>
                             <div class="main-footer__phone_desc">Бесплатный номер РФ</div>
                         </div>
-                        <div class="main-footer__phone">
-                            <a class="main-footer__phone_num" href="tel:89224730888">8-922-473-08-88</a>
-                        </div>
+                        <div class="main-footer__phone"></div>
                         <div class="main-footer__adress">г.Тюмень, ул. Осипенко</div>
                         <div class="main-footer__socials">
                             <a class="socials_item" href="//vk.com" target="_blank">
-                                <img src="/dist/img/ico/vk-original.svg" alt="">
+                                <img src="/dist/img/ico/vk-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//instagram.com" target="_blank">
-                                <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                <img src="/dist/img/ico/instagram-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//ok.ru" target="_blank">
-                                <img src="/dist/img/ico/envelope.svg" alt="">
+                                <img src="/dist/img/ico/envelope-white.svg" alt="">
                             </a>
                             <a class="socials_item" href="//youtube.com" target="_blank">
-                                <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                <img src="/dist/img/ico/youtube-white.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -942,13 +1030,13 @@
                 <div class="main-header__top">
                     <div class="container">
                         <div class="main-header__top-list">
-                            <div class="main-header__top-logo main-header__top-logo--dark">
+                            <a class="main-header__top-logo main-header__top-logo--dark" href="/">
                                 <img src="/dist/img/logo.svg" alt="">
-                            </div>
+                            </a>
                             <a class="main-header__top-city" href="#modalCity" data-toggle="modal" role="button">Тюмень</a>
                             <div class="main-header__top-phone d-none d-xl-block">
                                 <div class="main-header__top-phone_part">
-                                    <a class="main-header__top-socials_item main-header__top-socials_item--gradient" href="https://wa.me/89224730888">
+                                    <a class="main-header__top-socials_item main-header__top-socials_item--transparent" href="https://wa.me/89224730888">
                                         <img src="/dist/img/ico/whatsapp-original.svg" alt="">
                                     </a>
                                 </div>
@@ -1038,16 +1126,16 @@
                                     <div class="modal-menu__category-item">г.Тюмень, ул. Осипенко</div>
                                     <div class="main-header__top-socials footer-modifier">
                                         <a class="main-header__top-socials_item" href="//vk.com" target="_blank">
-                                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                                            <img src="/dist/img/ico/vk-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//instagram.com" target="_blank">
-                                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                                            <img src="/dist/img/ico/instagram-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//ok.ru" target="_blank">
-                                            <img src="/dist/img/ico/envelope.svg" alt="">
+                                            <img src="/dist/img/ico/envelope-white.svg" alt="">
                                         </a>
                                         <a class="main-header__top-socials_item" href="//youtube.com" target="_blank">
-                                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                                            <img src="/dist/img/ico/youtube-white.svg" alt="">
                                         </a>
                                     </div>
                                     <a class="btn-default main-header__menu-btn" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>
@@ -1071,10 +1159,7 @@
                     <a class="modal-city__item" href="#">Ростов-на-Дону</a>
                     <a class="modal-city__item" href="#">Волгоград</a>
                     <a class="modal-city__item" href="#">Воронеж</a>
-                    <a class="modal-city__item" href="#">Саратов</a>
-                    <a class="modal-city__item" href="#">Благовещенск</a>
-                    <a class="modal-city__item" href="#">Хабаровск</a>
-                    <a class="modal-city__item" href="#">Владивосток</a>
+                    <a class="modal-city__item" href="#">Белгород</a>
                 </div>
             </div>
         </div>
@@ -1206,16 +1291,16 @@
                     <div class="mobile-menu__adress">г.Тюмень, ул. Осипенко</div>
                     <div class="mobile-menu__socials">
                         <a class="socials_item" href="//vk.com" target="_blank">
-                            <img src="/dist/img/ico/vk-original.svg" alt="">
+                            <img src="/dist/img/ico/vk-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//instagram.com" target="_blank">
-                            <img src="/dist/img/ico/instagram-original.svg" alt="">
+                            <img src="/dist/img/ico/instagram-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//ok.ru" target="_blank">
-                            <img src="/dist/img/ico/envelope.svg" alt="">
+                            <img src="/dist/img/ico/envelope-white.svg" alt="">
                         </a>
                         <a class="socials_item" href="//youtube.com" target="_blank">
-                            <img src="/dist/img/ico/youtube-original.svg" alt="">
+                            <img src="/dist/img/ico/youtube-white.svg" alt="">
                         </a>
                     </div>
                     <a class="btn-default" href="#callback" role="button" data-toggle="modal">Заказать обратный звонок</a>
@@ -1230,13 +1315,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="mother-full-card">
-                            <div class="js-profile-photo-slider profile-photo mother-full-card__slider">
-                                <img src="/dist/img/catalog/mom2.jpg" alt="" />
-                                <img src="/dist/img/catalog/mom1.jpg" alt="" />
-                                <img src="/dist/img/catalog/mom3.jpg" alt="" />
-                                <img src="/dist/img/catalog/mom4.jpg" alt="" />
-                                <img src="/dist/img/catalog/mom5.jpg" alt="" />
-                            </div>
+                            <img src="/dist/img/catalog/mom5.jpg">
                             <div class="mother-full-card__info">
                                 <div class="profile-info">
                                     <div class="profile-name">Самсонова Таисия Евгеньевна</div>
@@ -1299,6 +1378,13 @@
                                 </div>
                                 <a class="btn-aqua mother-full-card__add js-add-mother" href="" data-id="3003-T7-0" data-image="/dist/img/catalog/mom1.jpg" data-name="Самсонова Таисия Евгеньевна" data-city="Тюмень" data-old="24 года">Добавить в заявку</a>
                             </div>
+                        </div>
+                        <div class="mother-full-card__row">
+                            <img src="/dist/img/catalog/mom2.jpg" alt="" />
+                            <img src="/dist/img/catalog/mom1.jpg" alt="" />
+                            <img src="/dist/img/catalog/mom3.jpg" alt="" />
+                            <img src="/dist/img/catalog/mom4.jpg" alt="" />
+                            <img src="/dist/img/catalog/mom5.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -1494,12 +1580,13 @@
                         <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="mother-filter">
+                        <div class="mother-filter" id="filter-tab-parent">
                             <div class="mother-filter__desc">Отфильтруйте по необходимым параметрам и выберете 5 кандидатов для сурогатного материанства. Выбор нужно формировать в следующем порядке: больше всего понравилась - менее понравилась.</div>
+                            <a class="mother-filter__open btn-default js-toggle" href="#">Выбор по параметрам</a>
                             <form class="form form-filter" action="">
                                 <div class="form__body">
                                     <div class="row">
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Поиск по id</div>
                                                 <div class="form-input__wrap">
@@ -1508,7 +1595,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Город</div>
                                                 <select class="form-select js-nice-select">
@@ -1519,7 +1606,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Национальность</div>
                                                 <select class="form-select js-nice-select">
@@ -1529,7 +1616,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Цвет глаз</div>
                                                 <div class="form-select-color">
@@ -1556,7 +1643,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Цвет волос</div>
                                                 <div class="form-select-color">
@@ -1583,9 +1670,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
-                                                <div class="form__field-name">Группа крови <span class="form__field-hint js-hint" data-toggle="modal" data-target="#resus-table"></span>
+                                                <div class="form__field-name">Группа крови<span class="form__field-hint js-hint" data-toggle="modal" data-target="#resus-table"></span>
                                                 </div>
                                                 <select class="form-select js-nice-select">
                                                     <option value="Первая положительная">Первая положительная</option>
@@ -1599,7 +1686,29 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <div class="form__field">
+                                                <div class="form__field-name">Образование</div>
+                                                <select class="form-select js-nice-select">
+                                                    <option value="Среднее">Среднее</option>
+                                                    <option value="Высшее">Высшее</option>
+                                                    <option value="Неоконченное высшее">Неоконченное высшее</option>
+                                                    <option value="Среднеспециальное">Среднеспециальное</option>
+                                                    <option value="Среднее">Среднее</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <div class="form__field">
+                                                <div class="form__field-name">Семейное положение</div>
+                                                <select class="form-select js-nice-select">
+                                                    <option value="Не замужем">Не замужем</option>
+                                                    <option value="Жената">Замужем</option>
+                                                    <option value="Гражданский брак">Гражданский брак </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Возраст</div>
                                                 <div class="form-range">
@@ -1612,7 +1721,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Рост</div>
                                                 <div class="form-range">
@@ -1625,7 +1734,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                             <div class="form__field">
                                                 <div class="form__field-name">Вес</div>
                                                 <div class="form-range">
@@ -1640,30 +1749,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form__field">
-                                                <div class="form__field-name">Образование</div>
-                                                <select class="form-select js-nice-select">
-                                                    <option value="Среднее">Среднее</option>
-                                                    <option value="Высшее">Высшее</option>
-                                                    <option value="Неоконченное высшее">Неоконченное высшее</option>
-                                                    <option value="Среднеспециальное">Среднеспециальное</option>
-                                                    <option value="Среднее">Среднее</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form__field">
-                                                <div class="form__field-name">Семейное положение</div>
-                                                <select class="form-select js-nice-select">
-                                                    <option value="Не замужем">Не замужем</option>
-                                                    <option value="Жената">Жената</option>
-                                                    <option value="Гражданский брак">Гражданский брак</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4"></div>
-                                        <div class="col-12 col-sm-5 col-xl-4">
+                                        <div class="col-12 col-sm-5 col-xl-3">
                                             <div class="form__field form__field--horizontal">
                                                 <div class="form__field-name ml0">Наличие детей</div>
                                                 <label class="custom-switch">
@@ -1674,7 +1760,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-7 col-xl-7">
+                                        <div class="col-12 col-sm-7 col-xl-3">
                                             <div class="form__field form__field--horizontal">
                                                 <div class="form__field-name ml0">Опыт участия в программе</div>
                                                 <label class="custom-switch">
@@ -1685,12 +1771,14 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-3">
                                             <div class="form__field-submit">
                                                 <a class="btn-aqua" href="">Поиск по параметрам</a>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-3">
+                                        <div class="col-12 col-sm-6 col-md-3">
                                             <div class="form__field-clear">
                                                 <a class="btn-white-bordered js-form-clear" href="">Очистить</a>
                                             </div>

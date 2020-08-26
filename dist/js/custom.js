@@ -269,35 +269,44 @@ $(function () {
 
   /* js-selected-mother */
 
-  if ($(".js-selected-mother").length > 0) {
-    // select-mother sort
-    $(".selected-mother__form").sortable({
-      items: ".selected-mother__item:not(.selected-mother__item--no-selected)",
-      containment: ".selected-mother__wrapper",
-    });
+  // if ($(".js-selected-mother").length > 0) {
+  //   // select-mother sort
+  //   $(".selected-mother__form").sortable({
+  //     items: ".selected-mother__item:not(.selected-mother__item--no-selected)",
+  //     containment: ".selected-mother__wrapper",
+  //   });
 
-    // delete item
+  //   // delete item
+  //   $(document).on("click", ".js-selected-mother__close", function () {
+  //     deleteMother(
+  //       $(this),
+  //       $(this).closest(".selected-mother__item").data("id")
+  //     );
+  //   });
+
+  //   //delete and add item
+  //   $(document).on("click", ".js-mother-select", function (e) {
+  //     e.preventDefault();
+
+  //     if (!$(this).hasClass("card-selected")) {
+  //       if (
+  //         !$('.selected-mother__item[data-id="' + $(this).data("id") + '"]')
+  //           .length
+  //       ) {
+  //         addMother($(this));
+  //       }
+  //     } else {
+  //       deleteMother($(this), $(this).data("id"));
+  //     }
+  //   });
+  // }
+
+  if ($(".js-sortable").length > 0) {
+    $(".js-sortable").sortable();
+    $(".js-sortable").disableSelection();
+
     $(document).on("click", ".js-selected-mother__close", function () {
-      deleteMother(
-        $(this),
-        $(this).closest(".selected-mother__item").data("id")
-      );
-    });
-
-    //delete and add item
-    $(document).on("click", ".js-mother-select", function (e) {
-      e.preventDefault();
-
-      if (!$(this).hasClass("card-selected")) {
-        if (
-          !$('.selected-mother__item[data-id="' + $(this).data("id") + '"]')
-            .length
-        ) {
-          addMother($(this));
-        }
-      } else {
-        deleteMother($(this), $(this).data("id"));
-      }
+      $(this).closest(".card").parent().remove();
     });
   }
 
