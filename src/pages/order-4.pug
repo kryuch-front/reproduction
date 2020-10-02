@@ -14,7 +14,7 @@ block content
 
 	section.page.page-order
 		.page-order__bg
-			img(src="/dist/img/mam-bg.png", alt="")
+			img(src="/dist/img/donor-bg.png", alt="")
 		.container
 			.row
 				.col-12.col-sm-9
@@ -51,28 +51,45 @@ block content
 											.form__field-name готовы на программу с переездом в Москву
 									.col-12
 										.form__field-name Ваши профили в соц. сетях
-									.col-12.col-sm-4
-										.form__field
-											input(type="text" class="form-input form-input--icon-instagram" placeholder="")
-									.col-12.col-sm-4
-										.form__field
-											input(type="text" class="form-input form-input--icon-vk" placeholder="")
-									.col-12.col-sm-4
-										.form__field
-											input(type="text" class="form-input form-input--icon-add" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--instagram
+												input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--vk
+												input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social.form__field-social-add
+											.form-input__wrap.js-add-social-input
+												.form-input-icon.form-input-icon--add
+												select.form-select.js-nice-select
+													option(value="")
+													option(value="fb") Facebook
+													option(value="ok") Одноклассники
+													option(value="wa") what’s app
+													option(value="tg") telegram
 									.col-12
 										.form__block-name 
 											span Расскажите о себе
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Национальность
-											input(type="date" class="form-input" placeholder="")
+											select.form-select.js-nice-select
+												option(value="Русская") Русская
+												option(value="Татарка") Татарка
+												option(value="Казашка") Казашка
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Гражданство
-											input(type="date" class="form-input" placeholder="")
+											select.form-select.js-nice-select
+												option(value="России") России
+												option(value="Казахстана") Казахстана
+												option(value="Узбекистана") Узбекистана
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name
 												| Группа крови, резус
 												span.form__field-hint.js-hint
@@ -86,7 +103,7 @@ block content
 												option(value="Третья отрицательная") Третья отрицательная
 												option(value="Четвертая отрицательная") Четвертая отрицательная
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Семейное положение
 											select.form-select.js-nice-select
 												option(value="Не замужем") Не замужем
@@ -131,7 +148,7 @@ block content
 													input(class="color-checkbox" type="checkbox")
 													span(data-toggle="tooltip" title="Блондинка").color.color--blonde.js-tooltip
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Образование
 											select.form-select.js-nice-select
 												option(value="Среднее") Среднее
@@ -142,10 +159,10 @@ block content
 									.col-12.col-sm-4
 										.form__field
 											.form__field-name Профессия
-											input(type="date" class="form-input" placeholder="")
+											input(type="text" class="form-input" placeholder="")
 									.col-12.col-sm-4
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Месяц рождения ребенка
 											select.form-select.js-nice-select
 												option(value="Январь") Январь
@@ -161,7 +178,7 @@ block content
 												option(value="Ноябрь") Ноябрь
 												option(value="Декабрь") Декабрь
 									.col-12.col-sm-4
-										.form__field
+										.form__field.clearfix
 											.form__field-name Год рождения ребенка
 											select.form-select.js-nice-select
 												option(value="2004") 2004 г.

@@ -14,11 +14,6 @@ block content
 
 	section.page.page-order
 		.container
-			.row
-				.d-none.d-lg-block.col-lg-3
-					+sidebar-menu([{href:"#",name: "Редактирование профиля", class: "current"},{href:"#",name: "Каталог сурготных мам"},{href:"#",name: "Каталог доноров ооцитов"},{href:"#",name: "VIP каталог", icon:"/dist/img/catalog/icon-star.svg"},{href:"#",name: "Типовые договоры"},{href:"#",name: "Видео-чат"},{href:"#",name: "Обратная связь"}])
-					include ../blocks/anonymous-consultation/anonymous-consultation.pug
-				.col-12.col-lg-9
 					h2.page-title Заявка на подбор суррогатной мамы
 					.page-content
 						blockquote <strong>Внимание!</strong> Выбор суррогатной мамы происходит по каталогу с возможностью просмотра подробного профиля. Девушки в каталоге собраны привлекательные, строго до 34 лет. При заинтересованности в кандидате, Вы можете запросить у менеджера агентства расширенную информацию по донору, пообщаться с девушкой по телефону, запросить видео
@@ -69,10 +64,10 @@ block content
 											.form__field-name Вид программы
 											.form__radio
 												label.custom-radio-label
-													input(class="custom-radio" type="radio")
+													input(class="custom-radio" type="radio" name="program")
 													span.custom-radio__text программа с криозамороженными эмбрионами
 												label.custom-radio-label
-													input(class="custom-radio" type="checkbox")
+													input(class="custom-radio" type="radio" name="program")
 													span.custom-radio__text программа с синхронизацией менструальных циклов
 									.col-12
 										.form__field

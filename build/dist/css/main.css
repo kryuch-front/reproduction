@@ -2883,7 +2883,6 @@ ul li strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 35px;
 }
 
 @media (max-width: 767px) {
@@ -2925,6 +2924,7 @@ ul li strong {
 
 .form__field--horizontal.mt0 {
     margin-top: 0;
+    padding-top: 0 !important;
 }
 
 @media (max-width: 576px) {
@@ -2987,19 +2987,19 @@ ul li strong {
 }
 
 .form__field-social-add .nice-select li.option[data-value="fb"]::after {
-    background-image: url("/dist/img/ico/icon-instagram.svg");
+    background-image: url("/dist/img/ico/icon-fb.svg");
 }
 
 .form__field-social-add .nice-select li.option[data-value="ok"]::after {
-    background-image: url("/dist/img/ico/icon-vk.svg");
+    background-image: url("/dist/img/ico/icon-ok.svg");
 }
 
 .form__field-social-add .nice-select li.option[data-value="wa"]::after {
-    background-image: url("/dist/img/ico/icon-instagram.svg");
+    background-image: url("/dist/img/ico/icon-whatsapp.svg");
 }
 
 .form__field-social-add .nice-select li.option[data-value="tg"]::after {
-    background-image: url("/dist/img/ico/icon-vk.svg");
+    background-image: url("/dist/img/ico/icon-tg.svg");
 }
 
 .form__field-hint {
@@ -3023,9 +3023,15 @@ ul li strong {
     border: 1px solid transparent;
     font-family: "Rubik", Arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (max-width: 767px) {
+    .form__field-submit .btn-aqua {
+        min-width: 100%;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -3049,6 +3055,7 @@ ul li strong {
         height: 40px;
         padding: 10px 20px;
         margin: 0;
+        max-width: none;
     }
 }
 
@@ -3086,8 +3093,8 @@ ul li strong {
 @media (max-width: 1199px) {
     .form-input {
         font-size: 14px;
-        line-height: 16px;
-        padding: 7px 20px;
+        line-height: 13px;
+        padding: 13px 20px;
     }
 }
 
@@ -3283,7 +3290,7 @@ ul li strong {
 @media (max-width: 1199px) {
     .form-input-icon--instagram {
         left: 10px;
-        top: 14px;
+        top: 17px;
         width: 25px;
         height: 25px;
     }
@@ -3303,7 +3310,7 @@ ul li strong {
 @media (max-width: 1199px) {
     .form-input-icon--vk {
         left: 10px;
-        top: 14px;
+        top: 17px;
         width: 25px;
         height: 25px;
     }
@@ -3324,7 +3331,7 @@ ul li strong {
 @media (max-width: 1199px) {
     .form-input-icon--add {
         left: 10px;
-        top: 14px;
+        top: 17px;
         width: 25px;
         height: 25px;
     }
@@ -4053,7 +4060,7 @@ ul li strong {
 @media (max-width: 1199px) {
     .nice-select .list .option {
         min-height: 32px;
-        padding: 7px 10px;
+        padding: 15px 10px;
         font-size: 16px;
         line-height: 16px;
     }
@@ -4191,6 +4198,10 @@ ul li strong {
 
 .custom-switch .checkbox:checked~.no {
     opacity: 0;
+}
+
+.form-order .form__field--horizontal {
+    padding-top: 31px;
 }
 
 .modal-video .modal-header {
@@ -4595,7 +4606,7 @@ ul li strong {
 .main-header__menu-btn {
     font-size: 16px;
     padding: 15px 40px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .main-header__menu-hr {
@@ -5581,7 +5592,7 @@ ul li strong {
     padding: 12px 30px;
     border: 1px solid transparent;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     border-radius: 50px;
@@ -5591,6 +5602,7 @@ ul li strong {
     .form-order .form__field-submit .btn-aqua {
         padding: 7px 10px;
         font-size: 14px;
+        height: auto;
     }
 }
 
@@ -5605,12 +5617,19 @@ ul li strong {
 .page-order__bg {
     position: fixed;
     bottom: 0;
+    width: 20%;
+    z-index: 1;
     right: 0;
-    display: none;
+}
+
+@media (max-width: 991px) {
+    .page-order__bg {
+        display: none;
+    }
 }
 
 .page-order__bg img {
-    width: 800px;
+    width: auto;
 }
 
 .main-footer {
@@ -6829,6 +6848,10 @@ ul li strong {
     justify-content: space-between;
 }
 
+.catalog-top .btn-default {
+    line-height: normal;
+}
+
 @media (max-width: 767px) {
     .catalog-top {
         -webkit-box-orient: vertical;
@@ -7243,6 +7266,12 @@ ul li strong {
     position: relative;
 }
 
+.card__top_vip {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+}
+
 .card__select {
     position: absolute;
     top: 15px;
@@ -7446,6 +7475,12 @@ ul li strong {
 
 .programm-card hr {
     margin: 35px 0;
+}
+
+@media (max-width: 767px) {
+    .programm-card hr {
+        margin: 5px 0 20px 0;
+    }
 }
 
 .programm-card__row {
@@ -7754,6 +7789,12 @@ ul li strong {
         0 16px 24px rgba(0, 0, 0, 0.04),
         0 24px 32px rgba(0, 0, 0, 0.04);
     border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .guarantee-content {
+        padding: 25px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -8132,6 +8173,7 @@ ul li strong {
 }
 
 .motherhood-steps__list-item:hover {
+    border: 1px solid transparent;
     background-color: #fff;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04),
         0 2px 6px rgba(0, 0, 0, 0.04),
@@ -8146,8 +8188,8 @@ ul li strong {
     position: relative;
     margin: 0 auto;
     margin-bottom: 15px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #d5d5d5;
     opacity: 0.9;
     border-radius: 55px;
@@ -8170,12 +8212,21 @@ ul li strong {
     transition: 0.3s;
 }
 
-.motherhood-steps__list-item:hover .motherhood-steps__list-item__icon {
-    background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+.motherhood-steps__list-item__icon-hover {
+    display: none;
 }
 
-.motherhood-steps__list-item:hover .motherhood-steps__list-item__icon span {
-    color: #fff;
+.motherhood-steps__list-item:hover .motherhood-steps__list-item__icon {
+    background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+    border: none;
+}
+
+.motherhood-steps__list-item:hover .motherhood-steps__list-item__icon-hover {
+    display: block;
+}
+
+.motherhood-steps__list-item:hover .motherhood-steps__list-item__icon-base {
+    display: none;
 }
 
 .motherhood-steps__list-item__text {
@@ -9758,7 +9809,7 @@ ul li strong {
     position: relative;
     width: calc(33.33333333% - 30px);
     margin: 15px;
-    padding-left: 85px;
+    padding-left: 65px;
 }
 
 @media (max-width: 991px) {
@@ -9781,8 +9832,8 @@ ul li strong {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

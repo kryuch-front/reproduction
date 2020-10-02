@@ -20,6 +20,10 @@
 
   hr {
     margin: 35px 0;
+
+    @media (max-width: $screen-sm) {
+      margin: 5px 0 20px 0;
+    }
   }
 
   &__row {

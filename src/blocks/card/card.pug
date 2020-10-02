@@ -13,6 +13,22 @@ mixin card(id, image, name, city, old)
 		+profile-info([{name: "Id", value: id},{name: "Город", value: city},{name: "Возраст", value: old}], name)
 		a(href="" class="btn-aqua card__view js-card-view" data-toggle="modal" data-target="#show-mother-full-card") Смотреть профиль
 
+mixin cardVip(id, image, name, city, old)
+	- var i = 0;
+	- var current_image;
+		for url in image
+			- if(i == 0) {current_image = url;}
+			-i++;
+	div(class="card" data-id=id)
+		.card__top
+			+profile-photo("card__slider",image)
+			a(href="" data-video="dQw4w9WgXcQ").card__video.js-modal-video
+			a(href="" class="card__select js-mother-select btn-aqua" data-id=id data-image=current_image data-name=name data-city=city data-old=old data-toggle="tooltip" title="Добавлено в заявку") 
+				span Выбрать
+			span.card__top_vip
+				img(src="/dist/img/vip.png", alt="")
+		+profile-info([{name: "Id", value: id},{name: "Город", value: city},{name: "Возраст", value: old}], name)
+		a(href="" class="btn-aqua card__view js-card-view" data-toggle="modal" data-target="#show-mother-full-card") Смотреть профиль
 
 mixin cardSwitch(id, image, name, city, old)
 	- var i = 0;

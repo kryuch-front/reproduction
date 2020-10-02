@@ -2,7 +2,7 @@ extends ../pug/layout.pug
 //- mixins
 include ../blocks/breadcrumbs/breadcrumbs.pug
 include ../blocks/block-sidebar-menu/sidebar-menu.pug
-include ../blocks/video/video.pug
+include ../blocks/video/video.pug 
 
 
 block vars
@@ -187,88 +187,121 @@ block content
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 01
+									span
+										img(src="/dist/img/ico/manager.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/manager-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Консультация в офисе агентства или по телефону
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 02
+									span
+										img(src="/dist/img/ico/application.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/application-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Заполнение заявки на подбор и закрепление за вами менеджера
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 03
+									span
+										img(src="/dist/img/ico/woman.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/woman-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Выбор суррогатной мамы
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 04
+									span
+										img(src="/dist/img/ico/ultrasound.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/ultrasound-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Узи кандидатки у вашего лечащего врача для оценки состояния её матки
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 05
+									span
+										img(src="/dist/img/ico/handshake.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/handshake-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p При одобрении по узи, знакомство с суррогатной мамой
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 06
+									span
+										img(src="/dist/img/ico/examination.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/examination-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Прохождение обследования согласно Приказа №107н МЗ РФ под контролем куратора
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 07
+									span
+										img(src="/dist/img/ico/contract.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/contract-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Заключение договоров при полном одобрении врача
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 08
+									span
+										img(src="/dist/img/ico/doctor.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/doctor-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Начало программы подготовки эндометрия
 			
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 09
+									span
+										img(src="/dist/img/ico/date.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/date-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Назначение даты переноса эмбрионов
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 10
+									span
+										img(src="/dist/img/ico/money.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/money-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Расчёт с агентством за услугу подбора
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 11
+									span
+										img(src="/dist/img/ico/embryo.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/embryo-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Перенос эмбрионов и ожидание результата
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 12
+									span
+										img(src="/dist/img/ico/service.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/service-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Работа агентства продолжится, если будет выбрана услуга курирования или полного сопровождения	
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 13
+									span
+										img(src="/dist/img/ico/checklist.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/checklist-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Весь спектр услуг по сопровождению беременности
 						.col-lg-3.col-md-6.col-sm-12
 							.motherhood-steps__list-item
 								.motherhood-steps__list-item__icon
-									span 14
+									span
+										img(src="/dist/img/ico/baby.svg").motherhood-steps__list-item__icon-base
+										img(src="/dist/img/ico/baby-white.svg").motherhood-steps__list-item__icon-hover
 								.motherhood-steps__list-item__text
 									p Роды и оформление документов на малыша
 				p Процент наступления беременности в циклах с суррогатным материнством достаточно высокий, но в то же время он зависит и от возраста женщины, у которой получены яйцеклетки. В тех случаях, когда используются донорские яйцеклетки и суррогатная мать, то есть когда качество яйцеклеток и состояние матки оптимально, эффективность лечения является самой высокой в современной репродуктивной медицине. Во всех других случаях, частота наступления беременности в циклах ЭКО с привлечением суррогатной мамы бывает в среднем 50/50.
 				p Если беременность не состоялась с первой попытки, при обоюдном согласии, вы можете продолжить работу с вашей суррогатной мамой. В большинстве случаев беременность удаётся получить.
-				a(href="").btn-default Заявка на подбр суррогатной мамы 
+				//- a(href="").btn-default Заявка на подбр суррогатной мамы 
+				.block-surrogate-request
+					.block-surrogate-request__text Оставить заявку на подбор суррогатной мамы
+					.block-surrogate-request__button
+						a(href="" class="btn-white") 
+							span Перейти к заполнению анкеты

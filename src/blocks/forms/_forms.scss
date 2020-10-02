@@ -43,7 +43,7 @@
     &--horizontal {
       display: flex;
       align-items: center;
-      margin-top: 35px;
+      // padding-top: 31px;
 
       @media (max-width: $screen-sm) {
         justify-content: space-between;
@@ -74,6 +74,7 @@
 
       &.mt0 {
         margin-top: 0;
+        padding-top: 0 !important;
       }
     }
 
@@ -134,19 +135,19 @@
             }
 
             &[data-value="fb"]::after {
-              background-image: url("/dist/img/ico/icon-instagram.svg");
+              background-image: url("/dist/img/ico/icon-fb.svg");
             }
 
             &[data-value="ok"]::after {
-              background-image: url("/dist/img/ico/icon-vk.svg");
+              background-image: url("/dist/img/ico/icon-ok.svg");
             }
 
             &[data-value="wa"]::after {
-              background-image: url("/dist/img/ico/icon-instagram.svg");
+              background-image: url("/dist/img/ico/icon-whatsapp.svg");
             }
 
             &[data-value="tg"]::after {
-              background-image: url("/dist/img/ico/icon-vk.svg");
+              background-image: url("/dist/img/ico/icon-tg.svg");
             }
           }
         }
@@ -179,9 +180,13 @@
 
         font-family: $font-family;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 16px;
         line-height: 19px;
+
+        @media (max-width: $screen-sm) {
+          min-width: 100%;
+        }
 
         @media (max-width: $screen-lg) {
           height: 40px;
@@ -204,6 +209,7 @@
           height: 40px;
           padding: 10px 20px;
           margin: 0;
+          max-width: none;
         }
       }
     }
@@ -228,9 +234,8 @@
 
     @media (max-width: $screen-lg) {
       font-size: 14px;
-      line-height: 16px;
-
-      padding: 7px 20px;
+      line-height: 13px;
+      padding: 13px 20px;
     }
 
     &::placeholder {
@@ -316,7 +321,7 @@
 
         @media (max-width: $screen-lg) {
           left: 10px;
-          top: 14px;
+          top: 17px;
           width: 25px;
           height: 25px;
         }
@@ -336,7 +341,7 @@
 
         @media (max-width: $screen-lg) {
           left: 10px;
-          top: 14px;
+          top: 17px;
           width: 25px;
           height: 25px;
         }
@@ -357,7 +362,7 @@
 
         @media (max-width: $screen-lg) {
           left: 10px;
-          top: 14px;
+          top: 17px;
           width: 25px;
           height: 25px;
         }
@@ -966,7 +971,7 @@
 
       @media (max-width: $screen-lg) {
         min-height: 32px;
-        padding: 7px 10px;
+        padding: 15px 10px;
 
         font-size: 16px;
         line-height: 16px;
@@ -1071,5 +1076,11 @@
 
   .checkbox:checked ~ .no {
     opacity: 0;
+  }
+}
+
+.form-order {
+  .form__field--horizontal {
+    padding-top: 31px;
   }
 }

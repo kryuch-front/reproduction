@@ -9,6 +9,12 @@
 
   &__top {
     position: relative;
+
+    &_vip {
+      position: absolute;
+      bottom: 10%;
+      left: 3%;
+    }
   }
 
   &__select {

@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
 
+    .btn-default {
+      line-height: normal;
+    }
+
     @media (max-width: $screen-sm) {
       flex-direction: column;
     }
