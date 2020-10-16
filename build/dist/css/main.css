@@ -70,6 +70,16 @@ section {
     min-width: 320px;
 }
 
+.content {
+    min-height: calc(100vh - 420px);
+}
+
+@media (max-width: 991px) {
+    .content {
+        min-height: calc(100vh - 455px);
+    }
+}
+
 .slick-slide {
     outline: 0;
 }
@@ -1658,23 +1668,20 @@ ul li strong {
 }
 
 .block-surrogate-request__button a {
-    max-width: 320px;
+    max-width: 350px;
+    font-weight: 500;
 }
 
 @media (max-width: 1199px) {
     .block-surrogate-request__button a {
-        max-width: 230px;
+        max-width: 250px;
         padding: 11px 10px;
         font-size: 14px;
     }
 }
 
 .block-surrogate-request__button a span {
-    background: -webkit-gradient(linear, left top, right top, from(#6288e4), to(#ab86e4));
-    background: linear-gradient(90deg, #6288e4 0%, #ab86e4 100%);
-    color: #6288e4;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #222729;
 }
 
 .page-advantages .advantages {
@@ -4204,6 +4211,17 @@ ul li strong {
     padding-top: 31px;
 }
 
+.modal-video .modal-content {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-video iframe {
+    border-radius: 10px;
+}
+
 .modal-video .modal-header {
     padding: 25px 0;
     border: 0;
@@ -4483,7 +4501,7 @@ ul li strong {
 
 .main-header__top-btn--original {
     position: relative;
-    padding-top: 27px;
+    padding-top: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4617,12 +4635,28 @@ ul li strong {
     opacity: 0.4;
 }
 
+.main-header .gradient-logo {
+    display: none;
+}
+
 .main-header--bg {
     height: auto;
 }
 
-.main-header--bg .main-header__top {
-    padding: 30px 0;
+.main-header--bg .white-logo {
+    display: none;
+}
+
+.main-header--bg .gradient-logo {
+    display: block;
+}
+
+.main-header--bg .main-header__top--fixed .white-logo {
+    display: block;
+}
+
+.main-header--bg .main-header__top--fixed .gradient-logo {
+    display: none;
 }
 
 @media (max-width: 1199px) {
@@ -5620,6 +5654,7 @@ ul li strong {
     width: 20%;
     z-index: 1;
     right: 0;
+    opacity: 1;
 }
 
 @media (max-width: 991px) {
@@ -5636,6 +5671,12 @@ ul li strong {
     padding-top: 40px;
     padding-bottom: 70px;
     background-color: #3f4862;
+}
+
+@media (max-width: 991px) {
+    .main-footer {
+        max-height: 455px;
+    }
 }
 
 .main-footer__menu-title {
@@ -9808,7 +9849,8 @@ ul li strong {
 .contracts__item {
     position: relative;
     width: calc(33.33333333% - 30px);
-    margin: 15px;
+    margin-bottom: 45px;
+    margin-left: 15px;
     padding-left: 65px;
 }
 
