@@ -57,6 +57,14 @@ section {
   min-width: 320px;
 }
 
+.content {
+  min-height: calc(100vh - 420px);
+
+  @media (max-width: $screen-md) {
+    min-height: calc(100vh - 455px);
+  }
+}
+
 .slick-slide {
   outline: 0;
 

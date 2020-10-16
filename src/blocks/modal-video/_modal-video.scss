@@ -1,14 +1,25 @@
 .modal-video {
-	.modal-header {
-		padding: 25px 0;
-		border: 0;
-	}	
-	.modal-body {
-		height: 400px;
-	}
+  .modal-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
 
-	.modal-close {
-		top: 20px;
-		right: 15px;
-	}
+  iframe {
+    border-radius: 10px;
+  }
+
+  .modal-header {
+    padding: 25px 0;
+    border: 0;
+  }
+  .modal-body {
+    height: 400px;
+  }
+
+  .modal-close {
+    // display: none;
+    top: 20px;
+    right: 15px;
+  }
 }

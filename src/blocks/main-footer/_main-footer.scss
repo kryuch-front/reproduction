@@ -5,6 +5,10 @@
   padding-bottom: 70px;
   background-color: $fiord;
 
+  @media (max-width: $screen-md) {
+    max-height: 455px;
+  }
+
   &__menu-title {
     display: block;
     min-height: 70px;

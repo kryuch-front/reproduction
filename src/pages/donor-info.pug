@@ -9,7 +9,7 @@ block vars
 	- var page = 'motherhood-info';
 	- var header_class = "main-header main-header--programm"
 	- var menu_btn_class = "btn-default main-header__menu-btn"
-	- var header_bg = "/dist/img/programm_desc/baner_bg4.jpg"
+	- var header_bg = "/dist/img/programm_desc/banner-6.jpg"
 	- var b_title = "Донорам"
 	- var b_text = "Одна ваша клеточка может принести кому-то счастье. Благородная помощь и отличная подработка."
 	- var b_btn_text = "Заполнить анкету"
@@ -62,29 +62,33 @@ block content
 
 		.text-block.block-text--dark
 			.container 
-				.block-title В программе донорства вы получаете:
-				ul
-					li Достойное вознаграждение в день забора клеток
-					li Размер гонорара не зависит от числа полученных яйцеклеток
-					li Бесплатный медицинский осмотр перед каждой пункцией
-					li Полную конфиденциальность (персональные данные зашифрованы)
-					li Привычный уклад жизни практически не меняется
-					li Достойную подработка для всех женщин, и даже студентов, мам в декрете
-					li Гордость за свой поступок
+				.row
+					.col-lg-6
+						img(src="/dist/img/donor-info-img.jpg", alt="", style="border-radius: 10px")
+					.col-lg-6
+						.block-title В программе донорства вы получаете:
+						ul
+								li Достойное вознаграждение в день забора клеток
+								li Размер гонорара не зависит от числа полученных яйцеклеток
+								li Бесплатный медицинский осмотр перед каждой пункцией
+								li Полную конфиденциальность (персональные данные зашифрованы)
+								li Привычный уклад жизни практически не меняется
+								li Достойную подработка для всех женщин, и даже студентов, мам в декрете
+								li Гордость за свой поступок		
 
 		.motherhood-programm
 			.container 
 				.block-title Донорство яйцеклеток. Программы агентства
 					.programm-card
 							.programm-card__image
-								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+								img(src="/dist/img/programm_desc/6-1.jpg", alt="")
 							.programm-card__info.donor-info
 								.programm-card__name Донорство по месту жительства
 								.programm-card__price 
 									span 50 000 руб.
 					.programm-card
 							.programm-card__image
-								img(src="/dist/img/programm_desc/programm2.jpg", alt="")
+								img(src="/dist/img/programm_desc/6-2.jpg", alt="")
 							.programm-card__info.donor-info
 								.programm-card__name Донорство для девушек <br> с вылетом в другой город или страну
 								.programm-card__price 

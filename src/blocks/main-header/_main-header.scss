@@ -220,7 +220,7 @@
 
     &-btn--original {
       position: relative;
-      padding-top: 27px;
+      padding-top: 32px;
       display: flex;
       justify-content: center;
       color: $fiord;
@@ -339,12 +339,32 @@
     }
   }
 
+  .gradient-logo {
+    display: none;
+  }
+
   &--bg {
     height: auto;
 
-    .main-header__top {
-      padding: 30px 0;
+    .white-logo {
+      display: none;
+    }
 
+    .gradient-logo {
+      display: block;
+    }
+
+    .main-header__top--fixed {
+      .white-logo {
+        display: block;
+      }
+
+      .gradient-logo {
+        display: none;
+      }
+    }
+
+    .main-header__top {
       @media (max-width: $screen-lg) {
         padding: 10px 0;
       }

@@ -10,7 +10,8 @@
   &__item {
     position: relative;
     width: calc(33.33333333% - 30px);
-    margin: 15px;
+    margin-bottom: 45px;
+    margin-left: 15px;
     padding-left: 65px;
 
     @media (max-width: $screen-md) {

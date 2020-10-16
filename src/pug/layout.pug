@@ -26,217 +26,191 @@ html(lang="ru")
 		link(href="./dist/vendor/jquery/jquery-ui.theme.min.css", rel="stylesheet")
 		link(href="./dist/vendor/brazzers/jQuery.Brazzers-Carousel.min.css" rel="stylesheet")
 	body
-		header(class=header_class)
-			if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "advantages" || page == "reviews" || page == "partners" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
-				.main-header__bg.d-none.d-md-block
-					img(src=header_bg, alt="")
-				.main-header__bg.mobile
-			.main-header__top
-				.container
-					.main-header__top-list
-						if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "advantages" || page == "reviews" || page == "partners" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
-							a(href="/").main-header__top-logo
-								img(src="/dist/img/logo.svg", alt="")
-							//- .main-header__top-logo.mobile
-							//- 	img(src="/dist/img/logo.svg", alt="")
-							//- .main-header__top-socials.d-none.d-md-flex
-							//- 	a(href="//vk.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-							//- 		img(src="/dist/img/ico/vk-gradient.svg", alt="")
-							//- 	a(href="//instagram.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-							//- 		img(src="/dist/img/ico/instagram-gradient.svg", alt="")
-							//- 	a(href="//ok.ru" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-							//- 		img(src="/dist/img/ico/ok-gradient.svg", alt="")
-							//- 	a(href="//youtube.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-							//- 		img(src="/dist/img/ico/youtube-gradient.svg", alt="")
-							a(href="#modalCity" data-toggle="modal" role="button").main-header__top-city Тюмень
-							.main-header__top-phone.d-none.d-xl-block
-								.main-header__top-phone_part
-									a(href="https://wa.me/89224730888").main-header__top-socials_item.main-header__top-socials_item--transparent
-										img(src="/dist/img/ico/whatsapp-original.svg", alt="")
-								.main-header__top-phone_part
-									a(href="tel:88005001080").main-header__top-phone_num 8-800-500-10-88
-									.main-header__top-phone_desc Бесплатный номер РФ
-							//- .main-header__top-phone.d-none.d-xl-block
-							//- 	a(href="tel:89224730888").main-header__top-phone_num 8-922-473-08-88
-							//- 	a(href="mailto:baby@babyural.ru").main-header__top-phone_desc baby@babyural.ru
-							a(href="#").js-btn-modal-menu.main-header__top-btn.d-none.d-sm-flex меню
-							a(href="#").js-mobile-menu.main-header__top-btn.d-block.d-sm-none меню
-						else
-							a(href="/").main-header__top-logo
-								img(src="/dist/img/logo-gradient.svg", alt="")
-							//- .main-header__top-socials.d-none.d-md-flex
-							//- 	a(href="//vk.com" target="_blank").main-header__top-socials_item
-							//- 		img(src="/dist/img/ico/vk-gradient.svg", alt="")
-							//- 	a(href="//instagram.com" target="_blank").main-header__top-socials_item
-							//- 		img(src="/dist/img/ico/instagram-original.svg", alt="")
-							//- 	a(href="//ok.ru" target="_blank").main-header__top-socials_item
-							//- 		img(src="/dist/img/ico/envelope.svg", alt="")
-							//- 	a(href="//youtube.com" target="_blank").main-header__top-socials_item
-							//- 		img(src="/dist/img/ico/youtube-original.svg", alt="")
-							//- .main-header__top-phone.d-none.d-xl-block
-							//- 	a(href="tel:88005001080").main-header__top-phone_num.color-fiord 8-800-500-10-88
-								.main-header__top-phone_desc.color-fiord Бесплатный номер РФ
-							//- .main-header__top-phone.d-none.d-xl-block
-							//- 	a(href="tel:89224730888").main-header__top-phone_num.color-fiord 8-922-473-08-88
-							//- 	a(href="mailto:baby@babyural.ru").main-header__top-phone_desc.color-fiord baby@babyural.ru
-							a(href="#modalCity" data-toggle="modal" role="button").main-header__top-city.color-fiord Тюмень
-							.main-header__top-phone.d-none.d-xl-block
-								.main-header__top-phone_part
-									a(href="https://wa.me/89224730888").main-header__top-socials_item.main-header__top-socials_item--transparent
-										img(src="/dist/img/ico/whatsapp-original.svg", alt="")
-								.main-header__top-phone_part
-									a(href="tel:88005001080").main-header__top-phone_num.color-fiord 8-800-500-10-88
-									.main-header__top-phone_desc.color-fiord Бесплатный номер РФ
-							a(href="#").js-btn-modal-menu.main-header__top-btn--original меню
-			.main-header__menu
-				.container
-					.row
-						.col-xl-9.col-lg-9.d-none.d-lg-block
-							.main-header__menu-list
-								a(href="#").main-header__menu-item Родителям
-								a(href="#").main-header__menu-item Донорам яйцеклеток
-								a(href="#").main-header__menu-item Суррогатным мамам
-								a(href="#").main-header__menu-item Об агенстве
-								//- a(href="#").main-header__menu-item Контакты
-						.col-xl-3.col-lg-3.d-none.d-lg-block
-							.main-header__top-socials.d-none.d-md-flex
-								a(href="//vk.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-									img(src="/dist/img/ico/vk-gradient.svg", alt="")
-								a(href="//instagram.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-									img(src="/dist/img/ico/instagram-gradient.svg", alt="")
-								a(href="//ok.ru" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-									img(src="/dist/img/ico/envelope.svg", alt="")
-								a(href="//youtube.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
-									img(src="/dist/img/ico/youtube-gradient.svg", alt="")
-							//- a(href="#callback" role="button" data-toggle="modal" class=menu_btn_class) Заказать обратный звонок
-				if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "reviews" || page == "partners" || page == "advantages" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
-					.main-banner
+		.wrapper
+			.content
+				header(class=header_class)
+					if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "advantages" || page == "reviews" || page == "partners" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
+						.main-header__bg.d-none.d-md-block
+							img(src=header_bg, alt="")
+						.main-header__bg.mobile
+					.main-header__top
 						.container
-							.main-banner__img
-								img(src="/dist/img/baby-mobile.png", alt="")
-							if b_title
-								.main-banner__title=b_title
-							if b_text
-								.main-banner__text=b_text
-							if b_btn_text
-								a(href="#").btn-default.main-banner__btn=b_btn_text
-							if b_second_btn_text
-								a(href="#").btn-default.main-banner__btn=b_second_btn_text
-							a(href="#").js-banner-scroll.btn-arrow
-					.main-adv.d-none.d-sm-none.d-md-block
+							.main-header__top-list
+								if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "advantages" || page == "reviews" || page == "partners" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
+									a(href="/").main-header__top-logo
+										img(src="/dist/img/logo.svg", alt="").white-logo
+										img(src="/dist/img/logo-gradient.svg", alt="").gradient-logo
+									a(href="#modalCity" data-toggle="modal" role="button").main-header__top-city Тюмень
+									.main-header__top-phone.d-none.d-xl-block
+										.main-header__top-phone_part
+											a(href="https://wa.me/89224730888").main-header__top-socials_item.main-header__top-socials_item--transparent
+												img(src="/dist/img/ico/whatsapp-original.svg", alt="")
+										.main-header__top-phone_part
+											a(href="tel:88005001080").main-header__top-phone_num 8-800-500-10-88
+											.main-header__top-phone_desc Бесплатный номер РФ
+									
+									a(href="#").js-btn-modal-menu.main-header__top-btn.d-none.d-sm-flex меню
+									a(href="#").js-mobile-menu.main-header__top-btn.d-block.d-sm-none меню
+								else
+									a(href="/").main-header__top-logo
+										img(src="/dist/img/logo.svg", alt="").white-logo
+										img(src="/dist/img/logo-gradient.svg", alt="").gradient-logo
+									a(href="#modalCity" data-toggle="modal" role="button").main-header__top-city.color-fiord Тюмень
+									.main-header__top-phone.d-none.d-xl-block
+										.main-header__top-phone_part
+											a(href="https://wa.me/89224730888").main-header__top-socials_item.main-header__top-socials_item--transparent
+												img(src="/dist/img/ico/whatsapp-original.svg", alt="")
+										.main-header__top-phone_part
+											a(href="tel:88005001080").main-header__top-phone_num.color-fiord 8-800-500-10-88
+											.main-header__top-phone_desc.color-fiord Бесплатный номер РФ
+									a(href="#").js-btn-modal-menu.main-header__top-btn--original меню
+					.main-header__menu
 						.container
 							.row
-								.col-md-3
-									.main-adv__item
-										.main-adv__item-title
-											span(data-start="1") 13
-											|&nbsp; лет
-										.main-adv__item-text
-											|боремся с бесплодием
-								.col-md-3
-									.main-adv__item
-										.main-adv__item-title
-											span(data-start="1") 11
-											|&nbsp; городов
-										.main-adv__item-text
-											| присутствия
-								.col-md-3
-									.main-adv__item
-										.main-adv__item-title
-											| >&nbsp;
-											span(data-start="1000") 3000
-											|&nbsp; кандидатов
-										.main-adv__item-text
-											| в каталоге
-								.col-md-3
-									.main-adv__item
-										.main-adv__item-title
-											span(data-start="1000") 0
-											|&nbsp; руб предоплата
-										.main-adv__item-text
-											| оплата по финишу
+								.col-xl-9.col-lg-9.d-none.d-lg-block
+									.main-header__menu-list
+										a(href="#").main-header__menu-item Родителям
+										a(href="#").main-header__menu-item Донорам яйцеклеток
+										a(href="#").main-header__menu-item Суррогатным мамам
+										a(href="#").main-header__menu-item Об агенстве
+								.col-xl-3.col-lg-3.d-none.d-lg-block
+									.main-header__top-socials.d-none.d-md-flex
+										a(href="//vk.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
+											img(src="/dist/img/ico/vk-gradient.svg", alt="")
+										a(href="//instagram.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
+											img(src="/dist/img/ico/instagram-gradient.svg", alt="")
+										a(href="//ok.ru" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
+											img(src="/dist/img/ico/envelope.svg", alt="")
+										a(href="//youtube.com" target="_blank").main-header__top-socials_item.main-header__top-socials_item--gradient
+											img(src="/dist/img/ico/youtube-gradient.svg", alt="")
+						if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "reviews" || page == "partners" || page == "advantages" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
+							.main-banner
+								.container
+									.main-banner__img
+										img(src="/dist/img/baby-mobile.png", alt="")
+									if b_title
+										.main-banner__title=b_title
+									if b_text
+										.main-banner__text=b_text
+									if b_btn_text
+										a(href="#").btn-default.main-banner__btn=b_btn_text
+									if b_second_btn_text
+										a(href="#").btn-default.main-banner__btn=b_second_btn_text
+									a(href="#").js-banner-scroll.btn-arrow
+							.main-adv.d-none.d-sm-none.d-md-block
+								.container
+									.row
+										.col-md-3
+											.main-adv__item
+												.main-adv__item-title
+													span(data-start="1") 13
+													|&nbsp; лет
+												.main-adv__item-text
+													|боремся с бесплодием
+										.col-md-3
+											.main-adv__item
+												.main-adv__item-title
+													span(data-start="1") 11
+													|&nbsp; городов
+												.main-adv__item-text
+													| присутствия
+										.col-md-3
+											.main-adv__item
+												.main-adv__item-title
+													| >&nbsp;
+													span(data-start="1000") 3000
+													|&nbsp; кандидатов
+												.main-adv__item-text
+													| в каталоге
+										.col-md-3
+											.main-adv__item
+												.main-adv__item-title
+													span(data-start="1000") 0
+													|&nbsp; руб предоплата
+												.main-adv__item-text
+													| оплата по финишу
 
-		main
-			block content
-		footer.main-footer
-			.container
-				.row
-					.col-lg-2.col-md-12
-						.main-footer__logo
-							img(src="/dist/img/logo.svg", alt="")
-						.main-footer__phone
-							a(href="tel:88005001088").main-footer__phone_num 8-800-500-10-88
-							.main-footer__phone_desc Бесплатный номер РФ
-						.main-footer__phone
-							//- a(href="tel:89224730888").main-footer__phone_num 8-922-473-08-88
-							//- a(href="mailto:baby@babyural.ru").main-footer__phone_desc baby@babyural.ru
-						.main-footer__adress г.Тюмень, ул. Осипенко
-						.main-footer__socials
-							a(href="//vk.com" target="_blank").socials_item
-								img(src="/dist/img/ico/vk-white.svg", alt="")
-							a(href="//instagram.com" target="_blank").socials_item
-								img(src="/dist/img/ico/instagram-white.svg", alt="")
-							a(href="//ok.ru" target="_blank").socials_item
-								img(src="/dist/img/ico/envelope-white.svg", alt="")
-							a(href="//youtube.com" target="_blank").socials_item
-								img(src="/dist/img/ico/youtube-white.svg", alt="")
-					.col-lg-2.d-none.d-lg-block
-						.main-footer__menu
-							.main-footer__menu-title
-								span Родителям: донорство яйцеклеток
-							.main-footer__menu-list
-								a.main-footer__menu-item(href="#") О программе
-								a.main-footer__menu-item(href="#") Стоимость
-								a.main-footer__menu-item(href="#") Частые вопросы
-								a.main-footer__menu-item(href="#") Вход в каталог
-								a.main-footer__menu-item(href="#") Заявка
-					.col-lg-2.d-none.d-lg-block
-						.main-footer__menu
-							.main-footer__menu-title
-								span Родителям: суррогатное материнство
-							.main-footer__menu-list
-								a.main-footer__menu-item(href="#") О программе
-								a.main-footer__menu-item(href="#") Стоимость
-								a.main-footer__menu-item(href="#") Частые вопросы
-								a.main-footer__menu-item(href="#") Вход в каталог
-								a.main-footer__menu-item(href="#") Заявка
-					.col-lg-2.d-none.d-lg-block
-						.main-footer__menu
-							.main-footer__menu-title
-								span Донорам <br> яйцеклеток
-							.main-footer__menu-list
-								a.main-footer__menu-item(href="#") О программе
-								a.main-footer__menu-item(href="#") Оплата
-								a.main-footer__menu-item(href="#") Частые вопросы
-								a.main-footer__menu-item(href="#") Анкета
-					.col-lg-2.d-none.d-lg-block
-						.main-footer__menu
-							.main-footer__menu-title
-								span Суррогатным <br> мамам
-							.main-footer__menu-list
-								a.main-footer__menu-item(href="#") О программе
-								a.main-footer__menu-item(href="#") Оплата
-								a.main-footer__menu-item(href="#") Частые вопросы
-								a.main-footer__menu-item(href="#") Анкета
-					.col-lg-2.d-none.d-lg-block
-						.main-footer__menu
-							.main-footer__menu-title
-								span Об агенстве
-							.main-footer__menu-list
-								a.main-footer__menu-item(href="#") Преимущества
-								a.main-footer__menu-item(href="#") Отзывы
-								a.main-footer__menu-item(href="#") СМИ о нас
-								a.main-footer__menu-item(href="#") Контакты
+				main
+					block content
+			footer.main-footer
+				.container
+					.row
+						.col-lg-2.col-md-12
+							.main-footer__logo
+								img(src="/dist/img/logo.svg", alt="")
+							.main-footer__phone
+								a(href="tel:88005001088").main-footer__phone_num 8-800-500-10-88
+								.main-footer__phone_desc Бесплатный номер РФ
+							.main-footer__phone
+								//- a(href="tel:89224730888").main-footer__phone_num 8-922-473-08-88
+								//- a(href="mailto:baby@babyural.ru").main-footer__phone_desc baby@babyural.ru
+							.main-footer__adress г.Тюмень, ул. Осипенко
+							.main-footer__socials
+								a(href="//vk.com" target="_blank").socials_item
+									img(src="/dist/img/ico/vk-white.svg", alt="")
+								a(href="//instagram.com" target="_blank").socials_item
+									img(src="/dist/img/ico/instagram-white.svg", alt="")
+								a(href="//ok.ru" target="_blank").socials_item
+									img(src="/dist/img/ico/envelope-white.svg", alt="")
+								a(href="//youtube.com" target="_blank").socials_item
+									img(src="/dist/img/ico/youtube-white.svg", alt="")
+						.col-lg-2.d-none.d-lg-block
+							.main-footer__menu
+								.main-footer__menu-title
+									span Родителям: донорство яйцеклеток
+								.main-footer__menu-list
+									a.main-footer__menu-item(href="#") О программе
+									a.main-footer__menu-item(href="#") Стоимость
+									a.main-footer__menu-item(href="#") Частые вопросы
+									a.main-footer__menu-item(href="#") Вход в каталог
+									a.main-footer__menu-item(href="#") Заявка
+						.col-lg-2.d-none.d-lg-block
+							.main-footer__menu
+								.main-footer__menu-title
+									span Родителям: суррогатное материнство
+								.main-footer__menu-list
+									a.main-footer__menu-item(href="#") О программе
+									a.main-footer__menu-item(href="#") Стоимость
+									a.main-footer__menu-item(href="#") Частые вопросы
+									a.main-footer__menu-item(href="#") Вход в каталог
+									a.main-footer__menu-item(href="#") Заявка
+						.col-lg-2.d-none.d-lg-block
+							.main-footer__menu
+								.main-footer__menu-title
+									span Донорам <br> яйцеклеток
+								.main-footer__menu-list
+									a.main-footer__menu-item(href="#") О программе
+									a.main-footer__menu-item(href="#") Оплата
+									a.main-footer__menu-item(href="#") Частые вопросы
+									a.main-footer__menu-item(href="#") Анкета
+						.col-lg-2.d-none.d-lg-block
+							.main-footer__menu
+								.main-footer__menu-title
+									span Суррогатным <br> мамам
+								.main-footer__menu-list
+									a.main-footer__menu-item(href="#") О программе
+									a.main-footer__menu-item(href="#") Оплата
+									a.main-footer__menu-item(href="#") Частые вопросы
+									a.main-footer__menu-item(href="#") Анкета
+						.col-lg-2.d-none.d-lg-block
+							.main-footer__menu
+								.main-footer__menu-title
+									span Об агенстве
+								.main-footer__menu-list
+									a.main-footer__menu-item(href="#") Преимущества
+									a.main-footer__menu-item(href="#") Отзывы
+									a.main-footer__menu-item(href="#") СМИ о нас
+									a.main-footer__menu-item(href="#") Контакты
 
-					.col-lg-5.col-md-12.col-12
-						.main-footer__copy
-							| © 2006-2019 ООО Репродукция, ИНН 7204207510, ОГРН 1147232029306
-					.col-lg-4.col-md-6.col-12
-						.main-footer__copy
-							a(href="#") Политика конфиденциальности
-					.col-lg-3.col-md-6.col-12
-						.main-footer__copy
-							a(href="//vprioritete.ru") Создание сайта ИК «Приоритет»
+						.col-lg-5.col-md-12.col-12
+							.main-footer__copy
+								| © 2006-2019 ООО Репродукция, ИНН 7204207510, ОГРН 1147232029306
+						.col-lg-4.col-md-6.col-12
+							.main-footer__copy
+								a(href="#") Политика конфиденциальности
+						.col-lg-3.col-md-6.col-12
+							.main-footer__copy
+								a(href="//vprioritete.ru") Создание сайта ИК «Приоритет»
 
 
 		.modal-menu
