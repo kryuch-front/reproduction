@@ -557,6 +557,18 @@ $(function () {
     });
   }
 
+  $(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
+    var pageHeight = $(document).height();
+    var windowHeight = $(this).height();
+
+    $(".page-order__bg").css({
+      opacity: function () {
+        return 1 - scrollTop / (pageHeight - windowHeight);
+      },
+    });
+  });
+
   /* js-form-clear end */
 });
 
