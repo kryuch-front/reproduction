@@ -4270,7 +4270,9 @@ ul li strong {
 }
 
 .main-header__bg.mobile {
-    background-image: url("/dist/img/mobile-bcg.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .main-header__top {
@@ -4703,8 +4705,8 @@ ul li strong {
 
 @media (max-width: 576px) {
     .main-banner {
-        margin-top: 60px;
-        position: static;
+        position: absolute;
+        bottom: 0%;
     }
 }
 

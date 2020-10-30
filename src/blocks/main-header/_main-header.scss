@@ -33,7 +33,10 @@
   &__bg.mobile {
     // background: $aqua;
     // transform: rotate(-180deg);
-    background-image: url("/dist/img/mobile-bcg.png");
+    // background-image: url("/dist/img/mobile-bcg.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   &__top {

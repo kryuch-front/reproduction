@@ -8,9 +8,10 @@
   color: $white;
 
   @media (max-width: $screen-xs) {
-    // margin-top: 0;
-    margin-top: 60px;
-    position: static;
+    position: absolute;
+    bottom: 0%;
+    // margin-top: 60px;
+    // position: static;
   }
   @media (max-width: $screen-5s) {
     margin-top: 40px;
