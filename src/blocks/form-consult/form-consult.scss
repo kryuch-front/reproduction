@@ -11,6 +11,7 @@
   &__body {
     display: flex;
     position: relative;
+    color: $black-text !important;
 
     @media (max-width: $screen-md) {
       flex-wrap: wrap;

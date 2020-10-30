@@ -10,11 +10,19 @@
 
   &__bg {
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: -1;
+
+    &-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
 
     img {
       width: 100%;
@@ -23,8 +31,9 @@
     }
   }
   &__bg.mobile {
-    background: $aqua;
-    transform: rotate(-180deg);
+    // background: $aqua;
+    // transform: rotate(-180deg);
+    background-image: url("/dist/img/mobile-bcg.png");
   }
 
   &__top {

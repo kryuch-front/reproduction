@@ -4,12 +4,13 @@ include ../blocks/video/video.pug
 include ../blocks/form-consult/form-consult.pug
 include ../blocks/partners/partners.pug
 include ../blocks/map/map.pug
-
+//- /dist/img/main-banner__baby.png
 block vars
 	- var page = 'index';
 	- var header_class = "main-header"
 	- var menu_btn_class = "btn-default main-header__menu-btn"
-	- var header_bg = "/dist/img/main-banner__baby.png"
+	- var header_bg = ""
+	- var header_bg_video = "/dist/img/video/main.mp4"
 	- var b_title = "Мы поможем вам стать родителями!"
 	- var b_text = "Суррогатное материнство и донорство яйцеклеток. Работаем в нескольких регионах России."
 	- var b_btn_text = "Узнать как"
@@ -24,7 +25,7 @@ block content
 					.col-lg-6
 						.categories__item
 							.categories__item-bg
-								img(src="/dist/img/category-1.png", alt="Родителям: донорство яйцеклеток яйцеклеток")
+								img(src="/dist/img/main/1-1.jpg", alt="Родителям: донорство яйцеклеток яйцеклеток")
 							.categories__item-links
 								a(href="#").categories__item-mainlink Родителям: донорство яйцеклеток яйцеклеток
 								.categories__item-links_list
@@ -35,7 +36,7 @@ block content
 					.col-lg-6
 						.categories__item
 							.categories__item-bg
-								img(src="/dist/img/category-2.png", alt="Родителям: суррогатное материнство")
+								img(src="/dist/img/main/1-6.jpg", alt="Родителям: суррогатное материнство")
 							.categories__item-links
 								a(href="#").categories__item-mainlink Родителям: суррогатное материнство
 								.categories__item-links_list
@@ -46,7 +47,7 @@ block content
 					.col-lg-6
 						.categories__item
 							.categories__item-bg
-								img(src="/dist/img/category-3.png", alt="Донорам яйцеклеток")
+								img(src="/dist/img/main/1-3.jpg", alt="Донорам яйцеклеток")
 							.categories__item-links
 								a(href="#").categories__item-mainlink Донорам яйцеклеток
 								.categories__item-links_list
@@ -56,7 +57,7 @@ block content
 					.col-lg-6
 						.categories__item
 							.categories__item-bg
-								img(src="/dist/img/category-4.png", alt="Суррогатным мамам")
+								img(src="/dist/img/main/1-4.jpg", alt="Суррогатным мамам")
 							.categories__item-links
 								a(href="#").categories__item-mainlink Суррогатным мамам
 								.categories__item-links_list

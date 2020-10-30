@@ -30,8 +30,15 @@ html(lang="ru")
 			.content
 				header(class=header_class)
 					if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "advantages" || page == "reviews" || page == "partners" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
-						.main-header__bg.d-none.d-md-block
-							img(src=header_bg, alt="")
+						if header_bg !== "" 
+							.main-header__bg.d-none.d-md-block
+								.main-header__bg-overlay
+								img(src=header_bg, alt="")
+						else 
+							.main-header__bg.main-header__bg-video.d-none.d-md-block
+								.main-header__bg-test
+								video(width="100%", height="auto", autoplay, loop)
+									source(src=header_bg_video, type='video/mp4')
 						.main-header__bg.mobile
 					.main-header__top
 						.container
@@ -86,8 +93,8 @@ html(lang="ru")
 						if page == "index" || page == "programm-desc-1" || page == "programm-desc-2" || page == "programm-desc-3" || page == "programm-desc-4" || page == "faq" || page == "reviews" || page == "partners" || page == "advantages" || page == "motherhood" || page == "donor" || page == "motherhood-info" || page == "donor-info" || page == "motherhood-moscow"
 							.main-banner
 								.container
-									.main-banner__img
-										img(src="/dist/img/baby-mobile.png", alt="")
+									//- .main-banner__img
+									//- 	img(src="/dist/img/baby-mobile.png", alt="")
 									if b_title
 										.main-banner__title=b_title
 									if b_text
