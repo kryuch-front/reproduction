@@ -467,6 +467,7 @@ ul.white-list {
   width: 100%;
   width: calc(100% * 3);
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  height: 99px !important; 
 }
 .wave-bottom {
   position: absolute;
@@ -477,6 +478,7 @@ ul.white-list {
   width: 100%;
   width: calc(100% * 3);
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  height: 100px !important; 
 }
 
 @keyframes wave {
@@ -485,6 +487,15 @@ ul.white-list {
   }
   100% {
     background-position-x: -1920px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
   }
 }
 

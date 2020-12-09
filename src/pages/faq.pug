@@ -12,7 +12,8 @@ block vars
 	- var header_bg = "/dist/img/9.png"
 	- var b_title = "Родителям: часто задаваемые вопросы"
 	- var b_text = ""
-	- var b_btn_text = ""
+	- var b_btn_text = "Задать вопрос"
+	- var b_btn_link = "#"
 
 block content
 	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Часто задаваемые вопросы", class: "current"}])
@@ -23,9 +24,10 @@ block content
 					.reviews__tabs-wrapper
 							.reviews__tabs
 								.nav
-									a(href="#").reviews__tabs-item.active.js-switch-reviews Родителям
-									a(href="#").reviews__tabs-item.js-switch-reviews Суррогатным мамам
-									a(href="#").reviews__tabs-item.js-switch-reviews Донорам
+									a(href="#").reviews__tabs-item.active.js-switch-reviews Родители о донорстве
+									a(href="#").reviews__tabs-item.js-switch-reviews Родители о суррогатном материнстве
+									a(href="#").reviews__tabs-item.js-switch-reviews Суррогатные мамы
+									a(href="#").reviews__tabs-item.js-switch-reviews Доноры яйцеклеток
 					#parent-faq.faq
 						.faq__item
 							a(href="#faq-1" data-toggle="collapse" aria-expanded="true" role="button").faq__item-name Суррогатные мамы без опыта

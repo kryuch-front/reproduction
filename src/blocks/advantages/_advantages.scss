@@ -7,6 +7,10 @@
     background: none;
   }
 
+  &-list{
+    margin-bottom: 50px;
+  }
+
   &__desc {
     margin-bottom: 50px;
   }
@@ -64,6 +68,40 @@
       font-size: 18px;
       padding: 20px 30px;
     }
+  }
+}
+
+
+.desc-tab {
+  position: relative;
+  font-weight: 400;
+  
+  &-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  &-content {
+    margin-top: 15px;
+    p {
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+ 
+  &::after {
+    position: absolute;
+    content: "";
+    background: url(/dist/img/ico/arrow-accordion-down.svg) no-repeat center;
+    right: -45px;
+    top: -5px;
+    width: 31px;
+    transform: rotate(-180deg);
+    height: 31px;
+    transition: all 0.2s ease-out;
+  }
+
+  &[aria-expanded="false"]::after {
+    transform: rotate(0);
   }
 }
 /* advantages end */

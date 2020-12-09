@@ -27,7 +27,7 @@ block content
 					+pagination(5)
 
 block modal
-	include ../blocks/modal-mother-full-card/modal-mother-full-card.pug
+	include ../blocks/modal-mother-full-card/modal-mother-full-card-vip.pug
 
 	div(class="modal fade modal-resus" id="resus-table" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true")
 		div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
@@ -36,11 +36,15 @@ block modal
 					button(type="button" class="modal-close" data-dismiss="modal" aria-label="Close")
 				.modal-body
 					.resus-table
+						p С медицинской точки зрения, группа крови донора яйцеклеток никак не влияет на результат ноступления беременности.
+						p Выбирать донора по группе крови следует только в ситуации, если вы опасаетесь, что в дальнейшем будущий ребенок, сопоставив группы крови родителей, начнёт задавать неудобные вопросы.
+						p Неправильно считать, что выбирая группу крови донора яйцеклеток, нужно выбирать группу крови матери или отца. Если с кровью матери это утверждение верно, то с кровью отца не так всё однозначно. Изучите внимательно таблицу и следуйте предложенным вариантам. Или выбирайте донора «По зову сердца» не обращая внимание на группу и резус.
+						p Удачного поиска! 
 						.resus-table__item
-							.resus-table__item-title Возможные группы крови <span class="gradient-text">ребёнка</span>
+							.resus-table__item-title Какая кровь может быть у <span class="gradient-text">вашего совместного</span> ребенка
 							img(src="/dist/img/table-resus-child.svg", alt="")
 						.resus-table__item
-							.resus-table__item-title Возможные группы крови <span class="gradient-text">донора</span>
+							.resus-table__item-title Какая кровь должна быть у <span class="gradient-text">донора яйцеклеток</span> в вашей паре
 							img(src="/dist/img/table-resus-donor.svg", alt="")
 						.resus-table__btn
 							a(href="#" class="btn-aqua") Подробнее

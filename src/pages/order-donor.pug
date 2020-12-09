@@ -1,0 +1,316 @@
+extends ../pug/layout.pug
+
+include ../blocks/breadcrumbs/breadcrumbs.pug
+include ../blocks/block-profile-info/profile-info.pug
+include ../blocks/block-sidebar-menu/sidebar-menu.pug
+
+block vars
+	- var page = 'order-1';
+	- var header_class = "main-header main-header--bg" 
+	- var menu_btn_class = "btn-white main-header__menu-btn"
+
+block content
+	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Личный кабинет"},{href:"#",name: "Анкета", class: "current"}])
+
+	section.page.page-order
+		//- TODO add image fixed image
+		.page-order__bg
+			img(src="/dist/img/mam-bg.png", alt="")
+		.container
+			.row
+				.col-lg-9.col-sm-12
+					h2.page-title Анкета для доноров яйцеклеток или суррогатных мам
+					.page-content
+						blockquote <strong>Анкета заполняется девушками до 34 лет.</strong> Пожалуйста, не заполняйте анкету, если вы старше. Если у вас не получилось заполнить анкету на сайте, просьба написать нам на электронную почту info@yoona.ru
+					.order.order-submother-request
+						form(action="").form.form-order.form-order-surmother-request
+							.form__body
+								.row
+									.col-12.col-sm-8
+										.form__field
+											.form__field-name Фамилия Имя Отчество <span>*</span>
+											input(type="text" class="form-input" placeholder="Ситникова Екатерина Виталиевна")
+								.row
+									.col-12.col-sm-12
+										.form__field 
+											.form__field-name Вид программы (можно выбрать несколько)
+											label.checkbox-wrapper
+												input(type="checkbox" name="agreement")
+												span.form__agreement-text Донорство яйцеклеток
+											label.checkbox-wrapper
+												input(type="checkbox" name="agreement")
+												span.form__agreement-text Суррогатное материнство в своём регионе
+											label.checkbox-wrapper
+												input(type="checkbox" name="agreement")
+												span.form__agreement-text Суррогатное материнство с переездом в Москвку или Санкт-Петербург
+								.row
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name Город проживания <span>*</span>
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-4
+										.form__field
+											.form__field-name Номер телефона
+											input(type="phone" class="form-input" placeholder="+7 (___) ___ - __ - __")
+								.form__field-name Дата рождения			
+								.row
+									.col-12.col-sm-4
+										.form__field.clearfix
+											select.form-select.js-nice-select
+												option(value="" hidden disabled selected) День
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+												option(value="4") 4
+												option(value="5") 5
+												option(value="6") 6
+												option(value="7") 7
+												option(value="8") 8
+												option(value="9") 9
+												option(value="10") 10
+												option(value="11") 11
+												option(value="12") 12
+									.col-12.col-sm-4
+										.form__field.clearfix
+											select.form-select.js-nice-select
+												option(value="" hidden disabled selected) Месяц
+												option(value="Январь") Январь
+												option(value="Февраль") Февраль
+												option(value="Март") Март
+												option(value="Апрель") Апрель
+												option(value="Май") Май
+												option(value="Июнь") Июнь
+												option(value="Июль") Июль
+												option(value="Август") Август
+												option(value="Сентябрь") Сентябрь
+												option(value="Октябрь") Октябрь
+												option(value="Ноябрь") Ноябрь
+												option(value="Декабрь") Декабрь
+									.col-12.col-sm-4
+										.form__field.clearfix
+											select.form-select.js-nice-select
+												option(value="" hidden disabled selected) Год
+												option(value="2002") 2002 г.
+												option(value="2001") 2001 г.
+												option(value="2000") 2000 г.
+												option(value="1999") 1999 г.
+												option(value="1998") 1998 г.
+												option(value="1997") 1997 г.
+												option(value="1996") 1996 г.
+												option(value="1995") 1995 г.
+												option(value="1994") 1994 г.
+												option(value="1993") 1993 г.
+												option(value="1992") 1992 г.
+												option(value="1991") 1991 г.
+												option(value="1985") 1985 г.		
+								.row
+									.col-12
+										.form__field-name Ваши профили в соц. сетях
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--instagram
+												input(type="text" data-type="instagram" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social
+											.form-input__wrap
+												.form-input-icon.form-input-icon--vk
+												input(type="text" data-type="vk" class="form-input" placeholder="")
+									.col-12.col-sm-6.col-md-4
+										.form__field.form__field-social.form__field-social-add
+											.form-input__wrap.js-add-social-input
+												.form-input-icon.form-input-icon--add
+												select.form-select.js-nice-select
+													option(value="" hidden disabled selected) Добавить другую соц.сеть
+													option(value="fb") Facebook
+													option(value="ok") Одноклассники
+													option(value="wa") what’s app
+													option(value="tg") telegram
+								.row
+									.col-12.col-sm-4
+										.form__field.clearfix
+											.form__field-name Национальность
+											select.form-select.js-nice-select
+												option(value="Русская") Русская
+												option(value="Татарка") Татарка
+												option(value="Казашка") Казашка
+												option(value="Казашка") Украинка
+												option(value="Казашка") Армянка
+												option(value="Казашка") Другое
+									.col-12.col-sm-4
+										.form__field.clearfix
+											.form__field-name Группа крови
+											select.form-select.js-nice-select
+												option(value="Среднее") Первая
+												option(value="Высшее") Вторая
+												option(value="Неоконченное высшее") Третья
+												option(value="Среднеспециальное") Четвертая
+									.col-12.col-sm-4
+										.form__field.clearfix
+											.form__field-name Резус крови
+											select.form-select.js-nice-select
+												option(value="Среднее") Положительная
+												option(value="Высшее") Отрицательная
+									.col-12.col-sm-6
+										.form__field
+											.form__field-name Рост
+											.form-range
+												input(type="hidden" name="height['min']" value="155")
+												input(type="hidden" name="height['max']" value="190")
+												div(data-from="155" data-to="190").js-range
+													.js-range-min 155
+													.js-range-max 190
+									.col-12.col-sm-6
+										.form__field
+											.form__field-name Вес
+											.form-range
+												input(type="hidden" name="weight['min']" value="45")
+												input(type="hidden" name="weight['max']" value="95")
+												div(data-from="45" data-to="95").js-range
+													.js-range-min 45
+													.js-range-max 95			
+									.col-12.col-sm-6
+										.form__field
+											.form__field-name Цвет глаз
+											.form-select-color
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Серый").color.color--gray.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Голубой").color.color--blue.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Голубо-зеленый").color.color--blue-green.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Зеленый").color.color--green.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Карий").color.color--brown.js-tooltip
+									.col-12.col-sm-6
+										.form__field
+											.form__field-name Цвет волос
+											.form-select-color
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Черный").color.color--black.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Каштановый").color.color--brown.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Рыжий").color.color--orange.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Русый").color.color--gold.js-tooltip
+												label.custom-color-checkbox
+													input(class="color-checkbox" type="checkbox")
+													span(data-toggle="tooltip" title="Блондинка").color.color--blonde.js-tooltip
+									.col-12.col-sm-6
+										.form__field.clearfix
+											.form__field-name Образование
+											select.form-select.js-nice-select
+												option(value="Начальное") Начальное
+												option(value="Среднее") Среднее
+												option(value="Высшее") Высшее
+									.col-12.col-sm-6
+										.form__field
+											.form__field-name Профессия
+											input(type="text" class="form-input" placeholder="")
+									.col-12.col-sm-6
+										.form__field.clearfix
+											.form__field-name Замужем
+											select.form-select.js-nice-select
+												option(value="Да") Да
+												option(value="Нет") Нет
+									.col-12.col-sm-6
+										.form__field.clearfix
+											.form__field-name Количество детей
+											select.form-select.js-nice-select
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+												option(value="4") 4
+												option(value="5") 5
+								.row
+									.add-child-row.col-12
+										.row
+											.col-12.col-sm-4
+												.form__field.clearfix
+													.form__field-name Месяц рождения ребенка
+													select.form-select.js-nice-select
+														option(value="Январь") Январь
+														option(value="Февраль") Февраль
+														option(value="Март") Март
+														option(value="Апрель") Апрель
+														option(value="Май") Май
+														option(value="Июнь") Июнь
+														option(value="Июль") Июль
+														option(value="Август") Август
+														option(value="Сентябрь") Сентябрь
+														option(value="Октябрь") Октябрь
+														option(value="Ноябрь") Ноябрь
+														option(value="Декабрь") Декабрь
+											.col-12.col-sm-4
+												.form__field
+													.form__field-name Год рождения ребенка
+													select.form-select.js-nice-select
+														option(value="2020") 2020 г.
+														option(value="2019") 2019 г.
+														option(value="2018") 2018 г.
+														option(value="2017") 2017 г.
+														option(value="2016") 2016 г.
+														option(value="2015") 2015 г.
+														option(value="2014") 2014 г.
+														option(value="2013") 2013 г.
+														option(value="2012") 2012 г.
+														option(value="2011") 2011 г.
+														option(value="2010") 2010 г.
+														option(value="2009") 2009 г.
+														option(value="2008") 2008 г.
+														option(value="2007") 2007 г.
+														option(value="2006") 2006 г.
+														option(value="2005") 2005 г.
+														option(value="2004") 2004 г.
+														option(value="2003") 2003 г.
+														option(value="2002") 2002 г.
+														option(value="2001") 2001 г.
+														option(value="2000") 2000 г.
+											.col-12.col-sm-4
+												.form__field
+													.form__field-name Пол ребенка
+													.form-checkbox-gradient
+														label.custom-checkbox-gradient
+															input(class="male-checkbox" type="radio" name="male" checked)
+															span.custom-checkbox-gradient__text Мужской
+														label.custom-checkbox-gradient
+															input(class="male-checkbox" type="radio" name="male")
+															span.custom-checkbox-gradient__text Женский
+									.col-12.col-sm-4
+										.form__field
+											button.form__btn-child.js-add-child Добавить ребенка
+								.row
+									.col-12
+										.form__field.form__field--horizontal.mt0
+											.form__field-name.ml0 Было кесарево сечение?
+											label.custom-switch
+												input(type="checkbox" class="checkbox")
+												span.switch-handle
+												span.yes Да
+												span.no Нет
+									.col-12
+										.form__field
+											.form__field-name Дополнительная информация, которую Вы хотите сообщить
+											textarea(name="", cols="30", rows="10").form-textarea
+									.col-12
+										.form__field 
+											label.form__agreement
+												input(type="checkbox" name="agreement")
+												span.form__agreement-text Согласен на обработку персональных данных в соответствии с <a href="">политикой конфиденциальности</a>
+									.col-12
+										.form__field.form__field-captcha.form-field__captcha
+											.g-recaptcha(data-sitekey="6LeNGMUUAAAAAIdwqM4ZtR-qx-ipELQIlY3rR_bt")
+									.col-12
+										.form__field-submit.form__field-submit--request
+											button(href="" class="btn-aqua") Отправить заявку

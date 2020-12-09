@@ -4,9 +4,14 @@
   align-items: center;
   margin: 50px 0;
   padding: 35px 40px;
+  text-decoration: none !important;
 
   background: $gradient;
   border-radius: 10px;
+
+  &:hover {
+    background: linear-gradient(90deg, #AB86E4 0%, #6288E4 100%);
+  }
 
   @media (max-width: $screen-lg) {
     padding: 25px 20px;
@@ -26,6 +31,8 @@
     @include heading2;
     font-weight: 400;
     color: $white;
+    display: block;
+    text-align: center;
 
     @media (max-width: $screen-sm) {
       width: 100%;

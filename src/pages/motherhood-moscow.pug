@@ -11,8 +11,9 @@ block vars
 	- var menu_btn_class = "btn-default main-header__menu-btn"
 	- var header_bg = "/dist/img/7.0.png"
 	- var b_title = "Суррогатное материнство в Москве"
-	- var b_text = "Приглашаем девушек для выездных программ. Полный переезд с семьёй. Быстрый запуск в программу. "
-	- var b_btn_text = "Узнать подробности"
+	- var b_text = "Полный переезд с семьей. Быстрый запуск в программу"
+	- var b_btn_text = "Заполнить анкету"
+	- var b_btn_link = "#"
 
 block content
 	+breadcrumbs([{href:"#",name: "Главная"},{href:"#",name: "Родителям"},{href:"#",name: "Суррогатное материнство", class: "current"}])
@@ -76,8 +77,8 @@ block content
 										.col-md-6
 											.programm-card__rate-price
 												span от 30 000 руб.
-								.programm-card__button
-									a(href="#" class="btn-aqua") Подробнее
+								//- .programm-card__button
+								//- 	a(href="#" class="btn-aqua") Подробнее
 
 		.guarantee
 			.container
@@ -96,7 +97,7 @@ block content
 						.guarantee__item Работать на несложной и не вредной работе - можно. Это большой плюс, потому что зарплаты даже не квалифицированных работников в Москве на порядок выше, чем в регионе. Вы можете откладывать деньги.  Особенно, если с вами ещё и работает муж, накопить можно существенную сумму, ведь деньги на питание и быт тратить не нужно.
 						.guarantee__item Если у вас ребенок - школьник, есть возможность устроить его в московскую школу, но делать это придётся самостоятельно: обычно оформляют временную прописку на основании договора аренды (который будет на ту квартиру, где вы проживаете) и тогда проблем не возникает. Устроить в детский сад ребенка не получится.
 
-		.motherhood-faq(style="background: url(/dist/img/7.3.png); background-repeat: no-repeat; background-size: cover;")
+		.motherhood-faq(style="background: url(/dist/img/7.3.png); background-repeat: no-repeat; background-size: cover; background-position: center;")
 			.wave-top
 			.container#faq-item-parent
 				.row

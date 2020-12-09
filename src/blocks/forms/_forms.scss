@@ -93,10 +93,11 @@
 
       &-add {
         cursor: pointer;
+        height: 47px;
 
         .form-input__wrap .form-select {
-          width: 56px;
-          padding: 12px 10px;
+          // width: 56px;
+          padding: 12px 50px;
         }
 
         .nice-select {
@@ -268,7 +269,7 @@
 
     &-icon {
       position: absolute;
-      z-index: 10;
+      z-index: 1;
 
       &--search {
         right: 20px;
@@ -335,6 +336,87 @@
         height: 28px;
 
         background-image: url("/dist/img/ico/icon-vk.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 17px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--fb {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-fb.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 17px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--tg {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-tg.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 17px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+
+      &--ok {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-ok.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $screen-lg) {
+          left: 10px;
+          top: 17px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &--wa {
+        left: 15px;
+        top: 20px;
+
+        width: 28px;
+        height: 28px;
+
+        background-image: url("/dist/img/ico/icon-whatsapp.svg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -654,7 +736,7 @@
         transition: all 0.2s;
 
         @media (max-width: $screen-lg) {
-          padding: 7px 10px;
+          padding: 12px 10px;
           font-size: 14px;
           line-height: 14px;
         }
@@ -669,6 +751,7 @@
   }
 
   &__btn-child {
+    width: 100%;
     margin: 5px 0 0;
     padding: 15px 50px;
 
@@ -684,7 +767,7 @@
     cursor: pointer;
 
     @media (max-width: $screen-lg) {
-      padding: 7px 20px;
+      padding: 15px 20px;
       font-size: 16px;
       line-height: 14px;
     }
@@ -694,7 +777,7 @@
     }
 
     @media (max-width: $screen-xs) {
-      margin-top: 0;
+      margin: 15px 0;
     }
 
     &:hover {
@@ -709,6 +792,15 @@
 
     input {
       display: none;
+
+      &:checked ~ .form__agreement-text::after {
+        content: "\2714";
+        background: linear-gradient(90deg, #6288E4 0%, #AB86E4 100%);
+        border: none;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+      }
     }
 
     &-text {
@@ -721,8 +813,8 @@
       }
 
       @media (max-width: $screen-xs) {
-        padding-left: 15px;
-        font-size: 12px;
+        padding-left: 20px;
+        font-size: 16px;
       }
 
       a {
@@ -744,10 +836,10 @@
         border-radius: 3px;
 
         @media (max-width: $screen-xs) {
-          top: 0;
+          top: 2px;
 
-          width: 12px;
-          height: 12px;
+          width: 15px;
+          height: 15px;
         }
       }
     }
@@ -1083,4 +1175,133 @@
   .form__field--horizontal {
     padding-top: 31px;
   }
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+
+  input {
+    display: none;
+    &:checked ~ .form__agreement-text::after {
+      content: "\2714";
+      background: linear-gradient(90deg, #6288E4 0%, #AB86E4 100%);
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  &-text {
+    display: block;
+    padding-left: 35px;
+
+    @media (max-width: $screen-lg) {
+      line-height: 130%;
+      font-size: 16px;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding-left: 15px;
+      font-size: 12px;
+    }
+
+    a {
+      color: $black-text;
+      font-weight: 500;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 20px;
+      height: 20px;
+
+      border: 1px solid #cacaca;
+      border-radius: 3px;
+
+      @media (max-width: $screen-xs) {
+        top: 0;
+
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+
+.nice-select {
+  .list {
+    max-height: 180px;
+    overflow-y: scroll;
+    z-index: 999;
+  }
+}
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    &:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  input:checked ~ .checkmark {
+    background: $gradient;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }

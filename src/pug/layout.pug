@@ -74,8 +74,10 @@ html(lang="ru")
 											a(href="tel:88005001080").main-header__top-phone_num.color-fiord 8-800-500-10-88
 											.main-header__top-phone_desc.color-fiord Бесплатный номер РФ
 									a(href="#").js-btn-modal-menu.main-header__top-btn--original меню
+							
 					.main-header__menu
 						.container
+							//- hr
 							.row
 								.col-xl-9.col-lg-9.d-none.d-lg-block
 									.main-header__menu-list
@@ -103,9 +105,9 @@ html(lang="ru")
 									if b_text
 										.main-banner__text=b_text
 									if b_btn_text
-										a(href="#").btn-default.main-banner__btn=b_btn_text
+										a(href=b_btn_link).btn-default.main-banner__btn=b_btn_text
 									if b_second_btn_text
-										a(href="#").btn-default.main-banner__btn=b_second_btn_text
+										a(href=b_second_btn_link).btn-default.main-banner__btn=b_second_btn_text
 									a(href="#").js-banner-scroll.btn-arrow
 							.main-adv.d-none.d-sm-none.d-md-block
 								.container

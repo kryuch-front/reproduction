@@ -54,7 +54,7 @@
   }
 
   &-steps {
-    // background: url("/dist/img/spermagoal.png") no-repeat left;
+    position: relative;
     &__list {
       margin-bottom: 50px;
       &-item {
@@ -103,7 +103,8 @@
         }
 
         &:hover &__icon {
-          background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+          // background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
+          background: $gradient;
           border: none;
           &-hover {
             display: block;
@@ -149,6 +150,16 @@
       padding: 15px 70px;
       font-size: 18px;
       font-weight: 300;
+    }
+
+    &_spermagoal {
+      position: absolute;
+      left: -5%;
+      z-index: -1;
+
+      @media (max-width: $screen-blg) {
+        display: none;
+      }
     }
   }
 }

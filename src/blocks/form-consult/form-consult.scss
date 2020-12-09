@@ -1,15 +1,21 @@
 .consultation {
-  background: linear-gradient(161.81deg, #7dbc91 0%, #37add1 100%);
-  opacity: 0.9;
-  padding-top: 64px;
-  padding-bottom: 155px;
+  // opacity: 0.9;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-bottom: 100px;
 
-  .wave-bottom {
-    background: url("/dist/img/waves/consult-wave-bottom.png") repeat-x center;
-    height: 119px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #dfeff1;
+  background-position: right;
+
+  @media (max-width: $screen-md) {
+    background-image: none !important;
   }
+  
   &__body {
     display: flex;
+    flex-direction: column;
     position: relative;
     color: $black-text !important;
 
@@ -22,7 +28,7 @@
   }
 
   &__photo {
-    width: 321px;
+    // width: 321px;
 
     @media (max-width: $screen-md) {
       width: auto;
@@ -86,7 +92,6 @@
   }
 
   &__form {
-    margin-left: 40px;
     width: 635px;
 
     @media (max-width: $screen-lg) {
@@ -95,13 +100,14 @@
 
     @media (max-width: $screen-md) {
       margin: 0 auto;
-      width: 80%;
+      width: 100%;
     }
 
     form {
       display: flex;
-      justify-content: space-between;
-      margin-top: 35px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
       @media (max-width: $screen-md) {
         flex-direction: column;
@@ -129,13 +135,19 @@
 
   &__socials {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-
+    flex-direction: row;
+    
     a {
-      margin-bottom: 30px;
+      margin-right: 20px;
+      transition: all 0.2s ease-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .socials_item {
+      width: 40px;
+      height: 40px;
     }
 
     @media (max-width: $screen-md) {

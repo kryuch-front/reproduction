@@ -40,7 +40,10 @@
   }
 
   &__top {
-    padding: 45px 0 20px;
+    padding: 35px 0 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
 
     @media (max-width: $screen-xs) {
       padding: 15px 0;
@@ -54,6 +57,8 @@
       background: linear-gradient(90deg, #6288e4 0%, #ab86e4 100%);
       padding: 20px;
       box-shadow: 0 4px 11px rgba(0, 0, 0, 0.3);
+
+      border-bottom: none;
 
       .main-header__top-city::before {
         background: url(/dist/img/ico/location.svg) no-repeat center !important;
@@ -262,7 +267,7 @@
       font-weight: 400;
       padding: 2px 0;
       position: relative;
-      margin-left: 160px;
+      margin-left: 350px;
 
       @media (max-width: $screen-lg) {
         margin-left: 50px;
@@ -316,6 +321,12 @@
   }
 
   &__menu {
+
+    hr {
+      border: 1px solid #fff;
+      opacity: 0.3;
+  }
+
     &-list {
       display: flex;
       justify-content: space-between;

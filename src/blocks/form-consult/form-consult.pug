@@ -1,16 +1,11 @@
 mixin consultation()
-    section.consultation(style="background-image: url('/dist/img/main/1.6.png');")
+    section.consultation(style="background-image: url('/dist/img/main/1.6.png'); background-repeat: no-repeat;")
         .container
-            .block-title--white.d-block.d-sm-none Анонимная консультация
             .consultation__body
-                .consultation__photo
+                //- .consultation__photo
                     //- .consultation__photo-img
-                        img(src="/dist/img/consult-photo.png", alt="")
-                    //- .consultation__photo-text
-                        .consultation__photo-name Екатерина Минаева
-                        .consultation__photo-position Основатель и директор компании
-                        //- a(href="tel:89224730883").consultation__photo-tel 8-922-473-08-83
-                .consultation__form.d-none.d-sm-block
+                        //- img(src="/dist/img/consult-photo.png", alt="")
+                .consultation__form.d-sm-block
                     .block-title Анонимная консультация
                     ul.black-list
                         li

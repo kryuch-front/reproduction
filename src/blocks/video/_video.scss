@@ -1,6 +1,7 @@
 /* video start */
 
 .main-video {
+    margin-bottom: 100px;
 
     &__body {
         height: 859px;
@@ -13,12 +14,12 @@
     }
 
     .wave-top {
-        background: url('/dist/img/waves/video-wave-top.png') repeat-x center;
+        background: url('/dist/img/waves/region-wave-top.png') repeat-x center;
         height: 60px;
     }
 
     .wave-bottom {
-        background: url('/dist/img/waves/video-wave-bottom.png') repeat-x center;
+        background: url('/dist/img/waves/region-wave-bottom.png') repeat-x center;
         height: 141px;
     }
 }
