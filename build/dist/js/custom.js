@@ -495,18 +495,45 @@ $(function () {
       "click",
       ".js-add-social-input .nice-select li",
       function () {
-        var type = $(this).data("value");
+        var type = $(this).data("value"); 
         var template =
-          '<div class="col-12 col-sm-4"><div class="form__field form__field-social"><div class="form-input__wrap"><div class="form-input-icon form-input-icon--">' +
-          type +
-          '</div><input type="text" class="form-input" placeholder=""></div></div></div>';
-        var thisBlock = $(this).closest(".col-12.col-sm-4"),
+          `<div class="col-12 col-sm-4"><div class="form__field form__field-social"><div class="form-input__wrap"><div class="form-input-icon form-input-icon--${type}"></div><input type="text" data-type="${type}" class="form-input" placeholder=""></div></div></div>`;
+        var thisBlock = $(this).closest(".col-12.col-sm-6.col-md-4"),
           allBlock = $(this).closest(".form__body").find(".col-12");
+        thisBlock.before(template);
+        thisBlock.find(".current").html("Добавить другую соц.сеть");
+        console.log(thisBlock);
       }
     );
   }
 
   /* js-add-social-input end */
+
+  /* js-add-child start */
+
+    if ($(".js-add-child").length > 0) {
+      $(document).on(
+        "click",
+        ".js-add-child",
+        function () {
+          var childRow = $(this).closest(".col-12").prev(".add-child-row");
+          var buttonWrapper = $(this).closest(".col-12");
+          childRow.clone().insertBefore(buttonWrapper);
+          console.log(childRow);
+          return false;
+        }
+      );
+    }
+  
+  /* js-add-child end */
+
+  /* custom radio button start */
+
+    $('input[type="radio"]').on('change', function() {
+      $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+    });
+
+  /* custom radio button end*/
 
   /* js-modal-video start */
 
