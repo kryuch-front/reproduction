@@ -490,6 +490,15 @@ ul.white-list {
   }
 }
 
+@keyframes waveReverse {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1920px;
+  }
+}
+
 @keyframes swell {
   0%, 100% {
     transform: translate3d(0,-25px,0);

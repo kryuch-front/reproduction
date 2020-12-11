@@ -567,6 +567,26 @@ ul.white-list li span {
     }
 }
 
+@-webkit-keyframes waveReverse {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1920px;
+    }
+}
+
+@keyframes waveReverse {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1920px;
+    }
+}
+
 @-webkit-keyframes swell {
 
     0%,
@@ -8527,23 +8547,22 @@ ul li strong {
 .motherhood-faq {
     position: relative;
     background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
-    background-size: cover;
+    background-size: cover !important;
     padding: 125px 0;
     overflow: hidden;
+    margin-bottom: 60px;
 }
 
 .motherhood-faq .wave-top {
     background: url("/dist/img/waves/region-wave-top.png");
     background-repeat: repeat-x;
     background-position: center;
-    height: 46px;
 }
 
 .motherhood-faq .wave-bottom {
     background: url("/dist/img/waves/region-wave-bottom.png");
     background-repeat: repeat-x;
     background-position: center;
-    height: 119px;
 }
 
 .motherhood-steps {
@@ -8711,9 +8730,8 @@ ul li strong {
 .motherhood-donor__desc {
     position: relative;
     background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
-    background-size: cover;
+    background-size: cover !important;
     padding: 125px 0;
-    min-height: 500px;
     overflow: hidden;
     color: #fff;
 }

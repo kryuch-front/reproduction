@@ -34,29 +34,32 @@
   &-faq {
     position: relative;
     background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
-    background-size: cover;
+    background-size: cover !important;
     padding: 125px 0;
     overflow: hidden;
+    margin-bottom: 60px;
 
     .wave-top {
       background: url("/dist/img/waves/region-wave-top.png");
       background-repeat: repeat-x;
       background-position: center;
-      height: 46px;
+      // height: 46px;
     }
 
     .wave-bottom {
       background: url("/dist/img/waves/region-wave-bottom.png");
       background-repeat: repeat-x;
       background-position: center;
-      height: 119px;
+      // height: 119px;
     }
   }
 
   &-steps {
     position: relative;
+
     &__list {
       margin-bottom: 50px;
+
       &-item {
         margin: 15px 0px;
         border: 1px solid transparent;
@@ -84,6 +87,7 @@
           opacity: 0.9;
           border-radius: 55px;
           transition: 0.3s;
+
           span {
             position: absolute;
             left: 50%;
@@ -106,9 +110,11 @@
           // background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
           background: $gradient;
           border: none;
+
           &-hover {
             display: block;
           }
+
           &-base {
             display: none;
           }
@@ -186,6 +192,7 @@
 
 .motherhood-programm {
   margin-bottom: 100px;
+
   &__desc {
     ul {
       li {
@@ -209,11 +216,21 @@
   &__desc {
     position: relative;
     background: linear-gradient(134.87deg, #7dbc91 0%, #37add1 100%);
-    background-size: cover;
+    background-size: cover !important;
     padding: 125px 0;
-    min-height: 500px;
+    // min-height: 500px;
     overflow: hidden;
     color: #fff;
+
+    // &:before {
+    //  content: '';
+    //  width: 100%;
+    //  height: 100%;
+    //  left: 0;
+    //  top: 0;
+    //  position: absolute;
+    //  background-color: rgba( 255, 0, 0, 0.5);
+    // }
 
     .wave-top {
       background: url(/dist/img/waves/region-wave-top.png) repeat-x center;
@@ -240,9 +257,11 @@
 .manager-contacts {
   list-style-type: none;
   padding-left: 0;
+
   img {
     margin-right: 10px;
     transition: all 0.2s ease-out;
+
     &:hover {
       transform: scale(1.2);
     }
